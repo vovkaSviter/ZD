@@ -1,0 +1,17 @@
+// Contents
+// a. Variables
+// b. Navigation
+
+// a. Variables
+$xs: 768px
+$sm: 992px
+$lg: 1199px
+
+// b. Navigation
+nav.siteNav
+  @media screen and (max-width: $xs)
+    height: auto
+    .logo, .phones, .socials, .navList
+      @media screen and (max-width: $xs)
+        justify-content: center
+

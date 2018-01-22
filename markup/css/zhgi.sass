@@ -2,3 +2,30 @@
 @import "_fonts.sass"
 @import "_colourscheme.sass"
 
+
+//  Contents
+//  a. Variables
+//  b. Navigation
+
+//  a. Variables
+
+
+//  b. Navigation
+nav.siteNav
+  height: 5rem
+  >.row
+    height: 100%
+  .logo, .phones, .socials, .navList
+    display: flex
+    height: 100%
+  .logo
+    justify-content: flex-start
+  .phones
+    justify-content: flex-end
+  .socials
+    justify-content: space-between
+  .navList
+    justify-content: space-between
+
+
+@import "_xs&sm.sass"

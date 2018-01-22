@@ -1,6 +1,10 @@
 body {
   margin: 0; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 @font-face {
   font-family: RobotoLight;
   src: url(../fonts/Roboto-Light.ttf); }
@@ -17,8 +21,8 @@ body {
   font-family: RobotoBlack;
   src: url(../fonts/Roboto-Black.ttf); }
 html {
-  font-size: 18px;
-  line-height: 23px; }
+  font-size: 14px;
+  line-height: 18px; }
 
 body {
   font-family: RobotoRegular;
@@ -62,5 +66,28 @@ p, ul, ol, pre, table, blockquote {
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0;
   margin-bottom: 0; }
+
+nav.siteNav {
+  height: 5rem; }
+  nav.siteNav > .row {
+    height: 100%; }
+  nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
+    display: flex;
+    height: 100%; }
+  nav.siteNav .logo {
+    justify-content: flex-start; }
+  nav.siteNav .phones {
+    justify-content: flex-end; }
+  nav.siteNav .socials {
+    justify-content: space-between; }
+  nav.siteNav .navList {
+    justify-content: space-between; }
+
+@media screen and (max-width: 768px) {
+  nav.siteNav {
+    height: auto; } }
+  @media screen and (max-width: 768px) and (max-width: 768px) {
+    nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
+      justify-content: center; } }
 
 /*# sourceMappingURL=zhgi.css.map */
