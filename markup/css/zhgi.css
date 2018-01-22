@@ -5,6 +5,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
+ul {
+  list-style: none; }
+
 @font-face {
   font-family: RobotoLight;
   src: url(../fonts/Roboto-Light.ttf); }
@@ -68,26 +71,17 @@ ul ul, ol ol, ul ol, ol ul {
   margin-bottom: 0; }
 
 nav.siteNav {
-  height: 5rem; }
-  nav.siteNav > .row {
-    height: 100%; }
-  nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
-    display: flex;
-    height: 100%; }
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
   nav.siteNav .logo {
-    justify-content: flex-start; }
+    text-align: left; }
   nav.siteNav .phones {
-    justify-content: flex-end; }
+    text-align: right; }
   nav.siteNav .socials {
-    justify-content: space-between; }
-  nav.siteNav .navList {
-    justify-content: space-between; }
+    text-align: center; }
 
 @media screen and (max-width: 768px) {
-  nav.siteNav {
-    height: auto; } }
-  @media screen and (max-width: 768px) and (max-width: 768px) {
-    nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
-      justify-content: center; } }
+  nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
+    text-align: center; } }
 
 /*# sourceMappingURL=zhgi.css.map */
