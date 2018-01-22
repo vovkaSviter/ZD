@@ -72,16 +72,23 @@ ul ul, ol ol, ul ol, ol ul {
 
 nav.siteNav {
   padding-top: 1rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #282828; }
   nav.siteNav .logo {
     text-align: left; }
   nav.siteNav .phones {
     text-align: right; }
   nav.siteNav .socials {
     text-align: center; }
+  nav.siteNav .navList {
+    display: flex;
+    justify-content: space-between; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }
+@media screen and (max-width: 768px) {
+  nav.siteNav .navList {
+    display: block; } }
 
 /*# sourceMappingURL=zhgi.css.map */
