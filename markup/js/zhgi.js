@@ -17,6 +17,15 @@ $(document).ready(function(){
             console.log(navHeight);
             console.log(children);
         });
+        //MarryGoRound
+        $(function(){
+            var stub = $('.marryGoRound .stub');
+            var owlC = $('.owl-stage-outer');
+            var owlCWidth = owlC.width();
+
+            stub.css('height', owlCWidth / 2)
+
+        });
 
     console.log('JQ is here');
 });
