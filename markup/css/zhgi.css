@@ -9,6 +9,9 @@ ul {
   list-style: none; }
 
 @font-face {
+  font-family: RobotoThin;
+  src: url(../fonts/Roboto-Thin.ttf); }
+@font-face {
   font-family: RobotoLight;
   src: url(../fonts/Roboto-Light.ttf); }
 @font-face {
@@ -28,7 +31,7 @@ html {
   line-height: 18px; }
 
 body {
-  font-family: RobotoRegular;
+  font-family: RobotoLight;
   font-size: 1rem;
   line-height: 1.2777778rem; }
 
@@ -71,7 +74,8 @@ ul ul, ol ol, ul ol, ol ul {
   margin-bottom: 0; }
 
 body {
-  background: #282828; }
+  background: #282828;
+  color: #282828; }
   body > .container {
     background: white; }
 
@@ -115,6 +119,34 @@ nav.siteNav {
     background: transparent; }
     .marryGoRound .owl-dots .owl-dot.active {
       background: white; }
+
+.portfolio h3 {
+  font-family: RobotoThin;
+  text-transform: uppercase;
+  text-align: center; }
+.portfolio .digits {
+  margin-top: 1.2777778rem;
+  margin-bottom: 1.2777778rem; }
+.portfolio .digit {
+  position: relative; }
+  .portfolio .digit.plusDot:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 30%;
+    right: -2.5%;
+    border-radius: 50%;
+    border: solid 2px #ec4112; }
+.portfolio .fatDig {
+  font-family: RobotoBlack;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center; }
+.portfolio .thinDig {
+  font-size: 0.75rem;
+  text-align: center; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
