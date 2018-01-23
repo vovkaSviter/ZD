@@ -147,6 +147,8 @@ nav.siteNav {
 .portfolio .thinDig {
   font-size: 0.75rem;
   text-align: center; }
+.portfolio .pItem {
+  margin-bottom: 30px; }
 .portfolio .pItemText {
   display: block;
   position: relative;
@@ -203,8 +205,6 @@ nav.siteNav {
           margin-right: 0.5rem; }
 .portfolio .pItem:hover .info {
   opacity: 1; }
-.portfolio .examples > .row {
-  margin-bottom: 30px; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
