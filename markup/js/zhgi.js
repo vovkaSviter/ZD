@@ -14,9 +14,8 @@ $(document).ready(function(){
                 $(this).css('margin-top', marginTop);
             });
 
-            console.log(navHeight);
-            console.log(children);
         });
+
         //MarryGoRound
         $(function(){
             var stub = $('.marryGoRound .stub');
@@ -25,6 +24,15 @@ $(document).ready(function(){
 
             stub.css('height', owlCWidth / 2)
 
+        });
+
+        //Portfolio
+        $(function(){
+            var item = $('.pItem');
+            var iWidth = item.width();
+            var iHeight = iWidth / 1.5 + 'px';
+
+            item.css('height', iHeight);
         });
 
     console.log('JQ is here');

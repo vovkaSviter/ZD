@@ -147,6 +147,64 @@ nav.siteNav {
 .portfolio .thinDig {
   font-size: 0.75rem;
   text-align: center; }
+.portfolio .pItemText {
+  display: block;
+  position: relative;
+  font-family: RobotoRegular;
+  padding: 15px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #ec4112;
+  border: solid 5px #ec4112;
+  background: white;
+  transition: all 0.75s;
+  cursor: pointer; }
+  .portfolio .pItemText .header {
+    text-transform: uppercase;
+    font-size: 1.2777778rem;
+    margin-bottom: 1.2777778rem; }
+  .portfolio .pItemText:hover {
+    background: #ec4112;
+    color: white; }
+  .portfolio .pItemText .more {
+    position: absolute;
+    bottom: 15px;
+    left: 15px; }
+.portfolio .pItemImg {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/prtf1.jpg");
+  cursor: pointer;
+  transition: all 0.75s; }
+  .portfolio .pItemImg .info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(236, 65, 18, 0.85);
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    opacity: 0; }
+    .portfolio .pItemImg .info .header {
+      font-weight: bold;
+      margin-bottom: 1rem; }
+    .portfolio .pItemImg .info .customer, .portfolio .pItemImg .info .goal {
+      text-transform: uppercase; }
+    .portfolio .pItemImg .info .viewsLikes {
+      position: absolute;
+      bottom: 15px;
+      left: 15px; }
+      .portfolio .pItemImg .info .viewsLikes > * {
+        display: inline-block; }
+        .portfolio .pItemImg .info .viewsLikes > *:first-child {
+          margin-right: 0.5rem; }
+.portfolio .pItem:hover .info {
+  opacity: 1; }
+.portfolio .examples > .row {
+  margin-bottom: 30px; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
