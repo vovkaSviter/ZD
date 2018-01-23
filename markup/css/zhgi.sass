@@ -8,10 +8,11 @@
 //  b. Navigation
 //  c. MarryGoRound
 //  d. Portfolio
+//  e. News
 
 //  a. Variables
 
-$tranSpeed: .75s
+$tranSpeed: .25s
 
 //  b. Navigation
 nav.siteNav
@@ -72,8 +73,8 @@ nav.siteNav
       content: ''
       display: block
       position: absolute
-      width: 10px
-      height: 10px
+      width: 1rem
+      height: 1rem
       top: 30%
       right: -2.5%
       border-radius: 50%
@@ -148,5 +149,72 @@ nav.siteNav
   .pItem:hover
     .info
       opacity: 1
+
+//  e. News
+.dashBelow
+  position: relative
+  margin-bottom: 1rem
+  text-transform: uppercase
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    width: 36px
+    height: 2px
+    background: $bGray
+    bottom: calc(-.5rem - 1px)
+    left: calc(50% - 18px)
+
+.news
+  border-top: solid 1px lighten($bGray, 75%)
+  h2
+    text-align: center
+  .subHeader
+    width: 25%
+    margin: 0 auto
+    text-align: center
+
+  .nItem
+    display: block
+    position: relative
+    padding: 15px
+    .date
+      font-size: .85rem
+      line-height: 1rem
+      margin-bottom: 15px
+    h6
+      font-family: RobotoBold
+      text-transform: uppercase
+      transition: all $tranSpeed
+    &:hover
+      h6
+        color: $bOrange
+    .nItemSubHeader
+      font-size: .75rem
+      line-height: 1rem
+      margin-top: 1.2777778rem
+      margin-bottom: 3.8333334rem
+    .more
+      position: absolute
+      bottom: 15px
+      left: 15px
+      color: $bOrange
+  .owl-nav
+    display: none
+  .owl-dots
+    position: relative
+    top: -1.25rem
+    text-align: center
+    .owl-dot
+      display: inline-block
+      width: 1rem
+      height: 1rem
+      margin-left: .25rem
+      margin-right: .25rem
+      border-radius: 50%
+      border: solid 2px $bGray
+      background: transparent
+      &.active
+        background: $bGray
 
 @import "_xs&sm.sass"
