@@ -1,4 +1,10 @@
 body {
+  background: #282828;
+  color: #282828; }
+  body > .container {
+    background: white; }
+
+body {
   margin: 0; }
 
 a {
@@ -7,6 +13,18 @@ a {
 
 ul {
   list-style: none; }
+
+input, textarea {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: white; }
+
+::-webkit-input-placeholder {
+  color: white; }
+
+::-moz-placeholder {
+  color: white; }
 
 @font-face {
   font-family: RobotoThin;
@@ -313,6 +331,27 @@ nav.siteNav {
       background: transparent; }
       .customers .owl-dots .owl-dot.active {
         background: #282828; }
+
+.feedback {
+  background: #ec4112;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .feedback h2 {
+    color: white; }
+  .feedback form .left {
+    border-right: solid 1px white; }
+  .feedback form input, .feedback form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 17px 15px;
+    border-bottom: solid 1px white; }
+  .feedback form input[type=submit] {
+    border: solid 1px white;
+    cursor: pointer; }
+    .feedback form input[type=submit]:hover {
+      background: white;
+      color: #ec4112; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {

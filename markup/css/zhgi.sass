@@ -10,6 +10,7 @@
 //  d. Portfolio
 //  e. News
 //  f. Customers
+//  g. Feedback
 
 //  a. Variables
 
@@ -264,5 +265,29 @@ nav.siteNav
       background: transparent
       &.active
         background: $bGray
+
+//  g. Feedback
+.feedback
+  background: $bOrange
+  padding-top: 1rem
+  padding-bottom: 1rem
+  h2
+    color: $bWhite
+  form
+    .left
+      border-right: solid 1px $bWhite
+    input, textarea
+      display: block
+      width: 100%
+      margin-bottom: 1rem
+      padding: 17px 15px
+      border-bottom: solid 1px $bWhite
+    input[type=submit]
+      border: solid 1px $bWhite
+      cursor: pointer
+      &:hover
+        background: $bWhite
+        color: $bOrange
+
 
 @import "_xs&sm.sass"
