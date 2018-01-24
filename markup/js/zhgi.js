@@ -53,6 +53,17 @@ $(document).ready(function(){
         });
     });
 
+    //innerList behaviour
+    $(function(){
+        var trigger = $('.innerListTrigger');
+        //var innerList = $('');
+        trigger.click(function(){
+            $(this).toggleClass('fa-angle-double-down fa-angle-double-up');
+            $(this).next().slideToggle();
+        });
+
+    });
+
 
     console.log('JQ is here');
 });

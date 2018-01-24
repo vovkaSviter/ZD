@@ -18,6 +18,21 @@ nav.siteNav
   .navList
     @media screen and (max-width: $xs)
       display: block
+      li
+        @media screen and (max-width: $xs)
+          margin-bottom: .5rem
+          margin-top: .5rem
+    .innerList.xSmall
+      @media screen and (max-width: $xs)
+        display: none
+        background: $bGrayLight
+        a
+          @media screen and (max-width: $xs)
+            font-size: .75rem
+            line-height: 1rem
+            &:hover
+              @media screen and (max-width: $xs)
+                color: $bOrange
 
 //  c. Portfolio
 .portfolio
