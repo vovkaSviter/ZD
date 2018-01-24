@@ -345,7 +345,8 @@ nav.siteNav {
     width: 100%;
     margin-bottom: 1rem;
     padding: 17px 15px;
-    border-bottom: solid 1px white; }
+    border-bottom: solid 1px white;
+    resize: none; }
   .feedback form input[type=submit] {
     border: solid 1px white;
     cursor: pointer; }
