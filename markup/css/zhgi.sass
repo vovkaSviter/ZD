@@ -301,6 +301,9 @@ footer
   .pdf
     h4
       text-transform: uppercase
+      margin-top: 2.5555556rem
+      &+a.social
+        margin-top: 1rem
     a
       display: block
       margin-bottom: 1rem
@@ -308,6 +311,8 @@ footer
         display: inline-block
         font-size: 2rem
         margin-right: .5rem
+      &:first-child
+        margin-top: 1.2777778rem
       &:hover
         color: $bOrange
       &.social
@@ -328,12 +333,15 @@ footer
         &:hover
           a
             color: $bOrange
+        &:first-child
+          margin-top: 1rem
   .address
     h4
       text-transform: uppercase
       i
         color: $bOrange
     .leftAddress, .rightAddress
+      margin-bottom: 2.5555556rem
       div
         margin-top: 1rem
 
