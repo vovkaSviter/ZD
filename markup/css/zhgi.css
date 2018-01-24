@@ -403,6 +403,18 @@ footer {
     footer .address .leftAddress div, footer .address .rightAddress div {
       margin-top: 1rem; }
 
+.upTo {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #ec4112;
+  color: #ec4112;
+  text-align: center;
+  cursor: pointer;
+  display: none; }
+
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }

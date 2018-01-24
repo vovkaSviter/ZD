@@ -35,5 +35,24 @@ $(document).ready(function(){
             item.css('height', iHeight);
         });
 
+    //Scroll to top
+    $(function(){
+        var upTo = $('.upTo');
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                upTo.fadeIn();
+            } else {
+                upTo.fadeOut();
+            }
+        });
+        upTo.click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    });
+
+
     console.log('JQ is here');
 });
