@@ -410,4 +410,18 @@ footer {
   nav.siteNav .navList {
     display: block; } }
 
+.portfolio .digit {
+  margin-bottom: 2rem; }
+  @media screen and (max-width: 768px) {
+    .portfolio .digit.plusDot:after {
+      top: auto;
+      bottom: -1.5rem;
+      right: calc(50% - .5rem); } }
+
+.news .subHeader {
+  width: 100%; }
+
+.customers .subHeader {
+  width: 100%; }
+
 /*# sourceMappingURL=zhgi.css.map */

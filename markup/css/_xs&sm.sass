@@ -1,13 +1,16 @@
 // Contents
-// a. Variables
-// b. Navigation
+//  a. Variables
+//  b. Navigation
+//  c. Portfolio
+//  d. News
+//  e. Customers
 
-// a. Variables
+//  a. Variables
 $xs: 768px
 $sm: 992px
 $lg: 1199px
 
-// b. Navigation
+//  b. Navigation
 nav.siteNav
   .logo, .phones, .socials, .navList
     @media screen and (max-width: $xs)
@@ -16,3 +19,22 @@ nav.siteNav
     @media screen and (max-width: $xs)
       display: block
 
+//  c. Portfolio
+.portfolio
+  .digit
+    margin-bottom: 2rem
+    &.plusDot:after
+      @media screen and (max-width: $xs)
+        top: auto
+        bottom: -1.5rem
+        right: calc(50% - .5rem)
+
+//  d. News
+.news
+  .subHeader
+    width: 100%
+
+//  e. Customers
+.customers
+  .subHeader
+    width: 100%

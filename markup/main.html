@@ -563,13 +563,27 @@
             $('#news').owlCarousel({
                 nav: true,
                 dots: true,
-                items: 3
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 3
+                    }
+                }
             });
 
             $('#customers').owlCarousel({
                 nav: true,
                 dots: true,
-                items: 5
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 5
+                    }
+                }
             });
         });
     </script>
