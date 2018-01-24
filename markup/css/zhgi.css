@@ -270,6 +270,50 @@ nav.siteNav {
       .news .owl-dots .owl-dot.active {
         background: #282828; }
 
+.customers {
+  border-top: solid 1px #e7e7e7; }
+  .customers h2 {
+    text-align: center; }
+  .customers .subHeader {
+    width: 25%;
+    margin: 0 auto;
+    text-align: center; }
+  .customers .cItem .below, .customers .cItem .above {
+    position: relative;
+    min-height: 75px; }
+    .customers .cItem .below img, .customers .cItem .above img {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0 auto; }
+    .customers .cItem .below img:first-child, .customers .cItem .above img:first-child {
+      z-index: 2; }
+    .customers .cItem .below img:last-child, .customers .cItem .above img:last-child {
+      z-index: 1; }
+    .customers .cItem .below:hover img:first-child, .customers .cItem .above:hover img:first-child {
+      z-index: 1; }
+    .customers .cItem .below:hover img:last-child, .customers .cItem .above:hover img:last-child {
+      z-index: 2; }
+  .customers .owl-nav {
+    display: none; }
+  .customers .owl-dots {
+    position: relative;
+    top: -1.25rem;
+    text-align: center; }
+    .customers .owl-dots .owl-dot {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      border-radius: 50%;
+      border: solid 2px #282828;
+      background: transparent; }
+      .customers .owl-dots .owl-dot.active {
+        background: #282828; }
+
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }
