@@ -354,6 +354,46 @@ nav.siteNav {
       background: white;
       color: #ec4112; }
 
+footer {
+  background: #282828;
+  color: white;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 2rem; }
+  footer .pdf h4 {
+    text-transform: uppercase; }
+  footer .pdf a {
+    display: block;
+    margin-bottom: 1rem; }
+    footer .pdf a i {
+      display: inline-block;
+      font-size: 2rem;
+      margin-right: 0.5rem; }
+    footer .pdf a:hover {
+      color: #ec4112; }
+    footer .pdf a.social {
+      margin-bottom: 0.25rem;
+      margin-top: 0.25rem;
+      text-transform: uppercase; }
+      footer .pdf a.social i {
+        font-size: 1rem;
+        margin-right: 0.25rem; }
+  footer .map h4 {
+    text-transform: uppercase; }
+  footer .map ul {
+    padding: 0; }
+    footer .map ul li {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem; }
+      footer .map ul li:hover a {
+        color: #ec4112; }
+  footer .address h4 {
+    text-transform: uppercase; }
+    footer .address h4 i {
+      color: #ec4112; }
+  footer .address .leftAddress div, footer .address .rightAddress div {
+    margin-top: 1rem; }
+
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }

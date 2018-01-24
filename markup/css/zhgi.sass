@@ -11,6 +11,7 @@
 //  e. News
 //  f. Customers
 //  g. Feedback
+//  h. Footer
 
 //  a. Variables
 
@@ -289,6 +290,53 @@ nav.siteNav
       &:hover
         background: $bWhite
         color: $bOrange
+
+//  h. Footer
+footer
+  background: $bGray
+  color: $bWhite
+  font-size: .75rem
+  line-height: 1rem
+  padding-top: 2rem
+  .pdf
+    h4
+      text-transform: uppercase
+    a
+      display: block
+      margin-bottom: 1rem
+      i
+        display: inline-block
+        font-size: 2rem
+        margin-right: .5rem
+      &:hover
+        color: $bOrange
+      &.social
+        margin-bottom: .25rem
+        margin-top: .25rem
+        text-transform: uppercase
+        i
+          font-size: 1rem
+          margin-right: .25rem
+  .map
+    h4
+      text-transform: uppercase
+    ul
+      padding: 0
+      li
+        margin-top: .25rem
+        margin-bottom: .25rem
+        &:hover
+          a
+            color: $bOrange
+  .address
+    h4
+      text-transform: uppercase
+      i
+        color: $bOrange
+    .leftAddress, .rightAddress
+      div
+        margin-top: 1rem
+
 
 
 @import "_xs&sm.sass"
