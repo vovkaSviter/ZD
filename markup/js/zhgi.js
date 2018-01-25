@@ -56,14 +56,26 @@ $(document).ready(function(){
     //innerList behaviour
     $(function(){
         var trigger = $('.innerListTrigger');
-        //var innerList = $('');
         trigger.click(function(){
             $(this).toggleClass('fa-angle-double-down fa-angle-double-up');
             $(this).next().slideToggle();
         });
-
     });
 
+    //Navtabs behaviour
+    $(function(){
+        var trigger = $('.navList>li>a');
+        var tab = $('nav>.tab');
+
+        trigger.hover(function(){
+            var dataName = $(this).attr('data-tab');
+            var selectedTab = tab.filter(function(){
+                return $(this).attr('id') == dataName;
+            });
+
+            selectedTab.slideToggle();
+        });
+    });
 
     console.log('JQ is here');
 });
