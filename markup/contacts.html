@@ -234,10 +234,11 @@
 
     function init(){
         myMap = new ymaps.Map("contactsMap", {
-            center: [44.95469287, 34.11802557],
+            center: [44.95491831, 34.11566765],
             zoom: 17,
             controls: []
         });
+        myMap.behaviors.disable('scrollZoom');
 
         myPlacemark = new ymaps.Placemark([44.95469287, 34.11802557], {
             hintContent: '!',
@@ -245,6 +246,7 @@
         });
 
         myMap.geoObjects.add(myPlacemark);
+        myPlacemark.balloon.open();
 
     }
 </script>

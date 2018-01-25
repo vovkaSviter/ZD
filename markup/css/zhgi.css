@@ -442,6 +442,9 @@ footer {
   cursor: pointer;
   display: none; }
 
+.ymaps-2-1-60-inner-panes {
+  -webkit-filter: grayscale(100%); }
+
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }
