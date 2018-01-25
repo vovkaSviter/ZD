@@ -67,13 +67,13 @@ $(document).ready(function(){
         var trigger = $('.navList>li>a');
         var tab = $('nav>.tab');
 
-        trigger.hover(function(){
+        trigger.mouseenter(function(){
             var dataName = $(this).attr('data-tab');
             var selectedTab = tab.filter(function(){
                 return $(this).attr('id') == dataName;
             });
 
-            selectedTab.slideToggle().delay(500);
+            selectedTab.slideToggle();
         });
     });
 
