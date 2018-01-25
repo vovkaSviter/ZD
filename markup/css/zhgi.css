@@ -370,6 +370,18 @@ nav.siteNav {
     .feedback form input[type=submit]:hover {
       background: white;
       color: #ec4112; }
+  .feedback.contacts {
+    background-color: transparent;
+    background-image: url("../imgs/contacts.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .feedback.contacts h1 {
+      color: white;
+      text-align: center; }
+    .feedback.contacts form input[type=submit] {
+      width: 20%;
+      margin: 0 auto; }
 
 footer {
   background: #282828;
