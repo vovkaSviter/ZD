@@ -119,6 +119,8 @@ nav.siteNav {
   nav.siteNav .innerList.tab {
     background: #e7e5e7;
     display: none; }
+    nav.siteNav .innerList.tab:hover {
+      display: block !important; }
     nav.siteNav .innerList.tab a {
       text-transform: uppercase;
       font-size: 0.75rem;

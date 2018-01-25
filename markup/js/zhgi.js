@@ -73,7 +73,7 @@ $(document).ready(function(){
                 return $(this).attr('id') == dataName;
             });
 
-            selectedTab.slideToggle();
+            selectedTab.slideToggle().delay(500);
         });
     });
 
