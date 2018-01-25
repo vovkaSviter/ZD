@@ -32,6 +32,21 @@ nav.siteNav
   .navList
     display: flex
     justify-content: space-between
+    a
+      text-transform: uppercase
+      &:hover
+        color: $bOrange
+        text-decoration: underline
+  .innerList.tab
+    background: $bGrayLight
+    display: none
+    a
+      text-transform: uppercase
+      font-size: .75rem
+      line-height: 1rem
+      display: block
+      &:hover
+        color: $bOrange
 
 //  c. MarryGoRound
 .marryGoRound
@@ -87,6 +102,7 @@ nav.siteNav
     font-family: RobotoBlack
     font-size: 3rem
     line-height: 3rem
+    text-align: center
     text-align: center
   .thinDig
     font-size: .75rem
@@ -327,7 +343,6 @@ footer
     h4
       text-transform: uppercase
     ul
-      padding: 0
       li
         margin-top: .25rem
         margin-bottom: .25rem

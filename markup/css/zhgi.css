@@ -12,7 +12,8 @@ a {
   color: inherit; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding-left: 0; }
 
 input, textarea {
   outline: none;
@@ -51,41 +52,41 @@ html {
 body {
   font-family: RobotoLight;
   font-size: 1rem;
-  line-height: 1.2777778rem; }
+  line-height: 1.27778rem; }
 
 h1 {
-  font-size: 2.8333333rem;
-  line-height: 3.8333333rem;
-  margin-top: 1.2777778rem;
-  margin-bottom: 2.5555556rem; }
+  font-size: 2.83333rem;
+  line-height: 3.83333rem;
+  margin-top: 1.27778rem;
+  margin-bottom: 2.55556rem; }
 
 h2 {
   font-size: 2rem;
-  line-height: 2.5555556rem;
-  margin-top: 1.2777778rem;
+  line-height: 2.55556rem;
+  margin-top: 1.27778rem;
   margin-bottom: 0; }
 
 h3 {
-  font-size: 1.3888889rem;
-  line-height: 2.5555556rem;
-  margin-top: 1.2777778rem;
+  font-size: 1.38889rem;
+  line-height: 2.55556rem;
+  margin-top: 1.27778rem;
   margin-bottom: 0; }
 
 h4 {
   font-size: 1rem;
-  line-height: 1.2777778rem;
-  margin-top: 1.2777778rem;
+  line-height: 1.27778rem;
+  margin-top: 1.27778rem;
   margin-bottom: 0; }
 
 h5, h6 {
   font-size: 1rem;
-  line-height: 1.2777778rem;
-  margin-top: 1.2777778rem;
+  line-height: 1.27778rem;
+  margin-top: 1.27778rem;
   margin-bottom: 0; }
 
 p, ul, ol, pre, table, blockquote {
   margin-top: 0;
-  margin-bottom: 1.2777778rem; }
+  margin-bottom: 1.27778rem; }
 
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0;
@@ -110,6 +111,21 @@ nav.siteNav {
   nav.siteNav .navList {
     display: flex;
     justify-content: space-between; }
+    nav.siteNav .navList a {
+      text-transform: uppercase; }
+      nav.siteNav .navList a:hover {
+        color: #ec4112;
+        text-decoration: underline; }
+  nav.siteNav .innerList.tab {
+    background: #e7e5e7;
+    display: none; }
+    nav.siteNav .innerList.tab a {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      display: block; }
+      nav.siteNav .innerList.tab a:hover {
+        color: #ec4112; }
 
 .marryGoRound .stub {
   background-image: url("../imgs/mgrReception.jpg");
@@ -143,8 +159,8 @@ nav.siteNav {
   text-transform: uppercase;
   text-align: center; }
 .portfolio .digits {
-  margin-top: 1.2777778rem;
-  margin-bottom: 1.2777778rem; }
+  margin-top: 1.27778rem;
+  margin-bottom: 1.27778rem; }
 .portfolio .digit {
   position: relative; }
   .portfolio .digit.plusDot:after {
@@ -161,6 +177,7 @@ nav.siteNav {
   font-family: RobotoBlack;
   font-size: 3rem;
   line-height: 3rem;
+  text-align: center;
   text-align: center; }
 .portfolio .thinDig {
   font-size: 0.75rem;
@@ -181,8 +198,8 @@ nav.siteNav {
   cursor: pointer; }
   .portfolio .pItemText .header {
     text-transform: uppercase;
-    font-size: 1.2777778rem;
-    margin-bottom: 1.2777778rem; }
+    font-size: 1.27778rem;
+    margin-bottom: 1.27778rem; }
   .portfolio .pItemText:hover {
     background: #ec4112;
     color: white; }
@@ -263,8 +280,8 @@ nav.siteNav {
     .news .nItem .nItemSubHeader {
       font-size: 0.75rem;
       line-height: 1rem;
-      margin-top: 1.2777778rem;
-      margin-bottom: 3.8333334rem; }
+      margin-top: 1.27778rem;
+      margin-bottom: 3.83333rem; }
     .news .nItem .more {
       position: absolute;
       bottom: 15px;
@@ -362,7 +379,7 @@ footer {
   padding-top: 2rem; }
   footer .pdf h4 {
     text-transform: uppercase;
-    margin-top: 2.5555556rem; }
+    margin-top: 2.55556rem; }
     footer .pdf h4 + a.social {
       margin-top: 1rem; }
   footer .pdf a {
@@ -373,7 +390,7 @@ footer {
       font-size: 2rem;
       margin-right: 0.5rem; }
     footer .pdf a:first-child {
-      margin-top: 1.2777778rem; }
+      margin-top: 1.27778rem; }
     footer .pdf a:hover {
       color: #ec4112; }
     footer .pdf a.social {
@@ -385,21 +402,19 @@ footer {
         margin-right: 0.25rem; }
   footer .map h4 {
     text-transform: uppercase; }
-  footer .map ul {
-    padding: 0; }
-    footer .map ul li {
-      margin-top: 0.25rem;
-      margin-bottom: 0.25rem; }
-      footer .map ul li:hover a {
-        color: #ec4112; }
-      footer .map ul li:first-child {
-        margin-top: 1rem; }
+  footer .map ul li {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem; }
+    footer .map ul li:hover a {
+      color: #ec4112; }
+    footer .map ul li:first-child {
+      margin-top: 1rem; }
   footer .address h4 {
     text-transform: uppercase; }
     footer .address h4 i {
       color: #ec4112; }
   footer .address .leftAddress, footer .address .rightAddress {
-    margin-bottom: 2.5555556rem; }
+    margin-bottom: 2.55556rem; }
     footer .address .leftAddress div, footer .address .rightAddress div {
       margin-top: 1rem; }
 
@@ -421,6 +436,23 @@ footer {
 @media screen and (max-width: 768px) {
   nav.siteNav .navList {
     display: block; } }
+  @media screen and (max-width: 768px) and (max-width: 768px) {
+    nav.siteNav .navList li {
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem; } }
+
+@media screen and (max-width: 768px) {
+  nav.siteNav .navList .innerList.xSmall {
+    display: none;
+    background: #e7e5e7; } }
+  @media screen and (max-width: 768px) and (max-width: 768px) {
+    nav.siteNav .navList .innerList.xSmall a {
+      font-size: 0.75rem;
+      line-height: 1rem; } }
+
+  @media screen and (max-width: 768px) and (max-width: 768px) and (max-width: 768px) {
+    nav.siteNav .navList .innerList.xSmall a:hover {
+      color: #ec4112; } }
 
 .portfolio .digit {
   margin-bottom: 2rem; }
