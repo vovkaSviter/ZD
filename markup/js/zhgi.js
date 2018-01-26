@@ -79,7 +79,7 @@ $(document).ready(function(){
 
         tab.css({
             width: tabWidth,
-            top: tabHeight + 1 * rem
+            top: tabHeight + (.75 * rem)
         });
 
         trigger.hover(function(){
