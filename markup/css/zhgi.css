@@ -98,10 +98,19 @@ body {
   body > .container {
     background: white; }
 
+body .container > .row {
+  position: relative; }
+
 nav.siteNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: solid 1px #282828; }
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  nav.siteNav.scrolled {
+    background: rgba(255, 255, 255, 0.85); }
   nav.siteNav .logo {
     text-align: left; }
   nav.siteNav .phones {
