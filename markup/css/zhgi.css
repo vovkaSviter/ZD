@@ -344,6 +344,12 @@ nav.siteNav {
 
 .customers {
   border-top: solid 1px #e7e7e7; }
+  .customers #customers {
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    .customers #customers .owl-dots {
+      top: auto;
+      bottom: -1.25rem; }
   .customers h2 {
     text-align: center; }
   .customers .subHeader {
@@ -358,7 +364,7 @@ nav.siteNav {
       height: 100%;
       position: absolute;
       top: 0;
-      left: 0;
+      left: 25%;
       margin: 0 auto; }
     .customers .cItem .below img:first-child, .customers .cItem .above img:first-child {
       z-index: 2; }
