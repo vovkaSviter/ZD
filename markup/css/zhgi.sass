@@ -56,13 +56,15 @@ nav.siteNav
         color: $bOrange
         text-decoration: underline
   .innerList.tab
+    position: absolute
+    //bottom: -2.7777776rem
+    left: -36.9%
     background: $bGrayLight
     display: none
     margin-bottom: -1.5rem
     padding-top: .5rem
     padding-bottom: 1rem
-    &:hover
-      display: block !important
+    z-index: 10
     a
       text-transform: uppercase
       font-size: .75rem

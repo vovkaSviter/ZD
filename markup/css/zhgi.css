@@ -134,13 +134,14 @@ nav.siteNav {
         color: #ec4112;
         text-decoration: underline; }
   nav.siteNav .innerList.tab {
+    position: absolute;
+    left: -36.9%;
     background: #e7e5e7;
     display: none;
     margin-bottom: -1.5rem;
     padding-top: 0.5rem;
-    padding-bottom: 1rem; }
-    nav.siteNav .innerList.tab:hover {
-      display: block !important; }
+    padding-bottom: 1rem;
+    z-index: 10; }
     nav.siteNav .innerList.tab a {
       text-transform: uppercase;
       font-size: 0.75rem;

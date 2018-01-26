@@ -69,8 +69,18 @@ $(document).ready(function(){
 
     //Navtabs behaviour
     $(function(){
-        var trigger = $('.navList>li>a');
-        var tab = $('nav>.tab');
+        var trigger = $('.navList>li');
+        var tab = trigger.children('.tab');
+        var tabWidth = $('nav').outerWidth();
+        var tabHeight = tab.height();
+        var rem = parseInt($('html').css('font-size'));
+
+        console.log(tabHeight);
+
+        tab.css({
+            width: tabWidth,
+            top: tabHeight + 1 * rem
+        });
 
         trigger.hover(function(){
 
@@ -88,7 +98,7 @@ $(document).ready(function(){
             });
 
 
-            selectedTab.stop(true).slideUp().delay(1000);
+            selectedTab.stop(true).slideUp().delay(2000);
         });
     });
 
