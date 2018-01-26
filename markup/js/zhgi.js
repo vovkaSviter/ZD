@@ -2,10 +2,15 @@ $(document).ready(function(){
 
     //Equal heights
         //Navigation
-        $(function(){
+        if($(window).width() > 992) {
             var nav = $('nav');
             var navHeight = nav.outerHeight();
             var children = $('nav .row>*');
+
+            var logo = $('a.logo');
+            var navHeight = nav.height();
+
+            logo.css('height' , navHeight);
 
             $(children).each(function(){
                 var height = $(this).height();
@@ -14,7 +19,7 @@ $(document).ready(function(){
                 $(this).css('margin-top', marginTop);
             });
 
-        });
+        };
 
         //MarryGoRound
         $(function(){

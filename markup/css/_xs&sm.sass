@@ -16,6 +16,13 @@ nav.siteNav
   .logo, .phones, .socials, .navList
     @media screen and (max-width: $xs)
       text-align: center
+  .logo
+    @media screen and (max-width: $xs)
+      height: 35px
+  .socials
+    @media screen and (max-width: $xs)
+      display: block
+      text-align: center
   .navList
     @media screen and (max-width: $xs)
       display: block
@@ -27,6 +34,8 @@ nav.siteNav
       @media screen and (max-width: $xs)
         display: none
         background: $bGrayLight
+        padding-top: 1rem
+        padding-bottom: 1rem
         a
           @media screen and (max-width: $xs)
             font-size: .75rem
