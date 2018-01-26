@@ -40,6 +40,15 @@ $(document).ready(function(){
             item.css('height', iHeight);
         });
 
+        //News
+        $(function(){
+            var item = $('.nItem .imgKeeper');
+            var itemWidth = item.width();
+
+            item.css('height' , itemWidth *.65);
+
+        });
+
     //Scroll to top
     $(function(){
         var upTo = $('.upTo');
