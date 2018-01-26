@@ -484,10 +484,12 @@ footer {
 .news .subHeader {
   width: 100%; }
 
-.customers .subHeader {
-  width: 100%; }
+@media screen and (max-width: 768px) {
+  .customers .subHeader {
+    width: 100%; } }
 
-.feedback.contacts form input[type=submit] {
-  width: 80%; }
+@media screen and (max-width: 768px) {
+  .feedback.contacts form input[type=submit] {
+    width: 80%; } }
 
 /*# sourceMappingURL=zhgi.css.map */

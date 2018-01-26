@@ -53,11 +53,13 @@ nav.siteNav
 //  e. Customers
 .customers
   .subHeader
-    width: 100%
+    @media screen and (max-width: $xs)
+      width: 100%
 
 //  f. Contacts
 .feedback
   &.contacts
     form
       input[type=submit]
-        width: 80%
+        @media screen and (max-width: $xs)
+          width: 80%
