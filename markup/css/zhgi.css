@@ -108,6 +108,7 @@ nav.siteNav {
     position: fixed;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-bottom: solid 1px #e7e5e7;
     z-index: 10; }
   nav.siteNav .logo {
     display: block;
@@ -138,6 +139,8 @@ nav.siteNav {
     margin-bottom: -1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem; }
+    nav.siteNav .innerList.tab:hover {
+      display: block !important; }
     nav.siteNav .innerList.tab a {
       text-transform: uppercase;
       font-size: 0.75rem;

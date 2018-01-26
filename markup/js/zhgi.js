@@ -73,12 +73,22 @@ $(document).ready(function(){
         var tab = $('nav>.tab');
 
         trigger.hover(function(){
+
             var dataName = $(this).attr('data-tab');
             var selectedTab = tab.filter(function(){
                 return $(this).attr('id') == dataName;
             });
 
-            selectedTab.slideToggle().delay(500);
+
+            selectedTab.stop(true).slideDown().delay(500);
+        }, function(){
+            var dataName = $(this).attr('data-tab');
+            var selectedTab = tab.filter(function(){
+                return $(this).attr('id') == dataName;
+            });
+
+
+            selectedTab.stop(true).slideUp().delay(1000);
         });
     });
 
