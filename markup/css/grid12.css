@@ -215,17 +215,20 @@
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .container {
+  .container,
+  .siteNav.scrolled{
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .siteNav.scrolled{
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container,
+  .siteNav.scrolled{
     width: 1170px;
   }
 }

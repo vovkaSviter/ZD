@@ -98,19 +98,17 @@ body {
   body > .container {
     background: white; }
 
-body .container > .row {
-  position: relative; }
-
 nav.siteNav {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; }
+  transition: padding 0.25s; }
   nav.siteNav.scrolled {
-    background: rgba(255, 255, 255, 0.85); }
+    background: rgba(255, 255, 255, 0.85);
+    position: fixed;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 10; }
   nav.siteNav .logo {
     text-align: left; }
   nav.siteNav .phones {

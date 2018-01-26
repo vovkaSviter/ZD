@@ -78,17 +78,22 @@ $(document).ready(function(){
     });
 
     //Nav "fixed"
-    $(function(){
-        var nav = $('nav');
+    if($(window).width() > 992) {
 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 0) {
-                nav.addClass('scrolled');
-            } else {
-                nav.removeClass('scrolled')
-            }
-        });
-    });
+
+            var nav = $('nav');
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    nav.addClass('scrolled');
+                } else {
+                    nav.removeClass('scrolled')
+                }
+            });
+
+
+
+    }
 
     console.log('JQ is here');
 });
