@@ -118,6 +118,10 @@ nav.siteNav {
     background-repeat: no-repeat; }
   nav.siteNav .phones {
     text-align: right; }
+    nav.siteNav .phones i {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 1.25rem; }
   nav.siteNav .socials {
     display: flex;
     justify-content: space-between; }
