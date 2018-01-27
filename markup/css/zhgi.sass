@@ -14,12 +14,16 @@
 //  h. Footer
 //  i. UpTo
 //  j. Contacts map
+//  k. BreadCrumbs
+//  l. PageHeader
 
 //  a. Variables
 
 $tranSpeed: .25s
 
 //  b. Navigation
+.portfolioPage nav.siteNav
+  border-bottom: solid 1px $bGrayLight
 nav.siteNav
   padding-top: 1.5rem
   padding-bottom: 1.5rem
@@ -466,5 +470,20 @@ footer
     .ymaps-2-1-60-inner-panes
       -webkit-filter: grayscale(100%)
 
+//  k. BreadCrumbs
+.breadCrumbs
+  padding-top: 4rem
+  a
+    &:hover
+      color: $bOrange
+      text-decoration: underline
+  .lastCrumb
+    font-family: RobotoBold
+
+//  l. PageHeader
+.pageHeader
+  h1
+    text-transform: uppercase
+    font-family: RobotoRegular
 
 @import "_xs&sm.sass"

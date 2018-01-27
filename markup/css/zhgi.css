@@ -3,6 +3,8 @@ body {
   color: #282828; }
   body > .container {
     background: white; }
+    body > .container.portfolioPage {
+      background: #f9f9f9; }
 
 body {
   margin: 0; }
@@ -97,6 +99,11 @@ body {
   color: #282828; }
   body > .container {
     background: white; }
+    body > .container.portfolioPage {
+      background: #f9f9f9; }
+
+.portfolioPage nav.siteNav {
+  border-bottom: solid 1px #e7e5e7; }
 
 nav.siteNav {
   padding-top: 1.5rem;
@@ -518,6 +525,18 @@ footer {
   margin-top: 1.27778rem; }
   .contactsMap #contactsMap .ymaps-2-1-60-inner-panes {
     -webkit-filter: grayscale(100%); }
+
+.breadCrumbs {
+  padding-top: 4rem; }
+  .breadCrumbs a:hover {
+    color: #ec4112;
+    text-decoration: underline; }
+  .breadCrumbs .lastCrumb {
+    font-family: RobotoBold; }
+
+.pageHeader h1 {
+  text-transform: uppercase;
+  font-family: RobotoRegular; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
