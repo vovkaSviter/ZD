@@ -16,6 +16,8 @@
 //  j. Contacts map
 //  k. BreadCrumbs
 //  l. PageHeader
+//  m. TagsFilter
+//  n. PageDescription
 
 //  a. Variables
 
@@ -485,5 +487,44 @@ footer
   h1
     text-transform: uppercase
     font-family: RobotoRegular
+
+//  m. TagsFilter
+.tagsFilter
+  .tags
+    .tagItem
+      display: inline-block
+      border: solid 2px $bOrange
+      padding: 5px
+      margin-right: 10px
+      font-family: RobotoBold
+      font-size: .75rem
+      color: $bOrange
+      text-transform: uppercase
+      &:hover
+        color: $bWhite
+        background: $bOrange
+  .filter
+    .separator
+      color: $bOrange
+    a
+      color: $bOrange
+      &:hover, &.active
+        text-decoration: underline
+
+//  n. PageDescription
+.pageDescription
+  background: $bGrayLight
+  font-family: RobotoRegular
+  padding-top: 4rem
+  padding-bottom: 4rem
+  .header
+    margin-bottom: 4rem
+    text-align: center
+    span
+      display: inline-block
+      padding: 1rem
+      font-size: 1.25rem
+      border: solid 2px $bGray
+      text-transform: uppercase
 
 @import "_xs&sm.sass"

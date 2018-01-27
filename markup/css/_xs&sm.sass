@@ -5,6 +5,7 @@
 //  d. News
 //  e. Customers
 //  f. Contacts
+//  g. TagsFilter
 
 //  a. Variables
 $xs: 768px
@@ -72,3 +73,11 @@ nav.siteNav
       input[type=submit]
         @media screen and (max-width: $xs)
           width: 80%
+
+//  g. TagsFilter
+.tagsFilter
+  .tags
+    .tagItem
+      @media screen and (max-width: $xs)
+        display: block
+        margin-bottom: 10px
