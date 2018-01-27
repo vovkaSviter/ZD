@@ -431,7 +431,8 @@ footer {
   color: white;
   font-size: 0.75rem;
   line-height: 1rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
   footer .pdf h4 {
     text-transform: uppercase;
     margin-top: 2.55556rem; }
