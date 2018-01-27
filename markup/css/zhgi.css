@@ -475,15 +475,18 @@ footer {
 
 .upTo {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
-  width: 20px;
-  height: 20px;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
   border: solid 1px #ec4112;
   color: #ec4112;
   text-align: center;
   cursor: pointer;
-  display: none; }
+  display: none;
+  z-index: 1; }
+  .upTo i {
+    line-height: 2.5rem; }
 
 .contactsMap h2 {
   text-align: center; }
