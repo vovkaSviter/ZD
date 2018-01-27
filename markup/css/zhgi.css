@@ -158,10 +158,29 @@ nav.siteNav {
 .marryGoRound {
   padding: 0; }
   .marryGoRound .stub {
+    position: relative;
     background-image: url("../imgs/mgrReception.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+    .marryGoRound .stub .mgrItemText {
+      position: absolute;
+      top: 20%;
+      left: 15px;
+      width: 40%;
+      height: 40%;
+      color: white; }
+      .marryGoRound .stub .mgrItemText .header {
+        font-family: RobotoBold;
+        font-size: 5rem;
+        line-height: 6rem; }
+      .marryGoRound .stub .mgrItemText .body {
+        font-size: 1rem;
+        line-height: 1.5rem; }
+      .marryGoRound .stub .mgrItemText a {
+        position: absolute;
+        bottom: 0;
+        left: 0; }
     .marryGoRound .stub.second {
       background-image: url("../imgs/mgrNs.jpg"); }
     .marryGoRound .stub.third {

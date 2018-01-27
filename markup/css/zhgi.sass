@@ -82,10 +82,29 @@ nav.siteNav
 .marryGoRound
   padding: 0
   .stub
+    position: relative
     background-image: url("../imgs/mgrReception.jpg")
     background-position: center
     background-size: cover
     background-repeat: no-repeat
+    .mgrItemText
+      position: absolute
+      top: 20%
+      left: 15px
+      width: 40%
+      height: 40%
+      color: $bWhite
+      .header
+        font-family: RobotoBold
+        font-size: 5rem
+        line-height: 6rem
+      .body
+        font-size: 1rem
+        line-height: 1.5rem
+      a
+        position: absolute
+        bottom: 0
+        left: 0
     &.second
       background-image: url("../imgs/mgrNs.jpg")
     &.third
