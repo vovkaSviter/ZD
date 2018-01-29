@@ -32,7 +32,8 @@
 $tranSpeed: .25s
 
 //  b. Navigation
-.portfolioPage nav.siteNav
+.portfolioPage nav.siteNav,
+.newsPage nav.siteNav
   border-bottom: solid 1px $bGrayLight
 nav.siteNav
   padding-top: 1.5rem
@@ -259,41 +260,41 @@ nav.siteNav
     margin: 0 auto
     text-align: center
 
-  .nItem
-    display: block
-    position: relative
-    padding: 15px
-    .date
-      font-size: .85rem
-      line-height: 1rem
-      margin-bottom: 15px
-    .imgKeeper
-      background-size: cover
-      background-repeat: no-repeat
-      background-position: center
-      background-image: url("../imgs/prtf2.jpg")
-    .imgKeeper1
-      background-image: url("../imgs/prtf3.jpg")
-    .imgKeeper2
-      background-image: url("../imgs/prtf4.jpg")
+.nItem
+  display: block
+  position: relative
+  padding: 15px
+  .date
+    font-size: .85rem
+    line-height: 1rem
+    margin-bottom: 15px
+  .imgKeeper
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    background-image: url("../imgs/prtf2.jpg")
+  .imgKeeper1
+    background-image: url("../imgs/prtf3.jpg")
+  .imgKeeper2
+    background-image: url("../imgs/prtf4.jpg")
+  h6
+    font-family: RobotoBold
+    text-transform: uppercase
+    transition: all $tranSpeed
+  &:hover
     h6
-      font-family: RobotoBold
-      text-transform: uppercase
-      transition: all $tranSpeed
-    &:hover
-      h6
-        color: $bOrange
-    .nItemSubHeader
-      font-size: .75rem
-      line-height: 1rem
-      min-height: 60px
-      margin-top: 1.2777778rem
-      margin-bottom: 3.8333334rem
-    .more
-      position: absolute
-      bottom: 15px
-      left: 15px
       color: $bOrange
+  .nItemSubHeader
+    font-size: .75rem
+    line-height: 1rem
+    min-height: 60px
+    margin-top: 1.2777778rem
+    margin-bottom: 3.8333334rem
+  .more
+    position: absolute
+    bottom: 15px
+    left: 15px
+    color: $bOrange
   .owl-nav
     display: none
   .owl-dots
@@ -538,19 +539,19 @@ footer
 //  o. Works
 .works
   margin-top: 6rem
-  .showMeMore
-    text-align: center
-    .smmWrapper
-      display: inline-block
-      margin-top: 2rem
-      margin-bottom: 2rem
-      cursor: pointer
+.showMeMore
+  text-align: center
+  .smmWrapper
+    display: inline-block
+    margin-top: 2rem
+    margin-bottom: 2rem
+    cursor: pointer
+    img
+      display: block
+      margin: 0 auto 1rem
+      transition: transform $tranSpeed*4
+    &:hover
       img
-        display: block
-        margin: 0 auto 1rem
-        transition: transform $tranSpeed*4
-      &:hover
-        img
-          animation: $tranSpeed*6 linear infinite rotate
+        animation: $tranSpeed*4 linear infinite rotate
 
 @import "_xs&sm.sass"

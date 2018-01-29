@@ -3,7 +3,7 @@ body {
   color: #282828; }
   body > .container {
     background: white; }
-    body > .container.portfolioPage {
+    body > .container.portfolioPage, body > .container.newsPage {
       background: #f9f9f9; }
 
 body {
@@ -99,7 +99,7 @@ body {
   color: #282828; }
   body > .container {
     background: white; }
-    body > .container.portfolioPage {
+    body > .container.portfolioPage, body > .container.newsPage {
       background: #f9f9f9; }
 
 @keyframes rotate {
@@ -107,7 +107,8 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-.portfolioPage nav.siteNav {
+.portfolioPage nav.siteNav,
+.newsPage nav.siteNav {
   border-bottom: solid 1px #e7e5e7; }
 
 nav.siteNav {
@@ -327,47 +328,48 @@ nav.siteNav {
     width: 25%;
     margin: 0 auto;
     text-align: center; }
-  .news .nItem {
-    display: block;
-    position: relative;
-    padding: 15px; }
-    .news .nItem .date {
-      font-size: 0.85rem;
-      line-height: 1rem;
-      margin-bottom: 15px; }
-    .news .nItem .imgKeeper {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-image: url("../imgs/prtf2.jpg"); }
-    .news .nItem .imgKeeper1 {
-      background-image: url("../imgs/prtf3.jpg"); }
-    .news .nItem .imgKeeper2 {
-      background-image: url("../imgs/prtf4.jpg"); }
-    .news .nItem h6 {
-      font-family: RobotoBold;
-      text-transform: uppercase;
-      transition: all 0.25s; }
-    .news .nItem:hover h6 {
-      color: #ec4112; }
-    .news .nItem .nItemSubHeader {
-      font-size: 0.75rem;
-      line-height: 1rem;
-      min-height: 60px;
-      margin-top: 1.27778rem;
-      margin-bottom: 3.83333rem; }
-    .news .nItem .more {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      color: #ec4112; }
-  .news .owl-nav {
+
+.nItem {
+  display: block;
+  position: relative;
+  padding: 15px; }
+  .nItem .date {
+    font-size: 0.85rem;
+    line-height: 1rem;
+    margin-bottom: 15px; }
+  .nItem .imgKeeper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../imgs/prtf2.jpg"); }
+  .nItem .imgKeeper1 {
+    background-image: url("../imgs/prtf3.jpg"); }
+  .nItem .imgKeeper2 {
+    background-image: url("../imgs/prtf4.jpg"); }
+  .nItem h6 {
+    font-family: RobotoBold;
+    text-transform: uppercase;
+    transition: all 0.25s; }
+  .nItem:hover h6 {
+    color: #ec4112; }
+  .nItem .nItemSubHeader {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    min-height: 60px;
+    margin-top: 1.27778rem;
+    margin-bottom: 3.83333rem; }
+  .nItem .more {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #ec4112; }
+  .nItem .owl-nav {
     display: none; }
-  .news .owl-dots {
+  .nItem .owl-dots {
     position: relative;
     top: -1.25rem;
     text-align: center; }
-    .news .owl-dots .owl-dot {
+    .nItem .owl-dots .owl-dot {
       display: inline-block;
       width: 1rem;
       height: 1rem;
@@ -376,7 +378,7 @@ nav.siteNav {
       border-radius: 50%;
       border: solid 2px #282828;
       background: transparent; }
-      .news .owl-dots .owl-dot.active {
+      .nItem .owl-dots .owl-dot.active {
         background: #282828; }
 
 .customers {
@@ -581,19 +583,20 @@ footer {
 
 .works {
   margin-top: 6rem; }
-  .works .showMeMore {
-    text-align: center; }
-    .works .showMeMore .smmWrapper {
-      display: inline-block;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      cursor: pointer; }
-      .works .showMeMore .smmWrapper img {
-        display: block;
-        margin: 0 auto 1rem;
-        transition: transform 1s; }
-      .works .showMeMore .smmWrapper:hover img {
-        animation: 1.5s linear infinite rotate; }
+
+.showMeMore {
+  text-align: center; }
+  .showMeMore .smmWrapper {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer; }
+    .showMeMore .smmWrapper img {
+      display: block;
+      margin: 0 auto 1rem;
+      transition: transform 1s; }
+    .showMeMore .smmWrapper:hover img {
+      animation: 1s linear infinite rotate; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
