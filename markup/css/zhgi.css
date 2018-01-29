@@ -641,7 +641,8 @@ footer {
     .aboutInnGreetings .content .text {
       margin-bottom: 2rem; }
     .aboutInnGreetings .content .greetingIcon i {
-      display: block; }
+      display: block;
+      margin-bottom: 1rem; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
