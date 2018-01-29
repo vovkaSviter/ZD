@@ -512,6 +512,8 @@ footer {
     margin-bottom: 2.55556rem; }
     footer .address .leftAddress div, footer .address .rightAddress div {
       margin-top: 1rem; }
+  footer .address .footerCopy {
+    margin-top: 1rem; }
 
 .upTo {
   position: fixed;
