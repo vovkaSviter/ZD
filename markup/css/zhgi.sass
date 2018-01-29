@@ -18,6 +18,14 @@
 //  l. PageHeader
 //  m. TagsFilter
 //  n. PageDescription
+//  o. Works
+
+//  KeyFrames
+@keyframes rotate
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
 
 //  a. Variables
 
@@ -190,41 +198,41 @@ nav.siteNav
       position: absolute
       bottom: 15px
       left: 15px
-  .pItemImg
-    position: relative
-    background-position: center
-    background-size: cover
-    background-repeat: no-repeat
-    background-image: url("../imgs/prtf1.jpg")
-    cursor: pointer
-    transition: all $tranSpeed
-    .info
-      position: absolute
-      width: 100%
-      height: 100%
-      padding: 15px
-      background: rgba($bOrange, .85)
-      color: $bWhite
-      font-size: .75rem
-      line-height: 1rem
-      opacity: 0
-      .header
-        font-weight: bold
-        margin-bottom: 1rem
+.pItemImg
+  position: relative
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: url("../imgs/prtf1.jpg")
+  cursor: pointer
+  transition: all $tranSpeed
+  .info
+    position: absolute
+    width: 100%
+    height: 100%
+    padding: 15px
+    background: rgba($bOrange, .85)
+    color: $bWhite
+    font-size: .75rem
+    line-height: 1rem
+    opacity: 0
+    .header
+      font-weight: bold
+      margin-bottom: 1rem
 
-      .customer, .goal
-        text-transform: uppercase
-      .viewsLikes
-        position: absolute
-        bottom: 15px
-        left: 15px
-        >*
-          display: inline-block
-          &:first-child
-            margin-right: .5rem
-  .pItem:hover
-    .info
-      opacity: 1
+    .customer, .goal
+      text-transform: uppercase
+    .viewsLikes
+      position: absolute
+      bottom: 15px
+      left: 15px
+      >*
+        display: inline-block
+        &:first-child
+          margin-right: .5rem
+.pItem:hover
+  .info
+    opacity: 1
 
 //  e. News
 .dashBelow
@@ -526,5 +534,23 @@ footer
       font-size: 1.25rem
       border: solid 2px $bGray
       text-transform: uppercase
+
+//  o. Works
+.works
+  margin-top: 6rem
+  .showMeMore
+    text-align: center
+    .smmWrapper
+      display: inline-block
+      margin-top: 2rem
+      margin-bottom: 2rem
+      cursor: pointer
+      img
+        display: block
+        margin: 0 auto 1rem
+        transition: transform $tranSpeed*4
+      &:hover
+        img
+          animation: $tranSpeed*6 linear infinite rotate
 
 @import "_xs&sm.sass"

@@ -102,6 +102,11 @@ body {
     body > .container.portfolioPage {
       background: #f9f9f9; }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .portfolioPage nav.siteNav {
   border-bottom: solid 1px #e7e5e7; }
 
@@ -263,7 +268,8 @@ nav.siteNav {
     position: absolute;
     bottom: 15px;
     left: 15px; }
-.portfolio .pItemImg {
+
+.pItemImg {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -271,7 +277,7 @@ nav.siteNav {
   background-image: url("../imgs/prtf1.jpg");
   cursor: pointer;
   transition: all 0.25s; }
-  .portfolio .pItemImg .info {
+  .pItemImg .info {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -281,20 +287,21 @@ nav.siteNav {
     font-size: 0.75rem;
     line-height: 1rem;
     opacity: 0; }
-    .portfolio .pItemImg .info .header {
+    .pItemImg .info .header {
       font-weight: bold;
       margin-bottom: 1rem; }
-    .portfolio .pItemImg .info .customer, .portfolio .pItemImg .info .goal {
+    .pItemImg .info .customer, .pItemImg .info .goal {
       text-transform: uppercase; }
-    .portfolio .pItemImg .info .viewsLikes {
+    .pItemImg .info .viewsLikes {
       position: absolute;
       bottom: 15px;
       left: 15px; }
-      .portfolio .pItemImg .info .viewsLikes > * {
+      .pItemImg .info .viewsLikes > * {
         display: inline-block; }
-        .portfolio .pItemImg .info .viewsLikes > *:first-child {
+        .pItemImg .info .viewsLikes > *:first-child {
           margin-right: 0.5rem; }
-.portfolio .pItem:hover .info {
+
+.pItem:hover .info {
   opacity: 1; }
 
 .dashBelow {
@@ -571,6 +578,22 @@ footer {
       font-size: 1.25rem;
       border: solid 2px #282828;
       text-transform: uppercase; }
+
+.works {
+  margin-top: 6rem; }
+  .works .showMeMore {
+    text-align: center; }
+    .works .showMeMore .smmWrapper {
+      display: inline-block;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      cursor: pointer; }
+      .works .showMeMore .smmWrapper img {
+        display: block;
+        margin: 0 auto 1rem;
+        transition: transform 1s; }
+      .works .showMeMore .smmWrapper:hover img {
+        animation: 1.5s linear infinite rotate; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
