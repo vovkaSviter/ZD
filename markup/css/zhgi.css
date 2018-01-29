@@ -109,7 +109,8 @@ body {
     transform: rotate(360deg); } }
 .portfolioPage nav.siteNav,
 .newsPage nav.siteNav,
-.aboutPage nav.siteNav {
+.aboutPage nav.siteNav,
+.aboutInnTeam nav.siteNav {
   border-bottom: solid 1px #e7e5e7; }
 
 nav.siteNav {
@@ -572,20 +573,22 @@ footer {
   .tagsFilter .filter a:hover, .tagsFilter .filter a.active {
     text-decoration: underline; }
 
+.pageDescription .header, .strategyPhoto .header {
+  margin-bottom: 4rem;
+  text-align: center; }
+
+.pageDescription .header span, .strategyPhoto .header span {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: solid 2px #282828;
+  text-transform: uppercase; }
+
 .pageDescription {
   background: #e7e5e7;
   font-family: RobotoRegular;
   padding-top: 4rem;
   padding-bottom: 4rem; }
-  .pageDescription .header {
-    margin-bottom: 4rem;
-    text-align: center; }
-    .pageDescription .header span {
-      display: inline-block;
-      padding: 1rem;
-      font-size: 1.25rem;
-      border: solid 2px #282828;
-      text-transform: uppercase; }
 
 .works {
   margin-top: 6rem; }
@@ -604,6 +607,12 @@ footer {
     .showMeMore .smmWrapper:hover img {
       animation: 1s linear infinite rotate; }
 
+.pageSeo .text, .aboutInnGreetings .content .text {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.75rem; }
+
 .pageSeo {
   background-image: url("../imgs/about.jpg");
   background-position: center;
@@ -611,11 +620,28 @@ footer {
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem; }
-  .pageSeo .text {
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.75rem; }
+
+.strategyPhoto {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.aboutInnGreetings {
+  padding-bottom: 4rem;
+  background-image: url("../imgs/aboutInn.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; }
+  .aboutInnGreetings .content {
+    text-align: center; }
+    .aboutInnGreetings .content h1 {
+      text-transform: uppercase;
+      font-family: RobotoBold;
+      margin-bottom: 0; }
+    .aboutInnGreetings .content .text {
+      margin-bottom: 2rem; }
+    .aboutInnGreetings .content .greetingIcon i {
+      display: block; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {

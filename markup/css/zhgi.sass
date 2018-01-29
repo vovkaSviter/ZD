@@ -20,6 +20,12 @@
 //  n. PageDescription
 //  o. Works
 //  p. aboutSeo
+//  q. strategyPhoto
+//  r. aboutInnGreetings
+//  s.
+//  t.
+//  u.
+
 
 //  KeyFrames
 @keyframes rotate
@@ -35,7 +41,8 @@ $tranSpeed: .25s
 //  b. Navigation
 .portfolioPage nav.siteNav,
 .newsPage nav.siteNav,
-.aboutPage nav.siteNav
+.aboutPage nav.siteNav,
+.aboutInnTeam nav.siteNav
   border-bottom: solid 1px $bGrayLight
 nav.siteNav
   padding-top: 1.5rem
@@ -526,20 +533,30 @@ footer
         text-decoration: underline
 
 //  n. PageDescription
+%headerCommon
+  margin-bottom: 4rem
+  text-align: center
+%headerCommonSpan
+  display: inline-block
+  padding: 1rem
+  font-size: 1.25rem
+  border: solid 2px $bGray
+  text-transform: uppercase
 .pageDescription
   background: $bGrayLight
   font-family: RobotoRegular
   padding-top: 4rem
   padding-bottom: 4rem
   .header
-    margin-bottom: 4rem
-    text-align: center
+    @extend  %headerCommon
     span
-      display: inline-block
-      padding: 1rem
-      font-size: 1.25rem
-      border: solid 2px $bGray
-      text-transform: uppercase
+      @extend %headerCommonSpan
+
+.strategyPhoto
+  .header
+    @extend %headerCommon
+    span
+      @extend %headerCommonSpan
 
 //  o. Works
 .works
@@ -560,7 +577,11 @@ footer
         animation: $tranSpeed*4 linear infinite rotate
 
 //  p. aboutSeo
-.aboutPage
+%aboutText
+  color: $bWhite
+  text-align: center
+  font-size: 1.5rem
+  line-height: 1.75rem
 .pageSeo
   background-image: url("../imgs/about.jpg")
   background-position: center
@@ -569,9 +590,33 @@ footer
   padding-top: 8rem
   padding-bottom: 8rem
   .text
-    color: $bWhite
+    @extend %aboutText
+
+//  q. strategyPhoto
+.strategyPhoto
+  padding-top: 4rem
+  padding-bottom: 4rem
+
+//  r. aboutInnGreetings
+.aboutInnGreetings
+  padding-bottom: 4rem
+  background-image: url("../imgs/aboutInn.jpg")
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  color: $bWhite
+  .content
     text-align: center
-    font-size: 1.5rem
-    line-height: 1.75rem
+    h1
+      text-transform: uppercase
+      font-family: RobotoBold
+      margin-bottom: 0
+    .text
+      @extend %aboutText
+      margin-bottom: 2rem
+    .greetingIcon
+      i
+        display: block
+
 
 @import "_xs&sm.sass"
