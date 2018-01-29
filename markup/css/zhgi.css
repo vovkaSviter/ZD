@@ -3,7 +3,7 @@ body {
   color: #282828; }
   body > .container {
     background: white; }
-    body > .container.portfolioPage, body > .container.newsPage {
+    body > .container.portfolioPage, body > .container.newsPage, body > .container.aboutPage {
       background: #f9f9f9; }
 
 body {
@@ -99,7 +99,7 @@ body {
   color: #282828; }
   body > .container {
     background: white; }
-    body > .container.portfolioPage, body > .container.newsPage {
+    body > .container.portfolioPage, body > .container.newsPage, body > .container.aboutPage {
       background: #f9f9f9; }
 
 @keyframes rotate {
@@ -108,7 +108,8 @@ body {
   100% {
     transform: rotate(360deg); } }
 .portfolioPage nav.siteNav,
-.newsPage nav.siteNav {
+.newsPage nav.siteNav,
+.aboutPage nav.siteNav {
   border-bottom: solid 1px #e7e5e7; }
 
 nav.siteNav {
@@ -244,9 +245,11 @@ nav.siteNav {
 .portfolio .thinDig {
   font-size: 0.75rem;
   text-align: center; }
-.portfolio .pItem {
+
+.pItem {
   margin-bottom: 30px; }
-.portfolio .pItemText {
+
+.pItemText {
   display: block;
   position: relative;
   font-family: RobotoRegular;
@@ -258,14 +261,14 @@ nav.siteNav {
   background: white;
   transition: all 0.25s;
   cursor: pointer; }
-  .portfolio .pItemText .header {
+  .pItemText .header {
     text-transform: uppercase;
     font-size: 1.27778rem;
     margin-bottom: 1.27778rem; }
-  .portfolio .pItemText:hover {
+  .pItemText:hover {
     background: #ec4112;
     color: white; }
-  .portfolio .pItemText .more {
+  .pItemText .more {
     position: absolute;
     bottom: 15px;
     left: 15px; }
@@ -600,6 +603,19 @@ footer {
       transition: transform 1s; }
     .showMeMore .smmWrapper:hover img {
       animation: 1s linear infinite rotate; }
+
+.pageSeo {
+  background-image: url("../imgs/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+  .pageSeo .text {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.75rem; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {

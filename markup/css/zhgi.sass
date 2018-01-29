@@ -19,6 +19,7 @@
 //  m. TagsFilter
 //  n. PageDescription
 //  o. Works
+//  p. aboutSeo
 
 //  KeyFrames
 @keyframes rotate
@@ -33,7 +34,8 @@ $tranSpeed: .25s
 
 //  b. Navigation
 .portfolioPage nav.siteNav,
-.newsPage nav.siteNav
+.newsPage nav.siteNav,
+.aboutPage nav.siteNav
   border-bottom: solid 1px $bGrayLight
 nav.siteNav
   padding-top: 1.5rem
@@ -173,32 +175,32 @@ nav.siteNav
     font-size: .75rem
     text-align: center
 
-  .pItem
-    margin-bottom: 30px
+.pItem
+  margin-bottom: 30px
 
-  .pItemText
-    display: block
-    position: relative
-    font-family: RobotoRegular
-    padding: 15px
-    font-size: .75rem
-    line-height: 1rem
-    color: $bOrange
-    border: solid 5px $bOrange
-    background: $bWhite
-    transition: all $tranSpeed
-    cursor: pointer
-    .header
-      text-transform: uppercase
-      font-size: 1.2777778rem
-      margin-bottom: 1.2777778rem
-    &:hover
-      background: $bOrange
-      color: $bWhite
-    .more
-      position: absolute
-      bottom: 15px
-      left: 15px
+.pItemText
+  display: block
+  position: relative
+  font-family: RobotoRegular
+  padding: 15px
+  font-size: .75rem
+  line-height: 1rem
+  color: $bOrange
+  border: solid 5px $bOrange
+  background: $bWhite
+  transition: all $tranSpeed
+  cursor: pointer
+  .header
+    text-transform: uppercase
+    font-size: 1.2777778rem
+    margin-bottom: 1.2777778rem
+  &:hover
+    background: $bOrange
+    color: $bWhite
+  .more
+    position: absolute
+    bottom: 15px
+    left: 15px
 .pItemImg
   position: relative
   background-position: center
@@ -556,5 +558,20 @@ footer
     &:hover
       img
         animation: $tranSpeed*4 linear infinite rotate
+
+//  p. aboutSeo
+.aboutPage
+.pageSeo
+  background-image: url("../imgs/about.jpg")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 8rem
+  padding-bottom: 8rem
+  .text
+    color: $bWhite
+    text-align: center
+    font-size: 1.5rem
+    line-height: 1.75rem
 
 @import "_xs&sm.sass"
