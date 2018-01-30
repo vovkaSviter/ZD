@@ -3,7 +3,7 @@ body {
   color: #282828; }
   body > .container-fluid {
     background: white; }
-    body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage, body > .container-fluid.servicesPage, body > .container-fluid.serviceSinglePage {
+    body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage, body > .container-fluid.servicesPage, body > .container-fluid.serviceSinglePage, body > .container-fluid.portfolioSinglePage {
       background: #f9f9f9; }
 
 body {
@@ -99,7 +99,7 @@ body {
   color: #282828; }
   body > .container-fluid {
     background: white; }
-    body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage, body > .container-fluid.servicesPage, body > .container-fluid.serviceSinglePage {
+    body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage, body > .container-fluid.servicesPage, body > .container-fluid.serviceSinglePage, body > .container-fluid.portfolioSinglePage {
       background: #f9f9f9; }
 
 @keyframes rotate {
@@ -700,6 +700,11 @@ footer {
   margin-bottom: 4rem; }
 .serviceSinglePage .pageHeaderDescription {
   margin-top: 1.27778rem; }
+
+.portfolioSinglePage .portfolioSingleDescription img {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
