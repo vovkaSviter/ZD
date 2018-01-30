@@ -644,6 +644,27 @@ footer {
       display: block;
       margin-bottom: 1rem; }
 
+.aboutInnAdvs .aboutAdvsPageItems {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  .aboutInnAdvs .aboutAdvsPageItems > .row:not(:last-child) {
+    margin-bottom: 4rem; }
+.aboutInnAdvs .aboutAdvsPageItem .header {
+  text-transform: uppercase;
+  font-family: RobotoRegular;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem; }
+.aboutInnAdvs .aboutAdvsPageItem .fa {
+  position: relative; }
+  .aboutInnAdvs .aboutAdvsPageItem .fa:before {
+    display: block;
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    position: absolute; }
+
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }
@@ -710,5 +731,13 @@ footer {
 @media screen and (max-width: 768px) {
   nav.siteNav .logo img {
     display: none; } }
+
+@media screen and (max-width: 768px) {
+  .aboutInnAdvs .aboutAdvsPageItem .fa:before {
+    font-size: 2rem;
+    top: -3rem; } }
+@media screen and (max-width: 768px) {
+  .aboutInnAdvs .aboutAdvsPageItem:not(:last-child) {
+    margin-bottom: 2rem; } }
 
 /*# sourceMappingURL=zhgi.css.map */

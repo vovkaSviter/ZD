@@ -7,6 +7,7 @@
 //  f. Contacts
 //  g. TagsFilter
 //  h. Logo
+//  i. aboutInnAdvs
 
 //  a. Variables
 $xs: 768px
@@ -94,3 +95,16 @@ nav.siteNav
     img
       @media screen and (max-width: $xs)
         display: none
+
+//  i. aboutInnAdvs
+.aboutInnAdvs
+  .aboutAdvsPageItem
+    .fa
+      &:before
+        @media screen and (max-width: $xs)
+          font-size: 2rem
+          top: -3rem
+  .aboutAdvsPageItem:not(:last-child)
+    @media screen and (max-width: $xs)
+      margin-bottom: 2rem
+
