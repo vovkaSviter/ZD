@@ -47,12 +47,21 @@ $(document).ready(function(){
         item.css('height' , itemWidth *.65);
 
     });
+
     //Team
     $(function(){
         var phItem = $('.phItem');
         var phWidth = phItem.width();
 
         phItem.css('height', phWidth * .75);
+    });
+
+    //PDF
+    $(function(){
+        var item = $('.aboutInnPDFItem');
+        var itemWidth = item.width();
+
+        item.css('height' , itemWidth);
     });
 
     //Scroll to top
