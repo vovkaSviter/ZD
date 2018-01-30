@@ -229,7 +229,7 @@
 @media (min-width: 1200px) {
   .container,
   .siteNav.scrolled{
-    width: 1270px;        /*Vova*/
+    width: 1170px;
   }
 }
 .container-fluid {
