@@ -1,9 +1,9 @@
 body {
   background: #282828;
   color: #282828; }
-  body > .container {
+  body > .container-fluid {
     background: white; }
-    body > .container.portfolioPage, body > .container.newsPage, body > .container.aboutPage {
+    body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage {
       background: #f9f9f9; }
 
 body {
@@ -97,9 +97,9 @@ ul ul, ol ol, ul ol, ol ul {
 body {
   background: #282828;
   color: #282828; }
-  body > .container {
+  body > .container-fluid {
     background: white; }
-    body > .container.portfolioPage, body > .container.newsPage, body > .container.aboutPage {
+    body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage {
       background: #f9f9f9; }
 
 @keyframes rotate {

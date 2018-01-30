@@ -238,6 +238,13 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/*Vova*/
+.container-fluid.customWidth{
+  max-width: 1870px;
+}
+/*Vova*/
+
 .row {
   margin-left: -15px;
   margin-right: -15px;
