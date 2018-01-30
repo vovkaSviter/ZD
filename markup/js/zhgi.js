@@ -1,60 +1,60 @@
 $(document).ready(function(){
 
     //Equal heights
-        //Navigation
-        if($(window).width() > 992) {
-            var nav = $('nav');
-            var navHeight = nav.outerHeight();
-            var children = $('nav .row>*');
+    //Navigation
+    if($(window).width() > 992) {
+        var nav = $('nav');
+        var navHeight = nav.outerHeight();
+        var children = $('nav .row>*');
 
-            var logo = $('a.logo');
-            var navHeight = nav.height();
+        var logo = $('a.logo');
+        var navHeight = nav.height();
 
-            logo.css('height' , navHeight);
+        logo.css('height' , navHeight);
 
-            $(children).each(function(){
-                var height = $(this).height();
-                var marginTop = (navHeight - height) / 8 + 'px';
+        $(children).each(function(){
+            var height = $(this).height();
+            var marginTop = (navHeight - height) / 8 + 'px';
 
-                $(this).css('margin-top', marginTop);
-            });
-
-        };
-
-        //MarryGoRound
-        $(function(){
-            var stub = $('.marryGoRound .stub');
-            var owlC = $('.owl-stage-outer');
-            var owlCWidth = owlC.width();
-
-            stub.css('height', owlCWidth / 2)
-
+            $(this).css('margin-top', marginTop);
         });
 
-        //Portfolio
-        $(function(){
-            var item = $('.pItem');
-            var iWidth = item.width();
-            var iHeight = iWidth / 1.5 + 'px';
+    };
 
-            item.css('height', iHeight);
-        });
+    //MarryGoRound
+    $(function(){
+        var stub = $('.marryGoRound .stub');
+        var owlC = $('.owl-stage-outer');
+        var owlCWidth = owlC.width();
 
-        //News
-        $(function(){
-            var item = $('.nItem .imgKeeper');
-            var itemWidth = item.width();
+        stub.css('height', owlCWidth / 2)
 
-            item.css('height' , itemWidth *.65);
+    });
 
-        });
-        //Team
-        $(function(){
-            var phItem = $('.phItem');
-            var phWidth = phItem.width();
+    //Portfolio
+    $(function(){
+        var item = $('.pItem');
+        var iWidth = item.width();
+        var iHeight = iWidth / 1.5 + 'px';
 
-            phItem.css('height', phWidth * .75);
-        });
+        item.css('height', iHeight);
+    });
+
+    //News
+    $(function(){
+        var item = $('.nItem .imgKeeper');
+        var itemWidth = item.width();
+
+        item.css('height' , itemWidth *.65);
+
+    });
+    //Team
+    $(function(){
+        var phItem = $('.phItem');
+        var phWidth = phItem.width();
+
+        phItem.css('height', phWidth * .75);
+    });
 
     //Scroll to top
     $(function(){
@@ -91,8 +91,6 @@ $(document).ready(function(){
         var tabHeight = tab.height();
         var rem = parseInt($('html').css('font-size'));
 
-        console.log(tabHeight);
-
         tab.css({
             width: tabWidth,
             top: tabHeight + (.75 * rem)
@@ -122,15 +120,15 @@ $(document).ready(function(){
     if($(window).width() > 992) {
 
 
-            var nav = $('nav');
+        var nav = $('nav');
 
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 0) {
-                    nav.addClass('scrolled');
-                } else {
-                    nav.removeClass('scrolled')
-                }
-            });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                nav.addClass('scrolled');
+            } else {
+                nav.removeClass('scrolled')
+            }
+        });
 
 
 
@@ -138,3 +136,4 @@ $(document).ready(function(){
 
     console.log('JQ is here');
 });
+
