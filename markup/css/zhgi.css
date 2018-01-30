@@ -765,5 +765,12 @@ footer {
 @media screen and (max-width: 768px) {
   .aboutInnPDF .aboutInnPDFItems .aboutInnPDFItem > .row > .fa {
     font-size: 3rem; } }
+@media screen and (max-width: 768px) {
+  .aboutInnPDF .aboutInnPDFItems .aboutInnPDFItem:not(:last-child) {
+    margin-bottom: 3rem;
+    border-bottom: solid 1px #e7e5e7; } }
+@media screen and (max-width: 768px) {
+  .aboutInnPDF .aboutInnPDFItems .aboutInnPDFItem:not(:last-child) a {
+    bottom: 1rem; } }
 
 /*# sourceMappingURL=zhgi.css.map */

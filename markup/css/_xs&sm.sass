@@ -116,3 +116,10 @@ nav.siteNav
       &>.row>.fa
         @media screen and (max-width: $xs)
           font-size: 3rem
+      &:not(:last-child)
+        @media screen and (max-width: $xs)
+          margin-bottom: 3rem
+          border-bottom: solid 1px $bGrayLight
+        a
+          @media screen and (max-width: $xs)
+            bottom: 1rem
