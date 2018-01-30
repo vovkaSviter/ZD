@@ -4,7 +4,6 @@ $(document).ready(function(){
     //Navigation
     if($(window).width() > 992) {
         var nav = $('nav');
-        var navHeight = nav.outerHeight();
         var children = $('nav .row>*');
 
         var logo = $('a.logo');
@@ -14,7 +13,7 @@ $(document).ready(function(){
 
         $(children).each(function(){
             var height = $(this).height();
-            var marginTop = (navHeight - height) / 8 + 'px';
+            var marginTop = (navHeight - height) / 2 + 'px';
 
             $(this).css('margin-top', marginTop);
         });

@@ -126,11 +126,11 @@ nav.siteNav {
     border-bottom: solid 1px #e7e5e7;
     z-index: 10; }
   nav.siteNav .logo {
-    display: block;
-    background-image: url("../imgs/logo.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat; }
+    display: block; }
+    nav.siteNav .logo img {
+      display: block;
+      width: 30%;
+      height: auto; }
   nav.siteNav .phones {
     text-align: right; }
     nav.siteNav .phones i {
@@ -700,5 +700,15 @@ footer {
   .tagsFilter .tags .tagItem {
     display: block;
     margin-bottom: 10px; } }
+
+@media screen and (max-width: 768px) {
+  nav.siteNav .logo {
+    background-image: url("../imgs/logo.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; } }
+@media screen and (max-width: 768px) {
+  nav.siteNav .logo img {
+    display: none; } }
 
 /*# sourceMappingURL=zhgi.css.map */

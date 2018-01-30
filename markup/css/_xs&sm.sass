@@ -6,6 +6,7 @@
 //  e. Customers
 //  f. Contacts
 //  g. TagsFilter
+//  h. Logo
 
 //  a. Variables
 $xs: 768px
@@ -81,3 +82,15 @@ nav.siteNav
       @media screen and (max-width: $xs)
         display: block
         margin-bottom: 10px
+
+//  h. Logo
+nav.siteNav
+  .logo
+    @media screen and (max-width: $xs)
+      background-image: url("../imgs/logo.jpg")
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+    img
+      @media screen and (max-width: $xs)
+        display: none
