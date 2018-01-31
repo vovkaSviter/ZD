@@ -696,9 +696,67 @@ footer
 //  w. portfolioSinglePage
 .portfolioSinglePage
   .portfolioSingleDescription
-    img
-      display: block
-      width: 100%
+    .left
+      &>div
+        border-top: solid 1px darken($bGrayLight, .25)
+        padding-top: 1rem
+      .customerIs, .goalIs
+        margin-bottom: 1rem
+        text-transform: uppercase
+        font-family: RobotoRegular
+        font-weight: bold
+    .zooKeeper
       margin-bottom: 1rem
+      a
+        &:hover
+          color: $bOrange
+      h3
+        font-family: RobotoRegular
+      &>div:last-child
+        padding-top: 3rem
+    .right
+      img
+        display: block
+        width: 100%
+        margin-bottom: 1rem
+  .paginLike
+    margin-top: 4rem
+    margin-bottom: 4rem
+    .likeIt
+      display: flex
+      justify-content: center
+      margin-bottom: 2rem
+      a
+        text-align: center
+        min-width: 50px
+        min-height: calc(50px + 1rem)
+        &:before
+          content: ''
+          display: block
+          width: 100%
+          height: calc(100% - 1rem)
+          background-image: url("../imgs/likeIt.png")
+          background-position: center
+          background-repeat: no-repeat
+        &:hover
+          color: $bOrange
+          &:before
+            background-image: url("../imgs/likeItOr.png")
+    .pagination
+      display: flex
+      justify-content: space-between
+      i
+        display: inline-block
+      .prev
+        &:hover
+          color: $bOrange
+        i
+          margin-right: 15px
+      .next
+        &:hover
+          color: $bOrange
+        i
+          margin-left: 15px
+
 
 @import "_xs&sm.sass"

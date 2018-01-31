@@ -701,10 +701,62 @@ footer {
 .serviceSinglePage .pageHeaderDescription {
   margin-top: 1.27778rem; }
 
-.portfolioSinglePage .portfolioSingleDescription img {
+.portfolioSinglePage .portfolioSingleDescription .left > div {
+  border-top: solid 1px #e6e4e6;
+  padding-top: 1rem; }
+.portfolioSinglePage .portfolioSingleDescription .left .customerIs, .portfolioSinglePage .portfolioSingleDescription .left .goalIs {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: RobotoRegular;
+  font-weight: bold; }
+.portfolioSinglePage .portfolioSingleDescription .zooKeeper {
+  margin-bottom: 1rem; }
+  .portfolioSinglePage .portfolioSingleDescription .zooKeeper a:hover {
+    color: #ec4112; }
+  .portfolioSinglePage .portfolioSingleDescription .zooKeeper h3 {
+    font-family: RobotoRegular; }
+  .portfolioSinglePage .portfolioSingleDescription .zooKeeper > div:last-child {
+    padding-top: 3rem; }
+.portfolioSinglePage .portfolioSingleDescription .right img {
   display: block;
   width: 100%;
   margin-bottom: 1rem; }
+.portfolioSinglePage .paginLike {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+  .portfolioSinglePage .paginLike .likeIt {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    .portfolioSinglePage .paginLike .likeIt a {
+      text-align: center;
+      min-width: 50px;
+      min-height: calc(50px + 1rem); }
+      .portfolioSinglePage .paginLike .likeIt a:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: calc(100% - 1rem);
+        background-image: url("../imgs/likeIt.png");
+        background-position: center;
+        background-repeat: no-repeat; }
+      .portfolioSinglePage .paginLike .likeIt a:hover {
+        color: #ec4112; }
+        .portfolioSinglePage .paginLike .likeIt a:hover:before {
+          background-image: url("../imgs/likeItOr.png"); }
+  .portfolioSinglePage .paginLike .pagination {
+    display: flex;
+    justify-content: space-between; }
+    .portfolioSinglePage .paginLike .pagination i {
+      display: inline-block; }
+    .portfolioSinglePage .paginLike .pagination .prev:hover {
+      color: #ec4112; }
+    .portfolioSinglePage .paginLike .pagination .prev i {
+      margin-right: 15px; }
+    .portfolioSinglePage .paginLike .pagination .next:hover {
+      color: #ec4112; }
+    .portfolioSinglePage .paginLike .pagination .next i {
+      margin-left: 15px; }
 
 @media screen and (max-width: 768px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
@@ -791,5 +843,9 @@ footer {
 @media screen and (max-width: 768px) {
   .aboutInnPDF .aboutInnPDFItems .aboutInnPDFItem:not(:last-child) a {
     bottom: 1rem; } }
+
+@media screen and (max-width: 768px) {
+  .portfolioSinglePage .portfolioSingleDescription .right {
+    margin-top: 2rem; } }
 
 /*# sourceMappingURL=zhgi.css.map */
