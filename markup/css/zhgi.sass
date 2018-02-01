@@ -65,7 +65,7 @@ nav.siteNav
     display: block
     img
       display: block
-      width: 30%
+      width: 75%
       height: auto
   .phones
     text-align: right
@@ -76,8 +76,25 @@ nav.siteNav
   .socials
     display: flex
     justify-content: space-between
+    form
+      position: absolute
+      top: 0
+      left: -183px
+      width: auto
+      transition: all $tranSpeed
+      #navSearch
+        border: solid 2px $bOrange
+        padding: 5px
+    form.hidden
+      left: 0
+      width: 0
+      overflow: hidden
+    #navSearchTrigger
+      color: $bOrange
+      cursor: pointer
+      font-size: 1.5rem
     a
-      font-size: 1.25rem
+      font-size: 1.5rem
       &:hover
         color: $bOrange
   .navList

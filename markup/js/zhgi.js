@@ -138,10 +138,18 @@ $(document).ready(function(){
                 nav.removeClass('scrolled')
             }
         });
-
-
-
     }
+
+    //Search behaviour
+    $(function(){
+        var trigger = $('#navSearchTrigger');
+        var form = $('nav .socials form');
+
+        trigger.click(function(){
+            form.toggleClass('hidden')
+        });
+
+    });
 
     console.log('JQ is here');
 });
