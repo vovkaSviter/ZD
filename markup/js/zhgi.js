@@ -95,13 +95,14 @@ $(document).ready(function(){
     $(function(){
         var trigger = $('.navList>li');
         var tab = trigger.children('.tab');
-        var tabWidth = $('nav').outerWidth();
-        var tabHeight = tab.height();
-        var rem = parseInt($('html').css('font-size'));
+        var nav = $('nav');
+        var tabWidth = nav.outerWidth();
+        var navHeight = nav.outerHeight();
+        //var rem = parseInt($('html').css('font-size'));
 
         tab.css({
             width: tabWidth,
-            top: tabHeight + (.75 * rem)
+            top: navHeight / 2
         });
 
         trigger.hover(function(){

@@ -147,6 +147,9 @@ nav.siteNav {
   nav.siteNav .navList {
     display: flex;
     justify-content: space-between; }
+    nav.siteNav .navList > li > a {
+      padding-top: 50px;
+      padding-bottom: 60px; }
     nav.siteNav .navList a {
       text-transform: uppercase; }
       nav.siteNav .navList a:hover {
@@ -154,7 +157,7 @@ nav.siteNav {
         text-decoration: underline; }
   nav.siteNav .innerList.tab {
     position: absolute;
-    left: -36.9%;
+    left: -37.9%;
     background: #e7e5e7;
     display: none;
     margin-bottom: -1.5rem;
