@@ -506,7 +506,7 @@ nav.siteNav {
     background-position: center;
     background-repeat: no-repeat; }
     .feedback.contacts h1 {
-      color: white;
+      color: #282828;
       text-align: center; }
     .feedback.contacts form input[type=submit] {
       width: 20%;
