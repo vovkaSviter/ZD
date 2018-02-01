@@ -298,8 +298,8 @@ nav.siteNav {
   padding: 15px;
   font-size: 0.75rem;
   line-height: 1rem;
-  color: #dddd27;
-  border: solid 5px #dddd27;
+  color: #282828;
+  border: solid 5px #282828;
   background: white;
   transition: all 0.25s;
   cursor: pointer; }
@@ -308,7 +308,7 @@ nav.siteNav {
     font-size: 1.27778rem;
     margin-bottom: 1.27778rem; }
   .pItemText:hover {
-    background: #dddd27;
+    background: #282828;
     color: white; }
   .pItemText .more {
     position: absolute;
@@ -329,7 +329,7 @@ nav.siteNav {
     height: 100%;
     padding: 15px;
     background: rgba(221, 221, 39, 0.85);
-    color: white;
+    color: #282828;
     font-size: 0.75rem;
     line-height: 1rem;
     opacity: 0; }
