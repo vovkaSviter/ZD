@@ -650,7 +650,7 @@ footer {
       animation: 1s linear infinite rotate; }
 
 .pageSeo .text, .aboutInnGreetings .content .text {
-  color: white;
+  color: #282828;
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.75rem; }
@@ -669,11 +669,11 @@ footer {
 
 .aboutInnGreetings {
   padding-bottom: 4rem;
-  background-image: url("../imgs/aboutInn.jpg");
+  background-image: url("../imgs/contacts.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white; }
+  color: #282828; }
   .aboutInnGreetings .content {
     text-align: center; }
     .aboutInnGreetings .content h1 {
