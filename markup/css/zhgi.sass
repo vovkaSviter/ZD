@@ -63,12 +63,16 @@ nav.siteNav
     z-index: 10
   .logo
     display: block
+    @media screen and (min-width: 992px)
+      float: left !important
     img
       display: block
-      width: 75%
+      width: 70%
       height: auto
   .phones
     text-align: right
+    @media screen and (min-width: 992px)
+      float: right !important
     i
       display: inline-block
       margin-right: 1rem
@@ -76,6 +80,8 @@ nav.siteNav
   .socials
     display: flex
     justify-content: space-between
+    @media screen and (min-width: 992px)
+      float: right !important
     form
       position: absolute
       top: 0
@@ -100,6 +106,8 @@ nav.siteNav
   .navList
     display: flex
     justify-content: space-between
+    @media screen and (min-width: 992px)
+      float: left !important
     &>li>a
       @media screen and (min-width: 992px)
         padding-top: 50px
@@ -112,7 +120,7 @@ nav.siteNav
   .innerList.tab
     position: absolute
     //bottom: -2.7777776rem
-    left: -37.9%
+    left: -18.2%
     background: $bGrayLight
     display: none
     margin-bottom: -1.5rem

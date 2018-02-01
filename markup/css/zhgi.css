@@ -136,12 +136,18 @@ nav.siteNav {
     z-index: 10; }
   nav.siteNav .logo {
     display: block; }
+    @media screen and (min-width: 992px) {
+      nav.siteNav .logo {
+        float: left !important; } }
     nav.siteNav .logo img {
       display: block;
-      width: 75%;
+      width: 70%;
       height: auto; }
   nav.siteNav .phones {
     text-align: right; }
+    @media screen and (min-width: 992px) {
+      nav.siteNav .phones {
+        float: right !important; } }
     nav.siteNav .phones i {
       display: inline-block;
       margin-right: 1rem;
@@ -149,6 +155,9 @@ nav.siteNav {
   nav.siteNav .socials {
     display: flex;
     justify-content: space-between; }
+    @media screen and (min-width: 992px) {
+      nav.siteNav .socials {
+        float: right !important; } }
     nav.siteNav .socials form {
       position: absolute;
       top: 0;
@@ -174,6 +183,9 @@ nav.siteNav {
     display: flex;
     justify-content: space-between; }
     @media screen and (min-width: 992px) {
+      nav.siteNav .navList {
+        float: left !important; } }
+    @media screen and (min-width: 992px) {
       nav.siteNav .navList > li > a {
         padding-top: 50px;
         padding-bottom: 60px; } }
@@ -184,7 +196,7 @@ nav.siteNav {
         text-decoration: underline; }
   nav.siteNav .innerList.tab {
     position: absolute;
-    left: -37.9%;
+    left: -18.2%;
     background: #e7e5e7;
     display: none;
     margin-bottom: -1.5rem;
@@ -877,5 +889,14 @@ footer {
 @media screen and (max-width: 768px) {
   .portfolioSinglePage .portfolioSingleDescription .right {
     margin-top: 2rem; } }
+
+nav.siteNav .socials {
+  margin-bottom: 35px; }
+  @media screen and (max-width: 992px) {
+    nav.siteNav .socials form {
+      top: auto;
+      bottom: -35px;
+      left: 0;
+      width: 100%; } }
 
 /*# sourceMappingURL=zhgi.css.map */
