@@ -217,37 +217,35 @@ nav.siteNav {
   padding: 0; }
   .marryGoRound .stub {
     position: relative;
-    background-image: url("../imgs/mgrReception.jpg");
+    background-image: url("../imgs/mgr3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+    .marryGoRound .stub > .container {
+      height: 100%; }
     .marryGoRound .stub .mgrItemText {
-      position: absolute;
-      top: 20%;
-      left: 15px;
       width: 40%;
-      height: 40%;
+      position: relative;
+      top: 15%;
       color: white; }
       .marryGoRound .stub .mgrItemText .header {
         font-family: RobotoBold;
         font-size: 5rem;
         line-height: 6rem; }
       .marryGoRound .stub .mgrItemText .body {
-        font-size: 1rem;
-        line-height: 1.5rem; }
-      .marryGoRound .stub .mgrItemText a {
-        position: absolute;
-        bottom: 0;
-        left: 0; }
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem; }
     .marryGoRound .stub.second {
-      background-image: url("../imgs/mgrNs.jpg"); }
+      background-image: url("../imgs/mgr2.jpg"); }
     .marryGoRound .stub.third {
-      background-image: url("../imgs/mgrFloris.jpg"); }
+      background-image: url("../imgs/mgr1.png"); }
   .marryGoRound .owl-nav {
     display: none; }
   .marryGoRound .owl-dots {
     position: relative;
-    top: -1.25rem;
+    top: -2.25rem;
     text-align: center; }
     .marryGoRound .owl-dots .owl-dot {
       display: inline-block;
