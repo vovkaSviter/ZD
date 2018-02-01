@@ -147,9 +147,10 @@ nav.siteNav {
   nav.siteNav .navList {
     display: flex;
     justify-content: space-between; }
-    nav.siteNav .navList > li > a {
-      padding-top: 50px;
-      padding-bottom: 60px; }
+    @media screen and (min-width: 992px) {
+      nav.siteNav .navList > li > a {
+        padding-top: 50px;
+        padding-bottom: 60px; } }
     nav.siteNav .navList a {
       text-transform: uppercase; }
       nav.siteNav .navList a:hover {
@@ -761,36 +762,36 @@ footer {
     .portfolioSinglePage .paginLike .pagination .next i {
       margin-left: 15px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav.siteNav .logo {
     height: 35px; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav.siteNav .socials {
     display: block;
     text-align: center; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav.siteNav .navList {
     display: block; } }
-  @media screen and (max-width: 768px) and (max-width: 768px) {
+  @media screen and (max-width: 992px) and (max-width: 992px) {
     nav.siteNav .navList li {
       margin-bottom: 0.5rem;
       margin-top: 0.5rem; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav.siteNav .navList .innerList.xSmall {
     display: none;
     background: #e7e5e7;
     padding-top: 1rem;
     padding-bottom: 1rem; } }
-  @media screen and (max-width: 768px) and (max-width: 768px) {
+  @media screen and (max-width: 992px) and (max-width: 992px) {
     nav.siteNav .navList .innerList.xSmall a {
       font-size: 0.75rem;
       line-height: 1rem; } }
 
-  @media screen and (max-width: 768px) and (max-width: 768px) and (max-width: 768px) {
+  @media screen and (max-width: 992px) and (max-width: 992px) and (max-width: 992px) {
     nav.siteNav .navList .innerList.xSmall a:hover {
       color: #ec4112; } }
 
@@ -818,13 +819,13 @@ footer {
     display: block;
     margin-bottom: 10px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav.siteNav .logo {
     background-image: url("../imgs/logo.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav.siteNav .logo img {
     display: none; } }
 
