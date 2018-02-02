@@ -426,7 +426,7 @@ nav.siteNav
           border-bottom: solid 2px $bGray
           margin-top: 3rem
           padding-bottom: 1rem
-          input, textarea
+          input[type='text'], textarea
             display: block
             width: 100%
           span
@@ -436,6 +436,26 @@ nav.siteNav
             top: 0
             opacity: 1
             transition: all $tranSpeed
+        &>label[for='file']
+          border: dashed 1px $bGray
+          border-radius: 5px
+          text-align: center
+          padding-top: 2rem
+          padding-bottom: 2rem
+          input
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            width: 100%
+            opacity: 0
+            cursor: pointer
+          span
+            position: relative
+            margin-bottom: .5rem
+          small
+            opacity: .6
           input:focus, textarea:focus
             &+span
               top: -75%

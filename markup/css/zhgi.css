@@ -490,7 +490,7 @@ nav.siteNav {
         border-bottom: solid 2px #282828;
         margin-top: 3rem;
         padding-bottom: 1rem; }
-        .feedback .feedbackEnvelope .right form > label input, .feedback .feedbackEnvelope .right form > label textarea {
+        .feedback .feedbackEnvelope .right form > label input[type='text'], .feedback .feedbackEnvelope .right form > label textarea {
           display: block;
           width: 100%; }
         .feedback .feedbackEnvelope .right form > label span {
@@ -500,7 +500,27 @@ nav.siteNav {
           top: 0;
           opacity: 1;
           transition: all 0.25s; }
-        .feedback .feedbackEnvelope .right form > label input:focus + span, .feedback .feedbackEnvelope .right form > label textarea:focus + span {
+      .feedback .feedbackEnvelope .right form > label[for='file'] {
+        border: dashed 1px #282828;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem; }
+        .feedback .feedbackEnvelope .right form > label[for='file'] input {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          opacity: 0;
+          cursor: pointer; }
+        .feedback .feedbackEnvelope .right form > label[for='file'] span {
+          position: relative;
+          margin-bottom: 0.5rem; }
+        .feedback .feedbackEnvelope .right form > label[for='file'] small {
+          opacity: 0.6; }
+        .feedback .feedbackEnvelope .right form > label[for='file'] input:focus + span, .feedback .feedbackEnvelope .right form > label[for='file'] textarea:focus + span {
           top: -75%;
           opacity: 0.6;
           transform: scale(0.8); }
