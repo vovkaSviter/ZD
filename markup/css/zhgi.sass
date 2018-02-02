@@ -436,6 +436,11 @@ nav.siteNav
             top: 0
             opacity: 1
             transition: all $tranSpeed
+          input:focus, textarea:focus
+            &+span
+              top: -75%
+              opacity: .6
+              transform: scale(.8)
         &>label[for='file']
           border: dashed 1px $bGray
           border-radius: 5px
@@ -456,11 +461,53 @@ nav.siteNav
             margin-bottom: .5rem
           small
             opacity: .6
-          input:focus, textarea:focus
-            &+span
-              top: -75%
-              opacity: .6
-              transform: scale(.8)
+        &>label[for='check']
+          cursor: pointer
+          border: none
+          user-select: none
+          span
+            position: relative
+            margin-right: 1rem
+            width: 15px
+            height: 15px
+            border: solid 2px $bGrayLight
+            display: inline-flex
+            justify-content: center
+            align-items: center
+            &:after
+              content: ''
+              display: block
+              width: 5px
+              height: 5px
+              background: $bGrayLight
+              opacity: 0
+          small
+            a:hover
+              text-decoration: underline
+          input
+            display: none
+            &:checked+span:after
+              opacity: 1
+        input[type='submit']
+          display: inline-block
+          margin-top: 2rem
+          border: solid 2px $bGray
+          border-radius: 5px
+          text-align: center
+          color: $bGray
+          padding: 1rem 2rem
+          font-family: RobotoRegular
+          cursor: pointer
+          opacity: 1
+          &[disabled='disabled']
+            opacity: .6
+            &:hover
+              background: $bWhite
+              color: $bGray
+          &:hover
+            background: $bGray
+            color: $bWhite
+
 
 
 //.feedback

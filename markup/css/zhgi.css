@@ -500,6 +500,10 @@ nav.siteNav {
           top: 0;
           opacity: 1;
           transition: all 0.25s; }
+        .feedback .feedbackEnvelope .right form > label input:focus + span, .feedback .feedbackEnvelope .right form > label textarea:focus + span {
+          top: -75%;
+          opacity: 0.6;
+          transform: scale(0.8); }
       .feedback .feedbackEnvelope .right form > label[for='file'] {
         border: dashed 1px #282828;
         border-radius: 5px;
@@ -520,10 +524,51 @@ nav.siteNav {
           margin-bottom: 0.5rem; }
         .feedback .feedbackEnvelope .right form > label[for='file'] small {
           opacity: 0.6; }
-        .feedback .feedbackEnvelope .right form > label[for='file'] input:focus + span, .feedback .feedbackEnvelope .right form > label[for='file'] textarea:focus + span {
-          top: -75%;
-          opacity: 0.6;
-          transform: scale(0.8); }
+      .feedback .feedbackEnvelope .right form > label[for='check'] {
+        cursor: pointer;
+        border: none;
+        user-select: none; }
+        .feedback .feedbackEnvelope .right form > label[for='check'] span {
+          position: relative;
+          margin-right: 1rem;
+          width: 15px;
+          height: 15px;
+          border: solid 2px #e7e5e7;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center; }
+          .feedback .feedbackEnvelope .right form > label[for='check'] span:after {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: #e7e5e7;
+            opacity: 0; }
+        .feedback .feedbackEnvelope .right form > label[for='check'] small a:hover {
+          text-decoration: underline; }
+        .feedback .feedbackEnvelope .right form > label[for='check'] input {
+          display: none; }
+          .feedback .feedbackEnvelope .right form > label[for='check'] input:checked + span:after {
+            opacity: 1; }
+      .feedback .feedbackEnvelope .right form input[type='submit'] {
+        display: inline-block;
+        margin-top: 2rem;
+        border: solid 2px #282828;
+        border-radius: 5px;
+        text-align: center;
+        color: #282828;
+        padding: 1rem 2rem;
+        font-family: RobotoRegular;
+        cursor: pointer;
+        opacity: 1; }
+        .feedback .feedbackEnvelope .right form input[type='submit'][disabled='disabled'] {
+          opacity: 0.6; }
+          .feedback .feedbackEnvelope .right form input[type='submit'][disabled='disabled']:hover {
+            background: white;
+            color: #282828; }
+        .feedback .feedbackEnvelope .right form input[type='submit']:hover {
+          background: #282828;
+          color: white; }
 
 footer {
   background: #282828;

@@ -151,6 +151,18 @@ $(document).ready(function(){
 
     });
 
+    //FeedbackSubmit behaviour
+    $(function(){
+        var check = $('#check');
+        var submit = $('#submit');
+        var checked = check.attr('checked');
+
+        check.click(function(){
+            submit.attr('disabled' , !this.checked);
+        });
+
+    });
+
     console.log('JQ is here');
 });
 
