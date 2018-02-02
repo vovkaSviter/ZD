@@ -504,6 +504,13 @@ nav.siteNav {
           top: -75%;
           opacity: 0.6;
           transform: scale(0.8); }
+      .feedback .feedbackEnvelope .right form select {
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: solid 2px;
+        margin-top: 4rem; }
       .feedback .feedbackEnvelope .right form > label[for='file'] {
         border: dashed 1px #282828;
         border-radius: 5px;
