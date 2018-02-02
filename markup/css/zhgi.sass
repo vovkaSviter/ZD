@@ -283,6 +283,7 @@ nav.siteNav
   position: relative
   margin-bottom: 1rem
   text-transform: uppercase
+  text-align: center
   &:after
     content: ''
     position: absolute
@@ -292,17 +293,15 @@ nav.siteNav
     background: $bGray
     bottom: calc(-.5rem - 1px)
     left: calc(50% - 18px)
+  &+.subHeader
+    width: 25%
+    margin: 0 auto 3rem
+    text-align: center
 
 .news
   border-top: solid 1px lighten($bGray, 75%)
   padding: 0 0 5rem 0
   background: lighten($bGrayLight, 7.5%)
-  h2
-    text-align: center
-  .subHeader
-    width: 25%
-    margin: 0 auto 3rem
-    text-align: center
   .owl-nav
     display: none
   .owl-dots
@@ -370,10 +369,6 @@ nav.siteNav
       bottom: -1.25rem
   h2
     text-align: center
-  .subHeader
-    width: 25%
-    margin: 0 auto
-    text-align: center
   .cItem
     .below, .above
       position: relative
@@ -415,39 +410,60 @@ nav.siteNav
 //  g. Feedback
 .feedback
   background: $bOrange
-  padding-top: 1rem
-  padding-bottom: 1rem
-  h2
-    color: $bGray
-  form
-    .left
-      border-right: solid 1px $bGray
-    input, textarea
-      display: block
-      width: 100%
-      margin-bottom: 1rem
-      padding: 17px 15px
-      border-bottom: solid 1px $bGray
-      resize: none
-    input[type=submit]
-      border: solid 1px $bGray
-      cursor: pointer
-      &:hover
-        background: $bGray
-        color: $bOrange
-  &.contacts
-    background-color: transparent
-    background-image: url("../imgs/contacts.jpg")
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    h1
-      color: $bGray
-      text-align: center
-    form
-      input[type=submit]
-        width: 20%
-        margin: 0 auto
+  padding-bottom: 6rem
+  .feedbackEnvelope
+    background: $bWhite
+    padding: 4rem
+    .descr
+      margin-top: 4rem
+      padding-right: 4rem
+    .right
+      form
+        margin-top: 4rem
+      input, textarea, select
+        display: block
+        border-bottom: solid 2px $bGray
+        width: 100%
+        padding-top: 1rem
+        padding-bottom: 1rem
+
+
+//.feedback
+//  background: $bOrange
+//  padding-top: 1rem
+//  padding-bottom: 1rem
+//  h2
+//    color: $bGray
+//  form
+//    .left
+//      border-right: solid 1px $bGray
+//    input, textarea
+//      display: block
+//      width: 100%
+//      margin-bottom: 1rem
+//      padding: 17px 15px
+//      border-bottom: solid 1px $bGray
+//      resize: none
+//    input[type=submit]
+//      border: solid 1px $bGray
+//      cursor: pointer
+//      &:hover
+//        background: $bGray
+//        color: $bOrange
+//  &.contacts
+//    background-color: transparent
+//    background-image: url("../imgs/contacts.jpg")
+//    background-size: cover
+//    background-position: center
+//    background-repeat: no-repeat
+//    h1
+//      color: $bGray
+//      text-align: center
+//    form
+//      input[type=submit]
+//        width: 20%
+//        margin: 0 auto
+
 //  h. Footer
 footer
   background: $bGray

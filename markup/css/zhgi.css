@@ -353,7 +353,8 @@ nav.siteNav {
 .dashBelow {
   position: relative;
   margin-bottom: 1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   .dashBelow:after {
     content: "";
     position: absolute;
@@ -363,17 +364,15 @@ nav.siteNav {
     background: #282828;
     bottom: calc(-.5rem - 1px);
     left: calc(50% - 18px); }
+  .dashBelow + .subHeader {
+    width: 25%;
+    margin: 0 auto 3rem;
+    text-align: center; }
 
 .news {
   border-top: solid 1px #e7e7e7;
   padding: 0 0 5rem 0;
   background: #f9f9f9; }
-  .news h2 {
-    text-align: center; }
-  .news .subHeader {
-    width: 25%;
-    margin: 0 auto 3rem;
-    text-align: center; }
   .news .owl-nav {
     display: none; }
   .news .owl-dots {
@@ -438,10 +437,6 @@ nav.siteNav {
       bottom: -1.25rem; }
   .customers h2 {
     text-align: center; }
-  .customers .subHeader {
-    width: 25%;
-    margin: 0 auto;
-    text-align: center; }
   .customers .cItem .below, .customers .cItem .above {
     position: relative;
     min-height: 75px; }
@@ -480,37 +475,21 @@ nav.siteNav {
 
 .feedback {
   background: #dddd27;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-  .feedback h2 {
-    color: #282828; }
-  .feedback form .left {
-    border-right: solid 1px #282828; }
-  .feedback form input, .feedback form textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 17px 15px;
-    border-bottom: solid 1px #282828;
-    resize: none; }
-  .feedback form input[type=submit] {
-    border: solid 1px #282828;
-    cursor: pointer; }
-    .feedback form input[type=submit]:hover {
-      background: #282828;
-      color: #dddd27; }
-  .feedback.contacts {
-    background-color: transparent;
-    background-image: url("../imgs/contacts.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-    .feedback.contacts h1 {
-      color: #282828;
-      text-align: center; }
-    .feedback.contacts form input[type=submit] {
-      width: 20%;
-      margin: 0 auto; }
+  padding-bottom: 6rem; }
+  .feedback .feedbackEnvelope {
+    background: white;
+    padding: 4rem; }
+    .feedback .feedbackEnvelope .descr {
+      margin-top: 4rem;
+      padding-right: 4rem; }
+    .feedback .feedbackEnvelope .right form {
+      margin-top: 4rem; }
+    .feedback .feedbackEnvelope .right input, .feedback .feedbackEnvelope .right textarea, .feedback .feedbackEnvelope .right select {
+      display: block;
+      border-bottom: solid 2px #282828;
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
 
 footer {
   background: #282828;
