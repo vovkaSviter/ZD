@@ -608,16 +608,34 @@
                                            Заказать услугу
                                         </h3>
                                         <form id="envelopeForm">
-                                            <input type="text" placeholder="Ваше имя*">
-                                            <input type="tel" placeholder="Телефон">
-                                            <input type="email" placeholder="E-Mail*">
+                                            <label for="name">
+                                                <input id="name" type="text">
+                                                <span>Ваше имя*</span>
+                                            </label>
+
+                                            <label for="phone">
+                                                <input id="phone" type="tel">
+                                                <span>Телефон</span>
+                                            </label>
+
+                                            <label for="email">
+                                                <input id="email" type="email">
+                                                <span>E-Mail*</span>
+                                            </label>
+
                                             <select>
                                                 <option>Создание сайта</option>
                                                 <option>Дизайн рекламы</option>
                                                 <option>Стратегия бренда</option>
                                                 <option>Прочее</option>
                                             </select>
-                                            <textarea placeholder="Комментарий"></textarea>
+
+                                            <label for="comment">
+                                                <textarea id="comment"></textarea>
+                                                <span>Комментарий</span>
+                                            </label>
+
+
                                             <input type="file">
                                             <input type="checkbox">
                                             <input type="submit" placeholder="Отправить">

@@ -484,12 +484,26 @@ nav.siteNav {
       padding-right: 4rem; }
     .feedback .feedbackEnvelope .right form {
       margin-top: 4rem; }
-    .feedback .feedbackEnvelope .right input, .feedback .feedbackEnvelope .right textarea, .feedback .feedbackEnvelope .right select {
-      display: block;
-      border-bottom: solid 2px #282828;
-      width: 100%;
-      padding-top: 1rem;
-      padding-bottom: 1rem; }
+      .feedback .feedbackEnvelope .right form > label {
+        display: block;
+        position: relative;
+        border-bottom: solid 2px #282828;
+        margin-top: 3rem;
+        padding-bottom: 1rem; }
+        .feedback .feedbackEnvelope .right form > label input, .feedback .feedbackEnvelope .right form > label textarea {
+          display: block;
+          width: 100%; }
+        .feedback .feedbackEnvelope .right form > label span {
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 1;
+          transition: all 0.25s; }
+        .feedback .feedbackEnvelope .right form > label input:focus + span, .feedback .feedbackEnvelope .right form > label textarea:focus + span {
+          top: -75%;
+          opacity: 0.6;
+          transform: scale(0.8); }
 
 footer {
   background: #282828;

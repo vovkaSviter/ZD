@@ -420,12 +420,27 @@ nav.siteNav
     .right
       form
         margin-top: 4rem
-      input, textarea, select
-        display: block
-        border-bottom: solid 2px $bGray
-        width: 100%
-        padding-top: 1rem
-        padding-bottom: 1rem
+        &>label
+          display: block
+          position: relative
+          border-bottom: solid 2px $bGray
+          margin-top: 3rem
+          padding-bottom: 1rem
+          input, textarea
+            display: block
+            width: 100%
+          span
+            display: inline-block
+            position: absolute
+            left: 0
+            top: 0
+            opacity: 1
+            transition: all $tranSpeed
+          input:focus, textarea:focus
+            &+span
+              top: -75%
+              opacity: .6
+              transform: scale(.8)
 
 
 //.feedback
