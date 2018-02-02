@@ -906,14 +906,17 @@ footer {
       bottom: -1.5rem;
       right: calc(50% - .5rem); } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .news .subHeader {
     width: 100%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .customers .subHeader {
     width: 100%; } }
 
+@media screen and (max-width: 992px) {
+  .feedback .subHeader {
+    width: 100%; } }
 @media screen and (max-width: 768px) {
   .feedback.contacts form input[type=submit] {
     width: 80%; } }
