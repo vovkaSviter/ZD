@@ -1,0 +1,165 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
+ */
+
+?>
+
+</div><!-- #content -->
+
+<!--<footer id="colophon" class="site-footer" role="contentinfo">-->
+<!--    <div class="wrap">-->
+<!--        --><?php
+//        get_template_part( 'template-parts/footer/footer', 'widgets' );
+//
+//        if ( has_nav_menu( 'social' ) ) : ?>
+<!--            <nav class="social-navigation" role="navigation" aria-label="--><?php //_e( 'Footer Social Links Menu', 'twentyseventeen' ); ?><!--">-->
+<!--                --><?php
+//                wp_nav_menu( array(
+//                    'theme_location' => 'social',
+//                    'menu_class'     => 'social-links-menu',
+//                    'depth'          => 1,
+//                    'link_before'    => '<span class="screen-reader-text">',
+//                    'link_after'     => '</span>' . twentyseventeen_get_svg( array( 'icon' => 'chain' ) ),
+//                ) );
+//                ?>
+<!--            </nav><!-- .social-navigation -->-->
+<!--        --><?php //endif;
+//
+//        get_template_part( 'template-parts/footer/site', 'info' );
+//        ?>
+<!--    </div><!-- .wrap -->-->
+<!--</footer><!-- #colophon -->-->
+
+<div class="row">
+    <footer class="col-xs-12">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="pdf col-xs-12 col-md-2 pull-right">
+                        <a href="#">
+                            <i class="fa fa-file-pdf-o"></i>
+                            PDF-презентация
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-comments-o"></i>
+                            Обратная связь
+                        </a>
+                        <h4>Мы в соцсетях</h4>
+                        <a href="#" class="social">
+                            <i class="fa fa-facebook"></i>
+                            фейсбук
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa fa-vk"></i>
+                            Вконтакте
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa fa-instagram"></i>
+                            инстаграм
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa fa-youtube-play"></i>
+                            ютуб
+                        </a>
+                    </div>
+                    <div class="address col-xs-12 col-md-8 pull-right">
+                        <div class="row">
+                            <div class="leftAddress col-xs-12 col-md-6">
+                                <h4>
+                                    <i class="fa fa-map-marker"></i>
+                                    Россия
+                                </h4>
+                                <div>
+                                    г. Москва, ул. Ленинская слобода, 26, стр. 5,<br>
+                                    оф. 5707, 5708<br>
+                                    Тел.: +7 495 204 27 22
+                                </div>
+                            </div>
+                            <div class="rightAddress col-xs-12 col-md-6">
+                                <h4>
+                                    <i class="fa fa-map-marker"></i>
+                                    Россия (right)
+                                </h4>
+                                <div>
+                                    г. Москва, ул. Ленинская слобода, 26, стр. 5,<br>
+                                    оф. 5707, 5708<br>
+                                    Тел.: +7 495 204 27 22
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 footerBody">
+                                Реакция, в том числе, многопланово диссонирует
+                                неизменный хтонический миф, что отмечают такие
+                                крупнейшие ученые как Фрейд, Адлер, Юнг, Эриксон,
+                                Фромм. Искусство многопланово начинает психоанализ.
+                                Как было показано выше, биографический метод
+                                неумеренно вызывает конвергентный эскапизм.
+                                Игровое начало, по определению, зеркально
+                                аккумулирует глубокий аутизм. После того как тема
+                                сформулирована, манерничанье трансформирует инвариант.
+                                Ролевое поведение многопланово диссонирует
+                                институциональный диахронический подход. Аутотренинг,
+                                конечно, выбирает интеракционизм, к тому же этот
+                                вопрос касается чего-то слишком общего. Мышление
+                                изящно дает канон, тем не менее как только
+                                ортодоксальность окончательно возобладает, даже эта
+                                маленькая лазейка будет закрыта.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 footerCopy">
+                                <i class="fa fa-copyright"></i>
+                                2018
+                                ЖГИ Дизайн
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map col-xs-12 col-md-2 pull-left">
+                        <h4>Услуги</h4>
+                        <ul>
+                            <li>
+                                <a href="#">футурологи</a>
+                            </li>
+                            <li>
+                                <a href="#">горизонт ожидания</a>
+                            </li>
+                            <li>
+                                <a href="#">кластерный анализ</a>
+                            </li>
+                            <li>
+                                <a href="#">метафоризм</a>
+                            </li>
+                            <li>
+                                <a href="#">Рейт-карта</a>
+                            </li>
+                            <li>
+                                <a href="#">Эл Райс</a>
+                            </li>
+                            <li>
+                                <a href="#">выстраивает медиавес</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</div><!-- .site-content-contain -->
+</div><!-- #page -->
+<?php wp_footer(); ?>
+
+</body>
+</html>
