@@ -979,22 +979,22 @@ input, textarea {
 
 @font-face {
     font-family: RobotoThin;
-    src: url(../fonts/Roboto-Thin.ttf); }
+    src: url(assets/fonts/Roboto-Thin.ttf); }
 @font-face {
     font-family: RobotoLight;
-    src: url(../fonts/Roboto-Light.ttf); }
+    src: url(assets/fonts/Roboto-Light.ttf); }
 @font-face {
     font-family: RobotoRegular;
-    src: url(../fonts/Roboto-Regular.ttf); }
+    src: url(assets/fonts/Roboto-Regular.ttf); }
 @font-face {
     font-family: RobotoMedium;
-    src: url(../fonts/Roboto-Medium.ttf); }
+    src: url(assets/fonts/Roboto-Medium.ttf); }
 @font-face {
     font-family: RobotoBold;
-    src: url(../fonts/Roboto-Bold.ttf); }
+    src: url(assets/fonts/Roboto-Bold.ttf); }
 @font-face {
     font-family: RobotoBlack;
-    src: url(../fonts/Roboto-Black.ttf); }
+    src: url(assets/fonts/Roboto-Black.ttf); }
 html {
     font-size: 14px;
     line-height: 18px; }
