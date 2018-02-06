@@ -234,7 +234,7 @@ nav.siteNav .innerList.tab a:hover {
     padding: 0; }
 .marryGoRound .stub {
     position: relative;
-    background-image: url("../imgs/mgr3.jpg");
+    background-image: url("assets/images/mgr3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -255,9 +255,9 @@ nav.siteNav .innerList.tab a:hover {
     margin-top: 2rem;
     margin-bottom: 2rem; }
 .marryGoRound .stub.second {
-    background-image: url("../imgs/mgr2.jpg"); }
+    background-image: url("assets/images/mgr2.jpg"); }
 .marryGoRound .stub.third {
-    background-image: url("../imgs/mgr1.png"); }
+    background-image: url("assets/images/mgr1.png"); }
 .marryGoRound .owl-nav {
     display: none; }
 .marryGoRound .owl-dots {
@@ -337,7 +337,7 @@ nav.siteNav .innerList.tab a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../imgs/prtf1.jpg");
+    background-image: url("assets/images/prtf1.jpg");
     cursor: pointer;
     transition: all 0.25s; }
 .pItemImg .info {
@@ -421,11 +421,11 @@ nav.siteNav .innerList.tab a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../imgs/prtf2.jpg"); }
+    background-image: url("assets/images/prtf2.jpg"); }
 .nItem .imgKeeper1 {
-    background-image: url("../imgs/prtf3.jpg"); }
+    background-image: url("assets/images/prtf3.jpg"); }
 .nItem .imgKeeper2 {
-    background-image: url("../imgs/prtf4.jpg"); }
+    background-image: url("assets/images/prtf4.jpg"); }
 .nItem h6 {
     font-family: RobotoBold;
     text-transform: uppercase;
@@ -738,7 +738,7 @@ footer .address .footerCopy {
     line-height: 1.75rem; }
 
 .pageSeo {
-    background-image: url("../imgs/about.jpg");
+    background-image: url("assets/images/about.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -751,7 +751,7 @@ footer .address .footerCopy {
 
 .aboutInnGreetings {
     padding-bottom: 4rem;
-    background-image: url("../imgs/contacts.jpg");
+    background-image: url("assets/images/contacts.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -861,13 +861,13 @@ footer .address .footerCopy {
     display: block;
     width: 100%;
     height: calc(100% - 1rem);
-    background-image: url("../imgs/likeIt.png");
+    background-image: url("assets/images/likeIt.png");
     background-position: center;
     background-repeat: no-repeat; }
 .portfolioSinglePage .paginLike .likeIt a:hover {
     color: #dddd27; }
 .portfolioSinglePage .paginLike .likeIt a:hover:before {
-    background-image: url("../imgs/likeItOr.png"); }
+    background-image: url("assets/images/likeItOr.png"); }
 .portfolioSinglePage .paginLike .pagination {
     display: flex;
     justify-content: space-between; }
@@ -945,7 +945,7 @@ footer .address .footerCopy {
 
 @media screen and (max-width: 992px) {
     nav.siteNav .logo {
-        background-image: url("../imgs/logo.jpg");
+        background-image: url("assets/images/logo.jpg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat; } }
