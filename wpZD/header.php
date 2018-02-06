@@ -27,7 +27,7 @@
     <div class="row">
         <nav class="siteNav col-xs-12">
             <div class="row">
-                <a href="http://zhgi.rf.gd/markup/main.html" class="logo col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-1">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-1">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.jpg">
                 </a>
 
@@ -83,7 +83,7 @@
                     </li>
                     <li><a href="http://zhgi.rf.gd/markup/portfolio.html">Портфолио</a></li>
                     <li><a href="http://zhgi.rf.gd/markup/news.html">Новости</a></li>
-                    <li><a href="http://zhgi.rf.gd/markup/contacts.html">Контакты</a></li>
+                    <li><a href="http://localhost/zhgi/contacts/">Контакты</a></li>
                 </ul>
 
                 <div class="socials col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-2">
