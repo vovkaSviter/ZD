@@ -21,7 +21,7 @@ get_header(); ?>
         <section id="mgr" class="marryGoRound owl-carousel col-xs-12">
             <div class="stub first">
                 <div class="container">
-                    <div class="mgrItemText">
+                    <div class="mgrItemText visible-md visible-lg">
                         <div class="header">Брыф</div>
                         <div class="body">
                             Прадукт традыцыйны, вельмі просты, зразумелы – і ў гэтым яго складанасць
@@ -34,7 +34,7 @@ get_header(); ?>
             </div>
             <div class="stub second">
                 <div class="container">
-                    <div class="mgrItemText">
+                    <div class="mgrItemText visible-md visible-lg">
                         <div class="header">Рашэнне</div>
                         <div class="body">
                             Стварэнне нацыянальна арыентаванай гандлёвай маркі «Цудоўная цукерня».
@@ -48,7 +48,7 @@ get_header(); ?>
             </div>
             <div class="stub third">
                 <div class="container">
-                    <div class="mgrItemText">
+                    <div class="mgrItemText visible-md visible-lg">
                         <div class="header">Задача</div>
                         <div class="body">
                             Стварыць новую, адмысловую гандлёвую марку цукру.
