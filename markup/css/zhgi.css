@@ -935,7 +935,10 @@ footer {
 @media screen and (max-width: 992px) {
   nav.siteNav .navList {
     display: block; } }
-  @media screen and (max-width: 992px) and (max-width: 992px) {
+@media screen and (max-width: 1199px) {
+  nav.siteNav .navList {
+    padding-left: 0; } }
+  @media screen and (max-width: 1199px) and (max-width: 992px) {
     nav.siteNav .navList li {
       margin-bottom: 0.5rem;
       margin-top: 0.5rem; } }
