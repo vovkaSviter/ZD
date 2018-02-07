@@ -92,10 +92,12 @@ get_header(); ?>
                                 <div class="header"><?php the_title(); ?></div>
                                 Клиент:
                                 <div class="customer">
-                                    ООО "АвалонТорг"
-                                </div>
+                                    <?php
+                                    $term_list = wp_get_post_terms($post->ID, 'my_taxonomy', array("fields" => "all"));
+                                    echo $term_list[0]->description ; ?>
                                 Цель:
-                                <div class="goal"><?php the_excerpt(); ?></div>
+                                <div class="goal"><?php wp_get_post_tags() ?></div>
+                                <?php the_excerpt(); ?>
                                 <div class="viewsLikes">
                                     <span class="views">
                                         <i class="fa fa-eye"></i> &mdash;
