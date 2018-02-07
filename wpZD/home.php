@@ -87,17 +87,15 @@ get_header(); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                     <div class="col-xs-12 col-md-4">
-                        <div class="pItem pItemImg">
+                        <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
+                        <div class="pItem pItemImg" style="background-image: url('<?php echo $bgImg[0] ?>')">
                             <div class="info">
                                 <div class="header"><?php the_title(); ?></div>
                                 Клиент:
-                                <div class="customer">
-                                    <?php
-                                    $term_list = wp_get_post_terms($post->ID, 'my_taxonomy', array("fields" => "all"));
-                                    echo $term_list[0]->description ; ?>
-                                Цель:
-                                <div class="goal"><?php wp_get_post_tags() ?></div>
-                                <?php the_excerpt(); ?>
+                                <div class="customer"></div>
+                                Задача:
+                                <div class="goal"><?php the_excerpt() ?></div>
+
                                 <div class="viewsLikes">
                                     <span class="views">
                                         <i class="fa fa-eye"></i> &mdash;
