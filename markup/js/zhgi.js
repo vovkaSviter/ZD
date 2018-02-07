@@ -40,7 +40,13 @@ $(document).ready(function(){
         var owlC = $('.owl-stage-outer');
         var owlCWidth = owlC.width();
 
-        stub.css('height', owlCWidth / 3)
+        stub.css('height', owlCWidth / 3);
+
+        if($(window).width() < 992) {
+
+            stub.css('height', owlCWidth / 2);
+
+        }
 
     });
 

@@ -627,29 +627,32 @@ footer {
   line-height: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  footer .pdf h4 {
-    text-transform: uppercase;
-    margin-top: 2.55556rem; }
-    footer .pdf h4 + a.social {
-      margin-top: 1rem; }
-  footer .pdf a {
-    display: block;
-    margin-bottom: 1rem; }
-    footer .pdf a i {
-      display: inline-block;
-      font-size: 2rem;
-      margin-right: 0.5rem; }
-    footer .pdf a:first-child {
-      margin-top: 1.27778rem; }
-    footer .pdf a:hover {
-      color: #e8e000; }
-    footer .pdf a.social {
-      margin-bottom: 0.25rem;
-      margin-top: 0.25rem;
-      text-transform: uppercase; }
-      footer .pdf a.social i {
-        font-size: 1rem;
-        margin-right: 0.25rem; }
+  footer .pdf {
+    padding-left: 5rem;
+    padding-right: 0; }
+    footer .pdf h4 {
+      text-transform: uppercase;
+      margin-top: 2.55556rem; }
+      footer .pdf h4 + a.social {
+        margin-top: 1rem; }
+    footer .pdf a {
+      display: block;
+      margin-bottom: 1rem; }
+      footer .pdf a i {
+        display: inline-block;
+        font-size: 2rem;
+        margin-right: 0.5rem; }
+      footer .pdf a:first-child {
+        margin-top: 1.27778rem; }
+      footer .pdf a:hover {
+        color: #e8e000; }
+      footer .pdf a.social {
+        margin-bottom: 0.25rem;
+        margin-top: 0.25rem;
+        text-transform: uppercase; }
+        footer .pdf a.social i {
+          font-size: 1rem;
+          margin-right: 0.25rem; }
   footer .map h4 {
     text-transform: uppercase; }
   footer .map ul li {
@@ -667,7 +670,7 @@ footer {
     margin-bottom: 2.55556rem; }
     footer .address .leftAddress div, footer .address .rightAddress div {
       margin-top: 1rem; }
-  footer .address .footerCopy {
+  footer .footerCopy {
     margin-top: 1rem; }
 
 .upTo {
@@ -1018,5 +1021,26 @@ footer {
     bottom: -35px;
     left: 0;
     width: 100%; } }
+
+@media screen and (max-width: 992px) {
+  footer {
+    text-align: center; }
+    footer .pdf {
+      margin-bottom: 2rem;
+      padding: 0 15px; }
+      footer .pdf a.download {
+        width: 50%;
+        float: left;
+        margin-top: 0 !important; }
+      footer .pdf a.social {
+        display: inline-block; } }
+@media screen and (max-width: 992px) {
+  footer .address {
+    margin-bottom: 1rem; }
+    footer .address .leftAddress, footer .address .rightAddress {
+      margin-bottom: 0; } }
+@media screen and (max-width: 992px) {
+  footer .services {
+    margin-bottom: 1rem; } }
 
 /*# sourceMappingURL=zhgi.css.map */
