@@ -2,23 +2,37 @@ $(document).ready(function(){
 
     //Equal heights
     //Navigation
-    if($(window).width() > 992) {
-        var nav = $('nav');
-        var children = $('nav .row>*');
+    //$(function(){
+    //    if($(window).width() > 992) {
+    //        var nav = $('nav');
+    //        var children = $('nav .row>*');
+    //
+    //        var logo = $('a.logo');
+    //        var navHeight = nav.height();
+    //
+    //        logo.css('height' , navHeight);
+    //
+    //        $(children).each(function(){
+    //            var height = $(this).height();
+    //            var marginTop = (navHeight - height) / 2 + 'px';
+    //
+    //            $(this).css('margin-top', marginTop);
+    //        });
+    //
+    //    }
+    //});
 
-        var logo = $('a.logo');
-        var navHeight = nav.height();
+    $(function(){
+        if($(window).width() > 992) {
+            var nav = $('nav');
+            var navHeight = nav.height();
+            var children = $('nav .row>*');
 
-        logo.css('height' , navHeight);
+            children.css('height' , navHeight * 1.5);
 
-        $(children).each(function(){
-            var height = $(this).height();
-            var marginTop = (navHeight - height) / 2 + 'px';
+        }
+    });
 
-            $(this).css('margin-top', marginTop);
-        });
-
-    };
 
     //MarryGoRound
     $(function(){
@@ -26,7 +40,13 @@ $(document).ready(function(){
         var owlC = $('.owl-stage-outer');
         var owlCWidth = owlC.width();
 
-        stub.css('height', owlCWidth / 3)
+        stub.css('height', owlCWidth / 3);
+
+        if($(window).width() < 992) {
+
+            stub.css('height', owlCWidth / 2);
+
+        }
 
     });
 
@@ -102,7 +122,7 @@ $(document).ready(function(){
 
         tab.css({
             width: tabWidth,
-            top: navHeight / 2
+            top: navHeight / 1.75
         });
 
         trigger.hover(function(){
@@ -126,19 +146,21 @@ $(document).ready(function(){
     });
 
     //Nav "fixed"
-    if($(window).width() > 992) {
+    $(function(){
+        if($(window).width() > 992) {
 
 
-        var nav = $('nav');
+            var nav = $('nav');
 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 0) {
-                nav.addClass('scrolled');
-            } else {
-                nav.removeClass('scrolled')
-            }
-        });
-    }
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    nav.addClass('scrolled');
+                } else {
+                    nav.removeClass('scrolled')
+                }
+            });
+        }
+    });
 
     //Search behaviour
     $(function(){

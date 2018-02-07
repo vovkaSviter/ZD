@@ -1,20 +1,3 @@
-/*
-Theme Name:     Theme for ZhgiDesign
-Theme URI:      
-Description:    WGW Twenty Seventeen
-Author:         Sviter
-Author URI:     
-Template:       twentyseventeen
-Version:        0.1.0
-*/
-
-
-/*///////////////////////////////////////////////////////////////////////////////////////*/
-
-
-
-/*///////////////////////////////////////////////////////////////////////////////////////*/
-
 body {
     background: white;
     color: #282828; }
@@ -47,13 +30,13 @@ input, textarea {
     color: #282828; }
 
 #navSearch {
-    color: #dddd27; }
+    color: #e8e000; }
 
 #navSearch::-webkit-input-placeholder {
-    color: #dddd27; }
+    color: #e8e000; }
 
 #navSearch::-moz-placeholder {
-    color: #dddd27; }
+    color: #e8e000; }
 
 @font-face {
     font-family: RobotoThin;
@@ -140,8 +123,7 @@ body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > 
     border-bottom: solid 1px #e7e5e7; }
 
 nav.siteNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 2rem 0 0;
     background: white;
     transition: padding 0.25s; }
 nav.siteNav.scrolled {
@@ -149,11 +131,31 @@ nav.siteNav.scrolled {
     background: rgba(255, 255, 255, 0.85);
     position: fixed;
     padding-top: 1rem;
-    padding-bottom: 1rem;
     border-bottom: solid 1px #e7e5e7;
     z-index: 10; }
 nav.siteNav .logo {
-    display: block; }
+    display: block;
+    position: relative; }
+nav.siteNav .logo div.orange {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    background: #e8e000; }
+nav.siteNav .logo div.bgImage {
+    position: absolute;
+    top: -12px;
+    bottom: 0;
+    left: auto;
+    right: 25px;
+    width: 75%;
+    background: url(assets/images/site-logo.png);
+    background-size: 85%;
+    background-position: 100% 0;
+    background-repeat: no-repeat; }
 @media screen and (min-width: 992px) {
     nav.siteNav .logo {
         float: left !important; } }
@@ -162,44 +164,59 @@ nav.siteNav .logo img {
     width: 70%;
     height: auto; }
 nav.siteNav .phones {
-    text-align: right; }
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
 @media screen and (min-width: 992px) {
     nav.siteNav .phones {
         float: right !important; } }
 nav.siteNav .phones i {
     display: inline-block;
-    margin-right: 1rem;
-    font-size: 1.25rem; }
+    margin-right: 1.25rem;
+    width: 25px;
+    height: 30px;
+    background: url("assets/images/call_zhgi-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
 nav.siteNav .socials {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around;
+    align-items: center; }
 @media screen and (min-width: 992px) {
     nav.siteNav .socials {
         float: right !important; } }
 nav.siteNav .socials form {
     position: absolute;
-    top: 0;
+    top: 15%;
     left: -183px;
     width: auto;
     transition: all 0.25s; }
 nav.siteNav .socials form #navSearch {
-    border: solid 2px #dddd27;
+    border: solid 2px #e8e000;
     padding: 5px; }
 nav.siteNav .socials form.hidden {
     left: 0;
     width: 0;
     overflow: hidden; }
 nav.siteNav .socials #navSearchTrigger {
-    color: #dddd27;
     cursor: pointer;
-    font-size: 1.5rem; }
+    width: 25px;
+    height: 30px;
+    background: url("assets/images/loop_zhgi-01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 nav.siteNav .socials a {
     font-size: 1.5rem; }
 nav.siteNav .socials a:hover {
-    color: #dddd27; }
+    color: #e8e000; }
 nav.siteNav .navList {
+    margin-bottom: 0;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 35px; }
 @media screen and (min-width: 992px) {
     nav.siteNav .navList {
         float: left !important; } }
@@ -210,25 +227,34 @@ nav.siteNav .navList {
 nav.siteNav .navList a {
     text-transform: uppercase; }
 nav.siteNav .navList a:hover {
-    color: #dddd27;
+    color: #e8e000;
     text-decoration: underline; }
 nav.siteNav .innerList.tab {
     position: absolute;
-    left: -18.2%;
-    background: #e7e5e7;
+    color: white;
+    background: #282828;
+    left: -45.2%;
     display: none;
     margin-bottom: -1.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: auto !important;
     z-index: 10; }
+nav.siteNav .innerList.tab .container {
+    height: auto !important; }
+nav.siteNav .innerList.tab .container div {
+    height: auto !important; }
 nav.siteNav .innerList.tab a {
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 0.75rem;
     line-height: 1rem;
     display: block;
+    height: auto !important; }
+nav.siteNav .innerList.tab a:not(:last-child) {
     margin-bottom: 0.5rem; }
-nav.siteNav .innerList.tab a:hover {
-    color: #dddd27; }
+nav.siteNav .innerList.tab a:not(:last-child):hover {
+    color: #e8e000; }
 
 .marryGoRound {
     padding: 0; }
@@ -294,7 +320,7 @@ nav.siteNav .innerList.tab a:hover {
     top: 30%;
     right: -2.5%;
     border-radius: 50%;
-    border: solid 2px #dddd27; }
+    border: solid 2px #e8e000; }
 .portfolio .fatDig {
     font-family: RobotoBlack;
     font-size: 3rem;
@@ -345,7 +371,7 @@ nav.siteNav .innerList.tab a:hover {
     width: 100%;
     height: 100%;
     padding: 15px;
-    background: rgba(221, 221, 39, 0.85);
+    background: rgba(232, 224, 0, 0.85);
     color: #282828;
     font-size: 0.75rem;
     line-height: 1rem;
@@ -431,7 +457,7 @@ nav.siteNav .innerList.tab a:hover {
     text-transform: uppercase;
     transition: all 0.25s; }
 .nItem:hover h6 {
-    color: #dddd27; }
+    color: #e8e000; }
 .nItem .nItemSubHeader {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -442,7 +468,7 @@ nav.siteNav .innerList.tab a:hover {
     position: absolute;
     bottom: 15px;
     left: 15px;
-    color: #dddd27; }
+    color: #e8e000; }
 
 .customers {
     border-top: solid 1px #e7e7e7; }
@@ -491,7 +517,7 @@ nav.siteNav .innerList.tab a:hover {
     background: #282828; }
 
 .feedback {
-    background: #dddd27;
+    background: #e8e000;
     padding-bottom: 6rem; }
 .feedback .feedbackEnvelope {
     background: white;
@@ -601,6 +627,9 @@ footer {
     line-height: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem; }
+footer .pdf {
+    padding-left: 5rem;
+    padding-right: 0; }
 footer .pdf h4 {
     text-transform: uppercase;
     margin-top: 2.55556rem; }
@@ -616,7 +645,7 @@ footer .pdf a i {
 footer .pdf a:first-child {
     margin-top: 1.27778rem; }
 footer .pdf a:hover {
-    color: #dddd27; }
+    color: #e8e000; }
 footer .pdf a.social {
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;
@@ -630,18 +659,18 @@ footer .map ul li {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem; }
 footer .map ul li:hover a {
-    color: #dddd27; }
+    color: #e8e000; }
 footer .map ul li:first-child {
     margin-top: 1rem; }
 footer .address h4 {
     text-transform: uppercase; }
 footer .address h4 i {
-    color: #dddd27; }
+    color: #e8e000; }
 footer .address .leftAddress, footer .address .rightAddress {
     margin-bottom: 2.55556rem; }
 footer .address .leftAddress div, footer .address .rightAddress div {
     margin-top: 1rem; }
-footer .address .footerCopy {
+footer .footerCopy {
     margin-top: 1rem; }
 
 .upTo {
@@ -650,8 +679,8 @@ footer .address .footerCopy {
     right: 30px;
     width: 40px;
     height: 40px;
-    border: solid 1px #dddd27;
-    color: #dddd27;
+    border: solid 1px #e8e000;
+    color: #e8e000;
     text-align: center;
     cursor: pointer;
     display: none;
@@ -669,7 +698,7 @@ footer .address .footerCopy {
 .breadCrumbs {
     padding-top: 4rem; }
 .breadCrumbs a:hover {
-    color: #dddd27;
+    color: #e8e000;
     text-decoration: underline; }
 .breadCrumbs .lastCrumb {
     font-family: RobotoBold; }
@@ -680,20 +709,20 @@ footer .address .footerCopy {
 
 .tagsFilter .tags .tagItem {
     display: inline-block;
-    border: solid 2px #dddd27;
+    border: solid 2px #e8e000;
     padding: 5px;
     margin-right: 10px;
     font-family: RobotoBold;
     font-size: 0.75rem;
-    color: #dddd27;
+    color: #e8e000;
     text-transform: uppercase; }
 .tagsFilter .tags .tagItem:hover {
     color: white;
-    background: #dddd27; }
+    background: #e8e000; }
 .tagsFilter .filter .separator {
-    color: #dddd27; }
+    color: #e8e000; }
 .tagsFilter .filter a {
-    color: #dddd27; }
+    color: #e8e000; }
 .tagsFilter .filter a:hover, .tagsFilter .filter a.active {
     text-decoration: underline; }
 
@@ -807,7 +836,7 @@ footer .address .footerCopy {
     bottom: 0;
     left: 15px; }
 .aboutInnPDF .aboutInnPDFItems .aboutInnPDFItem a .fa {
-    color: #dddd27;
+    color: #e8e000;
     display: inline-block;
     margin-left: 1rem; }
 
@@ -818,7 +847,7 @@ footer .address .footerCopy {
     margin-top: 1rem;
     margin-bottom: 1rem; }
 .servicesPage .serviceColumn a:hover {
-    color: #dddd27; }
+    color: #e8e000; }
 
 .serviceSinglePage .pageHeader {
     margin-bottom: 4rem; }
@@ -836,7 +865,7 @@ footer .address .footerCopy {
 .portfolioSinglePage .portfolioSingleDescription .zooKeeper {
     margin-bottom: 1rem; }
 .portfolioSinglePage .portfolioSingleDescription .zooKeeper a:hover {
-    color: #dddd27; }
+    color: #e8e000; }
 .portfolioSinglePage .portfolioSingleDescription .zooKeeper h3 {
     font-family: RobotoRegular; }
 .portfolioSinglePage .portfolioSingleDescription .zooKeeper > div:last-child {
@@ -865,7 +894,7 @@ footer .address .footerCopy {
     background-position: center;
     background-repeat: no-repeat; }
 .portfolioSinglePage .paginLike .likeIt a:hover {
-    color: #dddd27; }
+    color: #e8e000; }
 .portfolioSinglePage .paginLike .likeIt a:hover:before {
     background-image: url("assets/images/likeItOr.png"); }
 .portfolioSinglePage .paginLike .pagination {
@@ -874,11 +903,11 @@ footer .address .footerCopy {
 .portfolioSinglePage .paginLike .pagination i {
     display: inline-block; }
 .portfolioSinglePage .paginLike .pagination .prev:hover {
-    color: #dddd27; }
+    color: #e8e000; }
 .portfolioSinglePage .paginLike .pagination .prev i {
     margin-right: 15px; }
 .portfolioSinglePage .paginLike .pagination .next:hover {
-    color: #dddd27; }
+    color: #e8e000; }
 .portfolioSinglePage .paginLike .pagination .next i {
     margin-left: 15px; }
 
@@ -887,7 +916,21 @@ footer .address .footerCopy {
         text-align: center; } }
 @media screen and (max-width: 992px) {
     nav.siteNav .logo {
-        height: 35px; } }
+        height: 45px; }
+    nav.siteNav .logo div.bgImage {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        top: -10px;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        background-position: center;
+        background-size: 100%; } }
+@media screen and (max-width: 992px) {
+    nav.siteNav .phones {
+        justify-content: center; } }
 @media screen and (max-width: 992px) {
     nav.siteNav .socials {
         display: block;
@@ -895,7 +938,10 @@ footer .address .footerCopy {
 @media screen and (max-width: 992px) {
     nav.siteNav .navList {
         display: block; } }
-@media screen and (max-width: 992px) and (max-width: 992px) {
+@media screen and (max-width: 1199px) {
+    nav.siteNav .navList {
+        padding-left: 0; } }
+@media screen and (max-width: 1199px) and (max-width: 992px) {
     nav.siteNav .navList li {
         margin-bottom: 0.5rem;
         margin-top: 0.5rem; } }
@@ -913,7 +959,7 @@ footer .address .footerCopy {
 
 @media screen and (max-width: 992px) and (max-width: 992px) and (max-width: 992px) {
     nav.siteNav .navList .innerList.xSmall a:hover {
-        color: #dddd27; } }
+        color: #e8e000; } }
 
 .portfolio .digit {
     margin-bottom: 2rem; }
@@ -943,16 +989,6 @@ footer .address .footerCopy {
         display: block;
         margin-bottom: 10px; } }
 
-@media screen and (max-width: 992px) {
-    nav.siteNav .logo {
-        background-image: url("assets/images/logo.jpg");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; } }
-@media screen and (max-width: 992px) {
-    nav.siteNav .logo img {
-        display: none; } }
-
 @media screen and (max-width: 768px) {
     .aboutInnAdvs .aboutAdvsPageItem .fa:before {
         font-size: 2rem;
@@ -976,13 +1012,35 @@ footer .address .footerCopy {
     .portfolioSinglePage .portfolioSingleDescription .right {
         margin-top: 2rem; } }
 
-nav.siteNav .socials {
-    margin-bottom: 35px; }
+@media screen and (max-width: 768px) {
+    nav.siteNav .socials {
+        margin-bottom: 35px; } }
 @media screen and (max-width: 992px) {
     nav.siteNav .socials form {
         top: auto;
         bottom: -35px;
         left: 0;
         width: 100%; } }
+
+@media screen and (max-width: 992px) {
+    footer {
+        text-align: center; }
+    footer .pdf {
+        margin-bottom: 2rem;
+        padding: 0 15px; }
+    footer .pdf a.download {
+        width: 50%;
+        float: left;
+        margin-top: 0 !important; }
+    footer .pdf a.social {
+        display: inline-block; } }
+@media screen and (max-width: 992px) {
+    footer .address {
+        margin-bottom: 1rem; }
+    footer .address .leftAddress, footer .address .rightAddress {
+        margin-bottom: 0; } }
+@media screen and (max-width: 992px) {
+    footer .services {
+        margin-bottom: 1rem; } }
 
 /*# sourceMappingURL=zhgi.css.map */
