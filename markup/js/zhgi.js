@@ -116,7 +116,7 @@ $(document).ready(function(){
 
         tab.css({
             width: tabWidth,
-            top: navHeight / 2
+            top: navHeight / 1.75
         });
 
         trigger.hover(function(){

@@ -27,7 +27,21 @@ nav.siteNav
       text-align: center
   .logo
     @media screen and (max-width: $sm)
-      height: 35px
+      height: 45px
+      div.bgImage
+        position: relative
+        width: 50%
+        height: 100%
+        margin: 0 auto
+        top: -10px
+        bottom: auto
+        left: auto
+        right: auto
+        background-position: center
+        background-size: 100%
+  .phones
+    @media screen and (max-width: $sm)
+      justify-content: center
   .socials
     @media screen and (max-width: $sm)
       display: block
@@ -95,16 +109,16 @@ nav.siteNav
         margin-bottom: 10px
 
 //  h. Logo
-nav.siteNav
-  .logo
-    @media screen and (max-width: $sm)
-      background-image: url("../imgs/logo.jpg")
-      background-size: contain
-      background-position: center
-      background-repeat: no-repeat
-    img
-      @media screen and (max-width: $sm)
-        display: none
+//nav.siteNav
+//  .logo
+//    @media screen and (max-width: $sm)
+//      background-image: url("../imgs/logo.jpg")
+//      background-size: contain
+//      background-position: center
+//      background-repeat: no-repeat
+//    img
+//      @media screen and (max-width: $sm)
+//        display: none
 
 //  i. aboutInnAdvs
 .aboutInnAdvs

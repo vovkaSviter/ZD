@@ -131,7 +131,6 @@ nav.siteNav {
     background: rgba(255, 255, 255, 0.85);
     position: fixed;
     padding-top: 1rem;
-    padding-bottom: 1rem;
     border-bottom: solid 1px #e7e5e7;
     z-index: 10; }
   nav.siteNav .logo {
@@ -173,8 +172,13 @@ nav.siteNav {
         float: right !important; } }
     nav.siteNav .phones i {
       display: inline-block;
-      margin-right: 1rem;
-      font-size: 1.25rem; }
+      margin-right: 1.25rem;
+      width: 25px;
+      height: 30px;
+      background: url("../imgs/call_zhgi-01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
   nav.siteNav .socials {
     display: flex;
     justify-content: space-around;
@@ -211,7 +215,8 @@ nav.siteNav {
     margin-bottom: 0;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    padding-left: 35px; }
     @media screen and (min-width: 992px) {
       nav.siteNav .navList {
         float: left !important; } }
@@ -226,20 +231,29 @@ nav.siteNav {
         text-decoration: underline; }
   nav.siteNav .innerList.tab {
     position: absolute;
-    left: -18.2%;
-    background: #e7e5e7;
+    color: white;
+    background: #282828;
+    left: -45.2%;
     display: none;
     margin-bottom: -1.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: auto !important;
     z-index: 10; }
+    nav.siteNav .innerList.tab .container {
+      height: auto !important; }
+      nav.siteNav .innerList.tab .container div {
+        height: auto !important; }
     nav.siteNav .innerList.tab a {
       text-transform: uppercase;
+      text-decoration: none;
       font-size: 0.75rem;
       line-height: 1rem;
       display: block;
+      height: auto !important; }
+    nav.siteNav .innerList.tab a:not(:last-child) {
       margin-bottom: 0.5rem; }
-      nav.siteNav .innerList.tab a:hover {
+      nav.siteNav .innerList.tab a:not(:last-child):hover {
         color: #e8e000; }
 
 .marryGoRound {
@@ -899,7 +913,21 @@ footer {
     text-align: center; } }
 @media screen and (max-width: 992px) {
   nav.siteNav .logo {
-    height: 35px; } }
+    height: 45px; }
+    nav.siteNav .logo div.bgImage {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      margin: 0 auto;
+      top: -10px;
+      bottom: auto;
+      left: auto;
+      right: auto;
+      background-position: center;
+      background-size: 100%; } }
+@media screen and (max-width: 992px) {
+  nav.siteNav .phones {
+    justify-content: center; } }
 @media screen and (max-width: 992px) {
   nav.siteNav .socials {
     display: block;
@@ -954,16 +982,6 @@ footer {
   .tagsFilter .tags .tagItem {
     display: block;
     margin-bottom: 10px; } }
-
-@media screen and (max-width: 992px) {
-  nav.siteNav .logo {
-    background-image: url("../imgs/logo.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat; } }
-@media screen and (max-width: 992px) {
-  nav.siteNav .logo img {
-    display: none; } }
 
 @media screen and (max-width: 768px) {
   .aboutInnAdvs .aboutAdvsPageItem .fa:before {

@@ -58,7 +58,6 @@ nav.siteNav
     background: rgba($bWhite, .85)
     position: fixed
     padding-top: 1rem
-    padding-bottom: 1rem
     border-bottom: solid 1px $bGrayLight
     z-index: 10
   .logo
@@ -98,8 +97,13 @@ nav.siteNav
       float: right !important
     i
       display: inline-block
-      margin-right: 1rem
-      font-size: 1.25rem
+      margin-right: 1.25rem
+      width: 25px
+      height: 30px
+      background: url("../imgs/call_zhgi-01.png")
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
   .socials
     display: flex
     justify-content: space-around
@@ -136,6 +140,7 @@ nav.siteNav
     display: flex
     justify-content: space-around
     align-items: center
+    padding-left: 35px
     @media screen and (min-width: 992px)
       float: left !important
     &>li>a
@@ -149,19 +154,27 @@ nav.siteNav
         text-decoration: underline
   .innerList.tab
     position: absolute
-    //bottom: -2.7777776rem
-    left: -18.2%
-    background: $bGrayLight
+    color: $bWhite
+    background: $bGray
+    left: -45.2%
     display: none
     margin-bottom: -1.5rem
-    padding-top: .5rem
-    padding-bottom: 1rem
+    padding-top: 1.5rem
+    padding-bottom: 1.5rem
+    height: auto !important
     z-index: 10
+    .container
+      height: auto !important
+      div
+        height: auto !important
     a
       text-transform: uppercase
+      text-decoration: none
       font-size: .75rem
       line-height: 1rem
       display: block
+      height: auto !important
+    a:not(:last-child)
       margin-bottom: .5rem
       &:hover
         color: $bOrange
