@@ -81,147 +81,202 @@ get_header(); ?>
                             <div class="thinDig">ещё чего-нибудь</div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <div class="pItem pItemImg">
-                                <div class="info">
-                                    <div class="header">Amato</div>
-                                    Клиент:
-                                    <div class="customer">
-                                        ООО "АвалонТорг"
-                                    </div>
-                                    Цель:
-                                    <div class="goal">редизайн упаковки для кофе - молотого
-                                        и в зернах</div>
-                                    <div class="viewsLikes">
-                                            <span class="views">
-                                                <i class="fa fa-eye"></i> &mdash;
-                                                <span class="viewsNr">5587</span>
-                                            </span>
-                                            <span class="likes">
-                                                <i class="fa fa-thumbs-o-up"></i> &mdash;
-                                                <span class="likesNr">13441</span>
-                                            </span>
-                                    </div>
+                <div class="row">
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                    <div class="col-xs-12 col-md-4">
+                        <div class="pItem pItemImg">
+                            <div class="info">
+                                <div class="header"><?php the_title(); ?></div>
+                                Клиент:
+                                <div class="customer">
+                                    ООО "АвалонТорг"
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="pItem pItemImg">
-                                <div class="info">
-                                    <div class="header">Amato</div>
-                                    Клиент:
-                                    <div class="customer">
-                                        ООО "АвалонТорг"
-                                    </div>
-                                    Цель:
-                                    <div class="goal">редизайн упаковки для кофе - молотого
-                                        и в зернах</div>
-                                    <div class="viewsLikes">
-                                            <span class="views">
-                                                <i class="fa fa-eye"></i> &mdash;
-                                                <span class="viewsNr">5587</span>
-                                            </span>
-                                            <span class="likes">
-                                                <i class="fa fa-thumbs-o-up"></i> &mdash;
-                                                <span class="likesNr">13441</span>
-                                            </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="pItem pItemImg">
-                                <div class="info">
-                                    <div class="header">Amato</div>
-                                    Клиент:
-                                    <div class="customer">
-                                        ООО "АвалонТорг"
-                                    </div>
-                                    Цель:
-                                    <div class="goal">редизайн упаковки для кофе - молотого
-                                        и в зернах</div>
-                                    <div class="viewsLikes">
-                                            <span class="views">
-                                                <i class="fa fa-eye"></i> &mdash;
-                                                <span class="viewsNr">5587</span>
-                                            </span>
-                                            <span class="likes">
-                                                <i class="fa fa-thumbs-o-up"></i> &mdash;
-                                                <span class="likesNr">13441</span>
-                                            </span>
-                                    </div>
+                                Цель:
+                                <div class="goal"><?php the_excerpt(); ?></div>
+                                <div class="viewsLikes">
+                                    <span class="views">
+                                        <i class="fa fa-eye"></i> &mdash;
+                                        <span class="viewsNr">5587</span>
+                                    </span>
+                                    <span class="likes">
+                                        <i class="fa fa-thumbs-o-up"></i> &mdash;
+                                        <span class="likesNr">13441</span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <a href="#" class="pItem pItemText">
-                                <div class="header">
-                                    Бабiна лета
-                                </div>
-                                Тэг, ведущий к определенной выборке.
-                                Шрифт мелкий, название смешное.
-                                <div class="more">
-                                    <i class="fa fa-angle-double-right fa-2x"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="pItem pItemImg">
-                                <div class="info">
-                                    <div class="header">Amato</div>
-                                    Клиент:
-                                    <div class="customer">
-                                        ООО "АвалонТорг"
-                                    </div>
-                                    Цель:
-                                    <div class="goal">редизайн упаковки для кофе - молотого
-                                        и в зернах</div>
-                                    <div class="viewsLikes">
-                                            <span class="views">
-                                                <i class="fa fa-eye"></i> &mdash;
-                                                <span class="viewsNr">5587</span>
-                                            </span>
-                                            <span class="likes">
-                                                <i class="fa fa-thumbs-o-up"></i> &mdash;
-                                                <span class="likesNr">13441</span>
-                                            </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="pItem pItemImg">
-                                <div class="info">
-                                    <div class="header">Amato</div>
-                                    Клиент:
-                                    <div class="customer">
-                                        ООО "АвалонТорг"
-                                    </div>
-                                    Цель:
-                                    <div class="goal">редизайн упаковки для кофе - молотого
-                                        и в зернах</div>
-                                    <div class="viewsLikes">
-                                            <span class="views">
-                                                <i class="fa fa-eye"></i> &mdash;
-                                                <span class="viewsNr">5587</span>
-                                            </span>
-                                            <span class="likes">
-                                                <i class="fa fa-thumbs-o-up"></i> &mdash;
-                                                <span class="likesNr">13441</span>
-                                            </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endwhile; else : ?>
+                        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                    <?php endif; ?>
                 </div>
             </div>
         </section>
     </div>
+
+<!--    <div class="row">-->
+<!--        <section class="portfolio col-xs-12">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <h3>Fabula Branding: создаем историю вашего бренда</h3>-->
+<!--                    <div class="digits row">-->
+<!--                        <div class="digit plusDot col-xs-12 col-md-offset-3 col-md-2">-->
+<!--                            <div class="fatDig">300</div>-->
+<!--                            <div class="thinDig">торговых марок</div>-->
+<!--                        </div>-->
+<!--                        <div class="digit plusDot col-xs-12 col-md-2">-->
+<!--                            <div class="fatDig">665</div>-->
+<!--                            <div class="thinDig">названий, слоганов</div>-->
+<!--                        </div>-->
+<!--                        <div class="digit col-xs-12 col-md-2">-->
+<!--                            <div class="fatDig">18</div>-->
+<!--                            <div class="thinDig">ещё чего-нибудь</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="row">-->
+<!--                        <div class="col-xs-12 col-md-4">-->
+<!--                            <div class="pItem pItemImg">-->
+<!--                                <div class="info">-->
+<!--                                    <div class="header">Amato</div>-->
+<!--                                    Клиент:-->
+<!--                                    <div class="customer">-->
+<!--                                        ООО "АвалонТорг"-->
+<!--                                    </div>-->
+<!--                                    Цель:-->
+<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
+<!--                                        и в зернах</div>-->
+<!--                                    <div class="viewsLikes">-->
+<!--                                            <span class="views">-->
+<!--                                                <i class="fa fa-eye"></i> &mdash;-->
+<!--                                                <span class="viewsNr">5587</span>-->
+<!--                                            </span>-->
+<!--                                            <span class="likes">-->
+<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
+<!--                                                <span class="likesNr">13441</span>-->
+<!--                                            </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-12 col-md-4">-->
+<!--                            <div class="pItem pItemImg">-->
+<!--                                <div class="info">-->
+<!--                                    <div class="header">Amato</div>-->
+<!--                                    Клиент:-->
+<!--                                    <div class="customer">-->
+<!--                                        ООО "АвалонТорг"-->
+<!--                                    </div>-->
+<!--                                    Цель:-->
+<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
+<!--                                        и в зернах</div>-->
+<!--                                    <div class="viewsLikes">-->
+<!--                                            <span class="views">-->
+<!--                                                <i class="fa fa-eye"></i> &mdash;-->
+<!--                                                <span class="viewsNr">5587</span>-->
+<!--                                            </span>-->
+<!--                                            <span class="likes">-->
+<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
+<!--                                                <span class="likesNr">13441</span>-->
+<!--                                            </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-12 col-md-4">-->
+<!--                            <div class="pItem pItemImg">-->
+<!--                                <div class="info">-->
+<!--                                    <div class="header">Amato</div>-->
+<!--                                    Клиент:-->
+<!--                                    <div class="customer">-->
+<!--                                        ООО "АвалонТорг"-->
+<!--                                    </div>-->
+<!--                                    Цель:-->
+<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
+<!--                                        и в зернах</div>-->
+<!--                                    <div class="viewsLikes">-->
+<!--                                            <span class="views">-->
+<!--                                                <i class="fa fa-eye"></i> &mdash;-->
+<!--                                                <span class="viewsNr">5587</span>-->
+<!--                                            </span>-->
+<!--                                            <span class="likes">-->
+<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
+<!--                                                <span class="likesNr">13441</span>-->
+<!--                                            </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-xs-12 col-md-4">-->
+<!--                            <a href="#" class="pItem pItemText">-->
+<!--                                <div class="header">-->
+<!--                                    Бабiна лета-->
+<!--                                </div>-->
+<!--                                Тэг, ведущий к определенной выборке.-->
+<!--                                Шрифт мелкий, название смешное.-->
+<!--                                <div class="more">-->
+<!--                                    <i class="fa fa-angle-double-right fa-2x"></i>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-12 col-md-4">-->
+<!--                            <div class="pItem pItemImg">-->
+<!--                                <div class="info">-->
+<!--                                    <div class="header">Amato</div>-->
+<!--                                    Клиент:-->
+<!--                                    <div class="customer">-->
+<!--                                        ООО "АвалонТорг"-->
+<!--                                    </div>-->
+<!--                                    Цель:-->
+<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
+<!--                                        и в зернах</div>-->
+<!--                                    <div class="viewsLikes">-->
+<!--                                            <span class="views">-->
+<!--                                                <i class="fa fa-eye"></i> &mdash;-->
+<!--                                                <span class="viewsNr">5587</span>-->
+<!--                                            </span>-->
+<!--                                            <span class="likes">-->
+<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
+<!--                                                <span class="likesNr">13441</span>-->
+<!--                                            </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-xs-12 col-md-4">-->
+<!--                            <div class="pItem pItemImg">-->
+<!--                                <div class="info">-->
+<!--                                    <div class="header">Amato</div>-->
+<!--                                    Клиент:-->
+<!--                                    <div class="customer">-->
+<!--                                        ООО "АвалонТорг"-->
+<!--                                    </div>-->
+<!--                                    Цель:-->
+<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
+<!--                                        и в зернах</div>-->
+<!--                                    <div class="viewsLikes">-->
+<!--                                            <span class="views">-->
+<!--                                                <i class="fa fa-eye"></i> &mdash;-->
+<!--                                                <span class="viewsNr">5587</span>-->
+<!--                                            </span>-->
+<!--                                            <span class="likes">-->
+<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
+<!--                                                <span class="likesNr">13441</span>-->
+<!--                                            </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+<!--    </div>-->
 
     <div class="row">
         <section class="news col-xs-12">
