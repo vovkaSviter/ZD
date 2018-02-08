@@ -84,7 +84,7 @@
                                     'title_li' => '',
                                     'hide_empty' => 0,
                                     'hide_title_if_empty' => true,
-                                    'exclude' => 1,
+                                    'include' => '8,17,18,19,9,10,11,12,13,14,15,16',
                                 );
                                 wp_list_categories( $args );
                             ?>
