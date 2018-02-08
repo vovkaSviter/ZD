@@ -74,7 +74,9 @@
                         </div>
                     </div>
                     <div class="map col-xs-12 col-md-2 pull-left">
-                        <h4>Услуги</h4>
+                        <h4>
+                            <a href="http://localhost/zhgi/uslugi/">Услуги</a>
+                        </h4>
                         <ul>
                             <?php
                                 $args = array(

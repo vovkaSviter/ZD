@@ -1,10 +1,19 @@
+/*
+Theme Name:     Twenty Seventeen Child
+Description:    Дочерняя тема для темы Twenty Seventeen
+Author:         My name
+Template:       twentyseventeen
+Version:        0.1.0
+*/
 body {
     background: white;
     color: #282828; }
-body > .container-fluid {
-    background: white; }
-body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage, body > .container-fluid.servicesPage, body > .container-fluid.serviceSinglePage, body > .container-fluid.portfolioSinglePage {
+
+body > .container-fluid{
     background: #f9f9f9; }
+
+body.home > .container-fluid {
+    background: white; }
 
 body {
     margin: 0; }
@@ -106,10 +115,12 @@ ul ul, ol ol, ul ol, ol ul {
 body {
     background: white;
     color: #282828; }
-body > .container-fluid {
-    background: white; }
-body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage, body > .container-fluid.servicesPage, body > .container-fluid.serviceSinglePage, body > .container-fluid.portfolioSinglePage {
+
+body > .container-fluid{
     background: #f9f9f9; }
+
+body.home > .container-fluid {
+    background: white; }
 
 @keyframes rotate {
     0% {
@@ -840,13 +851,13 @@ footer .footerCopy {
     display: inline-block;
     margin-left: 1rem; }
 
-.servicesPage .servicesList {
+.servicesList {
     margin-bottom: 5rem; }
-.servicesPage .serviceColumn a {
+.serviceColumn a {
     display: block;
     margin-top: 1rem;
     margin-bottom: 1rem; }
-.servicesPage .serviceColumn a:hover {
+.serviceColumn a:hover {
     color: #e8e000; }
 
 .serviceSinglePage .pageHeader {

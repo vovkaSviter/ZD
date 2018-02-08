@@ -57,26 +57,23 @@
                             </ul>
                         </li>
                         <li data-tab="services">
-                            <a href="http://zhgi.rf.gd/markup/servicesPage.html">Услуги</a>
+                            <a href="http://localhost/zhgi/uslugi/">Услуги</a>
                             <div id="services" class="innerList tab row hidden-sm hidden-xs">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-3">
-                                                <?php
-                                                    $args = array(
-                                                        'orderby' => 'name',
-                                                        'title_li' => '',
-                                                        'hide_empty' => 0,
-                                                        'hide_title_if_empty' => true,
-                                                        'exclude' => 1,
-                                                        'include' => '8, 17, 18',
-                                                        'style' => 'none'
-                                                    );
-                                                    wp_list_categories( $args );
-                                                ?>
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">эстетическое воздействие</a>-->
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">выбирает стиль</a>-->
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">Строфоид</a>-->
+                                            <?php
+                                                $args = array(
+                                                    'orderby' => 'name',
+                                                    'title_li' => '',
+                                                    'hide_empty' => 0,
+                                                    'hide_title_if_empty' => true,
+                                                    'exclude' => 1,
+                                                    'include' => '8, 17, 18',
+                                                    'style' => 'none'
+                                                );
+                                                wp_list_categories( $args );
+                                            ?>
                                         </div>
                                         <div class="col-md-3">
                                             <?php
@@ -91,9 +88,6 @@
                                                 );
                                                 wp_list_categories( $args );
                                             ?>
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">эстетическое воздействие</a>-->
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">выбирает стиль</a>-->
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">Строфоид</a>-->
                                         </div>
                                         <div class="col-md-3">
                                             <?php
@@ -108,9 +102,6 @@
                                                 );
                                                 wp_list_categories( $args );
                                             ?>
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">эстетическое воздействие</a>-->
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">выбирает стиль</a>-->
-<!--                                            <a href="http://zhgi.rf.gd/markup/serviceSingle.html">Строфоид</a>-->
                                         </div>
                                         <div class="col-md-3">
                                             <?php
@@ -124,7 +115,7 @@
                                                     'style' => 'none'
                                                 );
                                                 wp_list_categories( $args );
-                                                ?>
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
