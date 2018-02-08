@@ -292,85 +292,102 @@ get_header(); ?>
                     </div>
 
                     <div id="news" class="owl-carousel col-xs-12">
-                        <a href="#" class="nItem">
-                            <div class="date">23.01.2018</div>
-                            <div class="imgKeeper"></div>
-                            <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prtf2.jpg" alt="piece of news">-->
-                            <h6>СОНЕЧНАЕ СОЧЫВА</h6>
-                            <div class="nItemSubHeader">
-                                Ты адчуваеш на вуснах іх салодкі смак — нібы прага да жыцця,...
-                            </div>
-                            <div class="more">
-                                <i class="fa fa-angle-double-right fa-2x"></i>
-                            </div>
-                        </a>
 
-                        <a href="#" class="nItem">
-                            <div class="date">23.12.2017</div>
-                            <div class="imgKeeper imgKeeper2"></div>
-                            <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prtf3.jpg" alt="piece of news">-->
-                            <h6>СМАЧНА ЖЫЦЬ ПА-БЕЛАРУСКУ</h6>
-                            <div class="nItemSubHeader">
-                                Узгадайце нядаўнія камунікацыі банкаў, аператараў сувязі.
-                            </div>
-                            <div class="more">
-                                <i class="fa fa-angle-double-right fa-2x"></i>
-                            </div>
-                        </a>
+                        <?php query_posts('cat=20'); ?>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                            <a href="<?php echo get_permalink(); ?>" class="nItem">
+                                <div class="date">23.01.2018</div>
+                                <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
+                                <div class="imgKeeper" style="background-image: url('<?php echo $bgImg[0] ?>')"></div>
+                                <h6><?php the_title(); ?></h6>
+                                <div class="nItemSubHeader">
+                                    Ты адчуваеш на вуснах іх салодкі смак — нібы прага да жыцця,...
+                                </div>
+                                <div class="more">
+                                    <i class="fa fa-angle-double-right fa-2x"></i>
+                                </div>
+                            </a>
+                        <?php endwhile; endif; ?>
 
-                        <a href="#" class="nItem">
-                            <div class="date">01.09.2017</div>
-                            <div class="imgKeeper imgKeeper2"></div>
-                            <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prtf4.jpg" alt="piece of news">-->
-                            <h6>Калі на тавары ёсць беларуская мова</h6>
-                            <div class="nItemSubHeader">
-                                то яна адразу прыцягвае ўвагу. І гэтым многія бізнесмены
-                                карыстаюцца, не баяцца ўключаць беларускую мову.
-                            </div>
-                            <div class="more">
-                                <i class="fa fa-angle-double-right fa-2x"></i>
-                            </div>
-                        </a>
-
-                        <a href="#" class="nItem">
-                            <div class="date">23.12.2017</div>
-                            <div class="imgKeeper imgKeeper1"></div>
-                            <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prtf3.jpg" alt="piece of news">-->
-                            <h6>СМАЧНА ЖЫЦЬ ПА-БЕЛАРУСКУ</h6>
-                            <div class="nItemSubHeader">
-                                Узгадайце нядаўнія камунікацыі банкаў, аператараў сувязі.
-                            </div>
-                            <div class="more">
-                                <i class="fa fa-angle-double-right fa-2x"></i>
-                            </div>
-                        </a>
-
-                        <a href="#" class="nItem">
-                            <div class="date">01.09.2017</div>
-                            <div class="imgKeeper"></div>
-                            <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prtf4.jpg" alt="piece of news">-->
-                            <h6>Калі на тавары ёсць беларуская мова</h6>
-                            <div class="nItemSubHeader">
-                                то яна адразу прыцягвае ўвагу. І гэтым многія бізнесмены
-                                карыстаюцца, не баяцца ўключаць беларускую мову.
-                            </div>
-                            <div class="more">
-                                <i class="fa fa-angle-double-right fa-2x"></i>
-                            </div>
-                        </a>
-
-                        <a href="#" class="nItem">
-                            <div class="date">23.01.2018</div>
-                            <div class="imgKeeper imgKeeper1"></div>
-                            <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prtf2.jpg" alt="piece of news">-->
-                            <h6>СОНЕЧНАЕ СОЧЫВА</h6>
-                            <div class="nItemSubHeader">
-                                Ты адчуваеш на вуснах іх салодкі смак — нібы прага да жыцця,...
-                            </div>
-                            <div class="more">
-                                <i class="fa fa-angle-double-right fa-2x"></i>
-                            </div>
-                        </a>
+<!--                        <a href="#" class="nItem">-->
+<!--                            <div class="date">23.01.2018</div>-->
+<!--                            <div class="imgKeeper"></div>-->
+<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf2.jpg" alt="piece of news">-->-->
+<!--                            <h6>СОНЕЧНАЕ СОЧЫВА</h6>-->
+<!--                            <div class="nItemSubHeader">-->
+<!--                                Ты адчуваеш на вуснах іх салодкі смак — нібы прага да жыцця,...-->
+<!--                            </div>-->
+<!--                            <div class="more">-->
+<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!---->
+<!--                        <a href="#" class="nItem">-->
+<!--                            <div class="date">23.12.2017</div>-->
+<!--                            <div class="imgKeeper imgKeeper2"></div>-->
+<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf3.jpg" alt="piece of news">-->-->
+<!--                            <h6>СМАЧНА ЖЫЦЬ ПА-БЕЛАРУСКУ</h6>-->
+<!--                            <div class="nItemSubHeader">-->
+<!--                                Узгадайце нядаўнія камунікацыі банкаў, аператараў сувязі.-->
+<!--                            </div>-->
+<!--                            <div class="more">-->
+<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!---->
+<!--                        <a href="#" class="nItem">-->
+<!--                            <div class="date">01.09.2017</div>-->
+<!--                            <div class="imgKeeper imgKeeper2"></div>-->
+<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf4.jpg" alt="piece of news">-->-->
+<!--                            <h6>Калі на тавары ёсць беларуская мова</h6>-->
+<!--                            <div class="nItemSubHeader">-->
+<!--                                то яна адразу прыцягвае ўвагу. І гэтым многія бізнесмены-->
+<!--                                карыстаюцца, не баяцца ўключаць беларускую мову.-->
+<!--                            </div>-->
+<!--                            <div class="more">-->
+<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!---->
+<!--                        <a href="#" class="nItem">-->
+<!--                            <div class="date">23.12.2017</div>-->
+<!--                            <div class="imgKeeper imgKeeper1"></div>-->
+<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf3.jpg" alt="piece of news">-->-->
+<!--                            <h6>СМАЧНА ЖЫЦЬ ПА-БЕЛАРУСКУ</h6>-->
+<!--                            <div class="nItemSubHeader">-->
+<!--                                Узгадайце нядаўнія камунікацыі банкаў, аператараў сувязі.-->
+<!--                            </div>-->
+<!--                            <div class="more">-->
+<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!---->
+<!--                        <a href="#" class="nItem">-->
+<!--                            <div class="date">01.09.2017</div>-->
+<!--                            <div class="imgKeeper"></div>-->
+<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf4.jpg" alt="piece of news">-->-->
+<!--                            <h6>Калі на тавары ёсць беларуская мова</h6>-->
+<!--                            <div class="nItemSubHeader">-->
+<!--                                то яна адразу прыцягвае ўвагу. І гэтым многія бізнесмены-->
+<!--                                карыстаюцца, не баяцца ўключаць беларускую мову.-->
+<!--                            </div>-->
+<!--                            <div class="more">-->
+<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!---->
+<!--                        <a href="#" class="nItem">-->
+<!--                            <div class="date">23.01.2018</div>-->
+<!--                            <div class="imgKeeper imgKeeper1"></div>-->
+<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf2.jpg" alt="piece of news">-->-->
+<!--                            <h6>СОНЕЧНАЕ СОЧЫВА</h6>-->
+<!--                            <div class="nItemSubHeader">-->
+<!--                                Ты адчуваеш на вуснах іх салодкі смак — нібы прага да жыцця,...-->
+<!--                            </div>-->
+<!--                            <div class="more">-->
+<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
+<!--                            </div>-->
+<!--                        </a>-->
                     </div>
                 </div>
             </div>
