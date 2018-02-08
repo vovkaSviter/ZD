@@ -84,6 +84,8 @@ get_header(); ?>
                 </div>
 
                 <div class="row">
+
+                    <?php query_posts('tag=pervaya-plashka'); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                     <div class="col-xs-12 col-md-4">
@@ -115,6 +117,40 @@ get_header(); ?>
                     <?php endwhile; else : ?>
                         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
                     <?php endif; ?>
+
+                    <?php query_posts('tag=vtoraya-plashka'); ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                        <div class="col-xs-12 col-md-4">
+                            <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
+                            <div class="pItem pItemImg" style="background-image: url('<?php echo $bgImg[0] ?>')">
+                                <div class="info">
+                                    <div class="header"><?php the_title(); ?></div>
+                                    Клиент:
+                                    <div class="customer">
+                                        <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                    </div>
+                                    Задача:
+                                    <div class="goal">
+                                        <?php $key="Задача"; echo get_post_meta($post->ID, $key, true); ?>
+                                    </div>
+                                    <div class="viewsLikes">
+                                    <span class="views">
+                                        <i class="fa fa-eye"></i> &mdash;
+                                        <span class="viewsNr">5587</span>
+                                    </span>
+                                    <span class="likes">
+                                        <i class="fa fa-thumbs-o-up"></i> &mdash;
+                                        <span class="likesNr">13441</span>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endwhile; else : ?>
+                        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                    <?php endif; ?>
+
                 </div>
             </div>
         </section>
@@ -296,12 +332,12 @@ get_header(); ?>
                         <?php query_posts('cat=20'); ?>
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                             <a href="<?php echo get_permalink(); ?>" class="nItem">
-                                <div class="date">23.01.2018</div>
+                                <div class="date"><?php echo get_the_date(); ?></div>
                                 <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                                 <div class="imgKeeper" style="background-image: url('<?php echo $bgImg[0] ?>')"></div>
                                 <h6><?php the_title(); ?></h6>
                                 <div class="nItemSubHeader">
-                                    Ты адчуваеш на вуснах іх салодкі смак — нібы прага да жыцця,...
+                                    <?php the_excerpt(); ?>
                                 </div>
                                 <div class="more">
                                     <i class="fa fa-angle-double-right fa-2x"></i>

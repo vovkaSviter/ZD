@@ -57,7 +57,7 @@
                             </ul>
                         </li>
                         <li data-tab="services">
-                            <a href="http://localhost/zhgi/uslugi/">Услуги</a>
+                            <a href="<?php echo get_page_link(35);?>">Услуги</a>
                             <div id="services" class="innerList tab row hidden-sm hidden-xs">
                                 <div class="container">
                                     <div class="row">
@@ -132,8 +132,8 @@
                             </ul>
                         </li>
                         <li><a href="http://zhgi.rf.gd/markup/portfolio.html">Портфолио</a></li>
-                        <li><a href="http://zhgi.rf.gd/markup/news.html">Новости</a></li>
-                        <li><a href="http://localhost/zhgi/contacts/">Контакты</a></li>
+                        <li><a href="<?php echo get_page_link(57);?>">Новости</a></li>
+                        <li><a href="<?php echo get_page_link(7);?>">Контакты</a></li>
                     </ul>
 
                     <div class="socials col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-2">

@@ -75,7 +75,7 @@
                     </div>
                     <div class="map col-xs-12 col-md-2 pull-left">
                         <h4>
-                            <a href="http://localhost/zhgi/uslugi/">Услуги</a>
+                            <a href="<?php echo get_page_link(35);?>">Услуги</a>
                         </h4>
                         <ul>
                             <?php
