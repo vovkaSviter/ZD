@@ -131,7 +131,7 @@
                                 <li><a href="http://zhgi.rf.gd/markup/serviceSingle.html">конкретный подтекст</a></li>
                             </ul>
                         </li>
-                        <li><a href="http://zhgi.rf.gd/markup/portfolio.html">Портфолио</a></li>
+                        <li><a href="<?php echo get_page_link(73);?>">Портфолио</a></li>
                         <li><a href="<?php echo get_page_link(57);?>">Новости</a></li>
                         <li><a href="<?php echo get_page_link(7);?>">Контакты</a></li>
                     </ul>

@@ -85,6 +85,18 @@ get_header(); ?>
 
                 <div class="row">
 
+                    <div class="col-xs-12 col-md-4">
+                        <a href="<?php echo get_tag_link(21); ?>" class="pItem pItemText">
+                            <div class="header">
+                                <?php single_tag_title(); ?>
+                            </div>
+                            <?php echo term_description( 21, 'post_tag' ) ?>
+                            <div class="more">
+                                <i class="fa fa-angle-double-right fa-2x"></i>
+                            </div>
+                        </a>
+                    </div>
+
                     <?php query_posts('tag=pervaya-plashka'); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -114,9 +126,26 @@ get_header(); ?>
                             </div>
                         </div>
                     </div>
+
                     <?php endwhile; else : ?>
                         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
                     <?php endif; ?>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-md-4">
+                        <a href="<?php echo get_tag_link(22); ?>" class="pItem pItemText">
+                            <div class="header">
+                                <?php single_tag_title(); ?>
+                            </div>
+                            <?php echo term_description( 22, 'post_tag' ) ?>
+                            <div class="more">
+                                <i class="fa fa-angle-double-right fa-2x"></i>
+                            </div>
+                        </a>
+                    </div>
 
                     <?php query_posts('tag=vtoraya-plashka'); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -156,167 +185,6 @@ get_header(); ?>
         </section>
     </div>
 
-<!--    <div class="row">-->
-<!--        <section class="portfolio col-xs-12">-->
-<!--            <div class="container">-->
-<!--                <div class="row">-->
-<!--                    <h3>Fabula Branding: создаем историю вашего бренда</h3>-->
-<!--                    <div class="digits row">-->
-<!--                        <div class="digit plusDot col-xs-12 col-md-offset-3 col-md-2">-->
-<!--                            <div class="fatDig">300</div>-->
-<!--                            <div class="thinDig">торговых марок</div>-->
-<!--                        </div>-->
-<!--                        <div class="digit plusDot col-xs-12 col-md-2">-->
-<!--                            <div class="fatDig">665</div>-->
-<!--                            <div class="thinDig">названий, слоганов</div>-->
-<!--                        </div>-->
-<!--                        <div class="digit col-xs-12 col-md-2">-->
-<!--                            <div class="fatDig">18</div>-->
-<!--                            <div class="thinDig">ещё чего-нибудь</div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="row">-->
-<!--                        <div class="col-xs-12 col-md-4">-->
-<!--                            <div class="pItem pItemImg">-->
-<!--                                <div class="info">-->
-<!--                                    <div class="header">Amato</div>-->
-<!--                                    Клиент:-->
-<!--                                    <div class="customer">-->
-<!--                                        ООО "АвалонТорг"-->
-<!--                                    </div>-->
-<!--                                    Цель:-->
-<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
-<!--                                        и в зернах</div>-->
-<!--                                    <div class="viewsLikes">-->
-<!--                                            <span class="views">-->
-<!--                                                <i class="fa fa-eye"></i> &mdash;-->
-<!--                                                <span class="viewsNr">5587</span>-->
-<!--                                            </span>-->
-<!--                                            <span class="likes">-->
-<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
-<!--                                                <span class="likesNr">13441</span>-->
-<!--                                            </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="col-xs-12 col-md-4">-->
-<!--                            <div class="pItem pItemImg">-->
-<!--                                <div class="info">-->
-<!--                                    <div class="header">Amato</div>-->
-<!--                                    Клиент:-->
-<!--                                    <div class="customer">-->
-<!--                                        ООО "АвалонТорг"-->
-<!--                                    </div>-->
-<!--                                    Цель:-->
-<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
-<!--                                        и в зернах</div>-->
-<!--                                    <div class="viewsLikes">-->
-<!--                                            <span class="views">-->
-<!--                                                <i class="fa fa-eye"></i> &mdash;-->
-<!--                                                <span class="viewsNr">5587</span>-->
-<!--                                            </span>-->
-<!--                                            <span class="likes">-->
-<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
-<!--                                                <span class="likesNr">13441</span>-->
-<!--                                            </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="col-xs-12 col-md-4">-->
-<!--                            <div class="pItem pItemImg">-->
-<!--                                <div class="info">-->
-<!--                                    <div class="header">Amato</div>-->
-<!--                                    Клиент:-->
-<!--                                    <div class="customer">-->
-<!--                                        ООО "АвалонТорг"-->
-<!--                                    </div>-->
-<!--                                    Цель:-->
-<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
-<!--                                        и в зернах</div>-->
-<!--                                    <div class="viewsLikes">-->
-<!--                                            <span class="views">-->
-<!--                                                <i class="fa fa-eye"></i> &mdash;-->
-<!--                                                <span class="viewsNr">5587</span>-->
-<!--                                            </span>-->
-<!--                                            <span class="likes">-->
-<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
-<!--                                                <span class="likesNr">13441</span>-->
-<!--                                            </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="row">-->
-<!--                        <div class="col-xs-12 col-md-4">-->
-<!--                            <a href="#" class="pItem pItemText">-->
-<!--                                <div class="header">-->
-<!--                                    Бабiна лета-->
-<!--                                </div>-->
-<!--                                Тэг, ведущий к определенной выборке.-->
-<!--                                Шрифт мелкий, название смешное.-->
-<!--                                <div class="more">-->
-<!--                                    <i class="fa fa-angle-double-right fa-2x"></i>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="col-xs-12 col-md-4">-->
-<!--                            <div class="pItem pItemImg">-->
-<!--                                <div class="info">-->
-<!--                                    <div class="header">Amato</div>-->
-<!--                                    Клиент:-->
-<!--                                    <div class="customer">-->
-<!--                                        ООО "АвалонТорг"-->
-<!--                                    </div>-->
-<!--                                    Цель:-->
-<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
-<!--                                        и в зернах</div>-->
-<!--                                    <div class="viewsLikes">-->
-<!--                                            <span class="views">-->
-<!--                                                <i class="fa fa-eye"></i> &mdash;-->
-<!--                                                <span class="viewsNr">5587</span>-->
-<!--                                            </span>-->
-<!--                                            <span class="likes">-->
-<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
-<!--                                                <span class="likesNr">13441</span>-->
-<!--                                            </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="col-xs-12 col-md-4">-->
-<!--                            <div class="pItem pItemImg">-->
-<!--                                <div class="info">-->
-<!--                                    <div class="header">Amato</div>-->
-<!--                                    Клиент:-->
-<!--                                    <div class="customer">-->
-<!--                                        ООО "АвалонТорг"-->
-<!--                                    </div>-->
-<!--                                    Цель:-->
-<!--                                    <div class="goal">редизайн упаковки для кофе - молотого-->
-<!--                                        и в зернах</div>-->
-<!--                                    <div class="viewsLikes">-->
-<!--                                            <span class="views">-->
-<!--                                                <i class="fa fa-eye"></i> &mdash;-->
-<!--                                                <span class="viewsNr">5587</span>-->
-<!--                                            </span>-->
-<!--                                            <span class="likes">-->
-<!--                                                <i class="fa fa-thumbs-o-up"></i> &mdash;-->
-<!--                                                <span class="likesNr">13441</span>-->
-<!--                                            </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-<!--    </div>-->
-
     <div class="row">
         <section class="news col-xs-12">
             <div class="container">
@@ -344,86 +212,6 @@ get_header(); ?>
                                 </div>
                             </a>
                         <?php endwhile; endif; ?>
-
-<!--                        <a href="#" class="nItem">-->
-<!--                            <div class="date">23.01.2018</div>-->
-<!--                            <div class="imgKeeper"></div>-->
-<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf2.jpg" alt="piece of news">-->-->
-<!--                            <h6>СОНЕЧНАЕ СОЧЫВА</h6>-->
-<!--                            <div class="nItemSubHeader">-->
-<!--                                Ты адчуваеш на вуснах іх салодкі смак — нібы прага да жыцця,...-->
-<!--                            </div>-->
-<!--                            <div class="more">-->
-<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!---->
-<!--                        <a href="#" class="nItem">-->
-<!--                            <div class="date">23.12.2017</div>-->
-<!--                            <div class="imgKeeper imgKeeper2"></div>-->
-<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf3.jpg" alt="piece of news">-->-->
-<!--                            <h6>СМАЧНА ЖЫЦЬ ПА-БЕЛАРУСКУ</h6>-->
-<!--                            <div class="nItemSubHeader">-->
-<!--                                Узгадайце нядаўнія камунікацыі банкаў, аператараў сувязі.-->
-<!--                            </div>-->
-<!--                            <div class="more">-->
-<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!---->
-<!--                        <a href="#" class="nItem">-->
-<!--                            <div class="date">01.09.2017</div>-->
-<!--                            <div class="imgKeeper imgKeeper2"></div>-->
-<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf4.jpg" alt="piece of news">-->-->
-<!--                            <h6>Калі на тавары ёсць беларуская мова</h6>-->
-<!--                            <div class="nItemSubHeader">-->
-<!--                                то яна адразу прыцягвае ўвагу. І гэтым многія бізнесмены-->
-<!--                                карыстаюцца, не баяцца ўключаць беларускую мову.-->
-<!--                            </div>-->
-<!--                            <div class="more">-->
-<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!---->
-<!--                        <a href="#" class="nItem">-->
-<!--                            <div class="date">23.12.2017</div>-->
-<!--                            <div class="imgKeeper imgKeeper1"></div>-->
-<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf3.jpg" alt="piece of news">-->-->
-<!--                            <h6>СМАЧНА ЖЫЦЬ ПА-БЕЛАРУСКУ</h6>-->
-<!--                            <div class="nItemSubHeader">-->
-<!--                                Узгадайце нядаўнія камунікацыі банкаў, аператараў сувязі.-->
-<!--                            </div>-->
-<!--                            <div class="more">-->
-<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!---->
-<!--                        <a href="#" class="nItem">-->
-<!--                            <div class="date">01.09.2017</div>-->
-<!--                            <div class="imgKeeper"></div>-->
-<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf4.jpg" alt="piece of news">-->-->
-<!--                            <h6>Калі на тавары ёсць беларуская мова</h6>-->
-<!--                            <div class="nItemSubHeader">-->
-<!--                                то яна адразу прыцягвае ўвагу. І гэтым многія бізнесмены-->
-<!--                                карыстаюцца, не баяцца ўключаць беларускую мову.-->
-<!--                            </div>-->
-<!--                            <div class="more">-->
-<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!---->
-<!--                        <a href="#" class="nItem">-->
-<!--                            <div class="date">23.01.2018</div>-->
-<!--                            <div class="imgKeeper imgKeeper1"></div>-->
-<!--                            <!--<img src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/assets/images/prtf2.jpg" alt="piece of news">-->-->
-<!--                            <h6>СОНЕЧНАЕ СОЧЫВА</h6>-->
-<!--                            <div class="nItemSubHeader">-->
-<!--                                Ты адчуваеш на вуснах іх салодкі смак — нібы прага да жыцця,...-->
-<!--                            </div>-->
-<!--                            <div class="more">-->
-<!--                                <i class="fa fa-angle-double-right fa-2x"></i>-->
-<!--                            </div>-->
-<!--                        </a>-->
                     </div>
                 </div>
             </div>
