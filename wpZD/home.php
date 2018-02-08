@@ -92,10 +92,13 @@ get_header(); ?>
                             <div class="info">
                                 <div class="header"><?php the_title(); ?></div>
                                 Клиент:
-                                <div class="customer"></div>
+                                <div class="customer">
+                                    <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                </div>
                                 Задача:
-                                <div class="goal"><?php the_excerpt() ?></div>
-
+                                <div class="goal">
+                                    <?php $key="Задача"; echo get_post_meta($post->ID, $key, true); ?>
+                                </div>
                                 <div class="viewsLikes">
                                     <span class="views">
                                         <i class="fa fa-eye"></i> &mdash;
