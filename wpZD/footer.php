@@ -76,27 +76,16 @@
                     <div class="map col-xs-12 col-md-2 pull-left">
                         <h4>Услуги</h4>
                         <ul>
-                            <li>
-                                <a href="#">футурологи</a>
-                            </li>
-                            <li>
-                                <a href="#">горизонт ожидания</a>
-                            </li>
-                            <li>
-                                <a href="#">кластерный анализ</a>
-                            </li>
-                            <li>
-                                <a href="#">метафоризм</a>
-                            </li>
-                            <li>
-                                <a href="#">Рейт-карта</a>
-                            </li>
-                            <li>
-                                <a href="#">Эл Райс</a>
-                            </li>
-                            <li>
-                                <a href="#">выстраивает медиавес</a>
-                            </li>
+                            <?php
+                                $args = array(
+                                    'orderby' => 'name',
+                                    'title_li' => '',
+                                    'hide_empty' => 0,
+                                    'hide_title_if_empty' => true,
+                                    'exclude' => 1,
+                                );
+                                wp_list_categories( $args );
+                            ?>
                         </ul>
                     </div>
                     <div class="footerBody col-xs-12 col-md-8 pull-right">
