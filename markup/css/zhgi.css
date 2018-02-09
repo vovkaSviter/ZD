@@ -247,8 +247,8 @@ nav.siteNav {
     nav.siteNav .innerList.tab a {
       text-transform: uppercase;
       text-decoration: none;
-      font-size: 0.75rem;
-      line-height: 1rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
       display: block;
       height: auto !important; }
     nav.siteNav .innerList.tab a:not(:last-child) {
@@ -328,7 +328,7 @@ nav.siteNav {
   text-align: center;
   text-align: center; }
 .portfolio .thinDig {
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-align: center; }
 
 .pItem {
@@ -339,7 +339,7 @@ nav.siteNav {
   position: relative;
   font-family: RobotoRegular;
   padding: 15px;
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1rem;
   color: #282828;
   border: solid 5px #282828;
@@ -373,14 +373,16 @@ nav.siteNav {
     padding: 15px;
     background: rgba(232, 224, 0, 0.85);
     color: #282828;
-    font-size: 0.75rem;
+    font-size: 1rem;
     line-height: 1rem;
     opacity: 0; }
     .pItemImg .info .header {
       font-weight: bold;
       margin-bottom: 1rem; }
     .pItemImg .info .customer, .pItemImg .info .goal {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      font-family: RobotoRegular; }
     .pItemImg .info .viewsLikes {
       position: absolute;
       bottom: 15px;
@@ -460,7 +462,7 @@ nav.siteNav {
   .nItem:hover h6 {
     color: #e8e000; }
   .nItem .nItemSubHeader {
-    font-size: 0.75rem;
+    font-size: 1rem;
     line-height: 1rem;
     min-height: 60px;
     margin-top: 1.27778rem;
@@ -711,10 +713,10 @@ footer.col-xs-12 {
 .tagsFilter .tags .tagItem {
   display: inline-block;
   border: solid 2px #e8e000;
-  padding: 5px;
+  padding: 5px 10px;
   margin-right: 10px;
   font-family: RobotoBold;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #e8e000;
   text-transform: uppercase; }
   .tagsFilter .tags .tagItem:hover {
@@ -842,12 +844,14 @@ footer.col-xs-12 {
         margin-left: 1rem; }
 
 .servicesList {
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  margin-top: 2.5rem; }
 
 .serviceColumn a {
   display: block;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; }
   .serviceColumn a:hover {
     color: #e8e000; }
 
@@ -965,7 +969,8 @@ footer.entry-footer {
       background-size: 100%; } }
 @media screen and (max-width: 992px) {
   nav.siteNav .phones {
-    justify-content: center; } }
+    justify-content: center;
+    margin-top: 1rem; } }
 @media screen and (max-width: 992px) {
   nav.siteNav .socials {
     display: block;
@@ -1014,7 +1019,11 @@ footer.entry-footer {
 
 @media screen and (max-width: 992px) {
   .feedback .subHeader {
-    width: 100%; } }
+    width: 100%; }
+  .feedback .feedbackEnvelope {
+    text-align: center; }
+    .feedback .feedbackEnvelope .descr {
+      padding-right: 0; } }
 @media screen and (max-width: 768px) {
   .feedback.contacts form input[type=submit] {
     width: 80%; } }
@@ -1049,7 +1058,8 @@ footer.entry-footer {
 
 @media screen and (max-width: 768px) {
   nav.siteNav .socials {
-    margin-bottom: 35px; } }
+    margin-bottom: 2rem;
+    margin-top: 1rem; } }
 @media screen and (max-width: 992px) {
   nav.siteNav .socials form {
     top: auto;
@@ -1058,24 +1068,24 @@ footer.entry-footer {
     width: 100%; } }
 
 @media screen and (max-width: 992px) {
-  footer {
+  footer.col-xs-12 {
     text-align: center; }
-    footer .pdf {
+    footer.col-xs-12 .pdf {
       margin-bottom: 2rem;
       padding: 0 15px; }
-      footer .pdf a.download {
+      footer.col-xs-12 .pdf a.download {
         width: 50%;
         float: left;
         margin-top: 0 !important; }
-      footer .pdf a.social {
+      footer.col-xs-12 .pdf a.social {
         display: inline-block; } }
 @media screen and (max-width: 992px) {
-  footer .address {
+  footer.col-xs-12 .address {
     margin-bottom: 1rem; }
-    footer .address .leftAddress, footer .address .rightAddress {
+    footer.col-xs-12 .address .leftAddress, footer.col-xs-12 .address .rightAddress {
       margin-bottom: 0; } }
 @media screen and (max-width: 992px) {
-  footer .services {
+  footer.col-xs-12 .services {
     margin-bottom: 1rem; } }
 
 @media screen and (max-width: 992px) {
@@ -1089,5 +1099,9 @@ footer.entry-footer {
 @media screen and (max-width: 992px) {
   .dynamic-col-2 {
     width: 100%; } }
+
+@media screen and (max-width: 992px) {
+  .serviceColumn {
+    text-align: center; } }
 
 /*# sourceMappingURL=zhgi.css.map */

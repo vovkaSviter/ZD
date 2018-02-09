@@ -13,7 +13,7 @@
 //  l. navSearch
 //  m. Footer
 //  n. dynamic-col-
-//  o.
+//  o. servicesPage
 
 //  a. Variables
 $xs: 768px
@@ -42,6 +42,7 @@ nav.siteNav
   .phones
     @media screen and (max-width: $sm)
       justify-content: center
+      margin-top: 1rem
   .socials
     @media screen and (max-width: $sm)
       display: block
@@ -93,9 +94,14 @@ nav.siteNav
 
 //  f. Contacts
 .feedback
-  .subHeader
-    @media screen and (max-width: $sm)
+  @media screen and (max-width: $sm)
+    .subHeader
       width: 100%
+    .feedbackEnvelope
+      text-align: center
+      .descr
+        padding-right: 0
+
   &.contacts
     form
       input[type=submit]
@@ -160,7 +166,8 @@ nav.siteNav
 nav.siteNav
   .socials
     @media screen and (max-width: $xs)
-      margin-bottom: 35px
+      margin-bottom: 2rem
+      margin-top: 1rem
     form
       @media screen and (max-width: $sm)
         top: auto
@@ -169,7 +176,7 @@ nav.siteNav
         width: 100%
 
 //  m. Footer
-footer
+footer.col-xs-12
   @media screen and (max-width: $sm)
     text-align: center
     .pdf
@@ -200,3 +207,8 @@ footer
 .dynamic-col-2
   @media screen and (max-width: $sm)
     width: 100%
+
+//  o. servicesPage
+.serviceColumn
+  @media screen and (max-width: $sm)
+    text-align: center
