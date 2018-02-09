@@ -1,10 +1,10 @@
 body {
   background: white;
   color: #282828; }
-  body > .container-fluid {
+  body.home > .container-fluid {
     background: white; }
-    body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage, body > .container-fluid.servicesPage, body > .container-fluid.serviceSinglePage, body > .container-fluid.portfolioSinglePage {
-      background: #f9f9f9; }
+  body > .container-fluid {
+    background: #f9f9f9; }
 
 body {
   margin: 0; }
@@ -106,10 +106,10 @@ ul ul, ol ol, ul ol, ol ul {
 body {
   background: white;
   color: #282828; }
-  body > .container-fluid {
+  body.home > .container-fluid {
     background: white; }
-    body > .container-fluid.portfolioPage, body > .container-fluid.newsPage, body > .container-fluid.aboutPage, body > .container-fluid.servicesPage, body > .container-fluid.serviceSinglePage, body > .container-fluid.portfolioSinglePage {
-      background: #f9f9f9; }
+  body > .container-fluid {
+    background: #f9f9f9; }
 
 @keyframes rotate {
   0% {
@@ -854,38 +854,39 @@ footer {
 .serviceSinglePage .pageHeaderDescription {
   margin-top: 1.27778rem; }
 
-.portfolioSinglePage .portfolioSingleDescription .left > div {
+.portfolioSingleDescription .left > div {
   border-top: solid 1px #e6e4e6;
   padding-top: 1rem; }
-.portfolioSinglePage .portfolioSingleDescription .left .customerIs, .portfolioSinglePage .portfolioSingleDescription .left .goalIs {
+.portfolioSingleDescription .left .customerIs, .portfolioSingleDescription .left .goalIs {
   margin-bottom: 1rem;
   text-transform: uppercase;
   font-family: RobotoRegular;
   font-weight: bold; }
-.portfolioSinglePage .portfolioSingleDescription .zooKeeper {
+.portfolioSingleDescription .zooKeeper {
   margin-bottom: 1rem; }
-  .portfolioSinglePage .portfolioSingleDescription .zooKeeper a:hover {
+  .portfolioSingleDescription .zooKeeper a:hover {
     color: #e8e000; }
-  .portfolioSinglePage .portfolioSingleDescription .zooKeeper h3 {
+  .portfolioSingleDescription .zooKeeper h3 {
     font-family: RobotoRegular; }
-  .portfolioSinglePage .portfolioSingleDescription .zooKeeper > div:last-child {
+  .portfolioSingleDescription .zooKeeper > div:last-child {
     padding-top: 3rem; }
-.portfolioSinglePage .portfolioSingleDescription .right img {
+.portfolioSingleDescription .right img {
   display: block;
   width: 100%;
   margin-bottom: 1rem; }
-.portfolioSinglePage .paginLike {
+
+.paginLike {
   margin-top: 4rem;
   margin-bottom: 4rem; }
-  .portfolioSinglePage .paginLike .likeIt {
+  .paginLike .likeIt {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem; }
-    .portfolioSinglePage .paginLike .likeIt a {
+    .paginLike .likeIt a {
       text-align: center;
       min-width: 50px;
       min-height: calc(50px + 1rem); }
-      .portfolioSinglePage .paginLike .likeIt a:before {
+      .paginLike .likeIt a:before {
         content: "";
         display: block;
         width: 100%;
@@ -893,22 +894,22 @@ footer {
         background-image: url("../imgs/likeIt.png");
         background-position: center;
         background-repeat: no-repeat; }
-      .portfolioSinglePage .paginLike .likeIt a:hover {
+      .paginLike .likeIt a:hover {
         color: #e8e000; }
-        .portfolioSinglePage .paginLike .likeIt a:hover:before {
+        .paginLike .likeIt a:hover:before {
           background-image: url("../imgs/likeItOr.png"); }
-  .portfolioSinglePage .paginLike .pagination {
+  .paginLike .pagination {
     display: flex;
     justify-content: space-between; }
-    .portfolioSinglePage .paginLike .pagination i {
+    .paginLike .pagination i {
       display: inline-block; }
-    .portfolioSinglePage .paginLike .pagination .prev:hover {
+    .paginLike .pagination .prev:hover {
       color: #e8e000; }
-    .portfolioSinglePage .paginLike .pagination .prev i {
+    .paginLike .pagination .prev i {
       margin-right: 15px; }
-    .portfolioSinglePage .paginLike .pagination .next:hover {
+    .paginLike .pagination .next:hover {
       color: #e8e000; }
-    .portfolioSinglePage .paginLike .pagination .next i {
+    .paginLike .pagination .next i {
       margin-left: 15px; }
 
 @media screen and (max-width: 992px) {
