@@ -20,16 +20,6 @@
     ?>
     <header class="entry-header">
         <?php
-        if ( 'post' === get_post_type() ) :
-            echo '<div class="entry-meta">';
-            if ( is_single() ) :
-                twentyseventeen_posted_on();
-            else :
-                echo twentyseventeen_time_link();
-                twentyseventeen_edit_link();
-            endif;
-            echo '</div><!-- .entry-meta -->';
-        endif;
 
         if ( is_single() ) {
             the_title( '<h1 class="entry-title">', '</h1>' );
@@ -38,6 +28,7 @@
         }
         ?>
     </header><!-- .entry-header -->
+
 
     <?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
         <div class="post-thumbnail">
@@ -49,12 +40,9 @@
 
     <div class="entry-content">
         <?php
-        /* translators: %s: Name of current post */
-//        the_content( sprintf(
-//            __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
-//            get_the_title()
-//        ) );
+
         $content = get_the_content('',FALSE,''); // arguments remove 'more' text
+
         echo my_multi_col_v2($content);
 
         wp_link_pages( array(

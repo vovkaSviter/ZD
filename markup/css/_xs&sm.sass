@@ -12,7 +12,7 @@
 //  k. portfolioSinglePage
 //  l. navSearch
 //  m. Footer
-//  n.
+//  n. dynamic-col-
 //  o.
 
 //  a. Variables
@@ -189,3 +189,14 @@ footer
   .services
     @media screen and (max-width: $sm)
       margin-bottom: 1rem
+
+//  n. dynamic-col-
+*[class *= dynamic-col-]
+  @media screen and (max-width: $sm)
+    float: none
+.dynamic-col-1
+  @media screen and (max-width: $sm)
+    width: 100%
+.dynamic-col-2
+  @media screen and (max-width: $sm)
+    width: 100%

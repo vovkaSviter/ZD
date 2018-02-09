@@ -27,8 +27,8 @@
 //  u. servicesPage
 //  v. serviceSinglePage
 //  w. portfolioSinglePage
-//  x.
-//  y.
+//  x. dynamic-col-
+//  y. wp
 //  z.
 
 
@@ -367,6 +367,7 @@ nav.siteNav
   position: relative
   padding: 15px
   background: $bWhite
+  margin-bottom: 2rem
   .date
     font-size: .85rem
     line-height: 1rem
@@ -596,7 +597,7 @@ nav.siteNav
 //        margin: 0 auto
 
 //  h. Footer
-footer
+footer.col-xs-12
   background: $bGray
   color: $bWhite
   font-size: .75rem
@@ -855,16 +856,15 @@ footer
           margin-left: 1rem
 
 //  u. servicesPage
-.servicesPage
-  .servicesList
-    margin-bottom: 5rem
-  .serviceColumn
-    a
-      display: block
-      margin-top: 1rem
-      margin-bottom: 1rem
-      &:hover
-        color: $bOrange
+.servicesList
+  margin-bottom: 5rem
+.serviceColumn
+  a
+    display: block
+    margin-top: .5rem
+    margin-bottom: .5rem
+    &:hover
+      color: $bOrange
 
 //  v. serviceSinglePage
 .serviceSinglePage
@@ -936,6 +936,28 @@ footer
         color: $bOrange
       i
         margin-left: 15px
+
+
+//  x. dynamic-col-
+*[class *= dynamic-col-]
+  float: left
+.dynamic-col-1
+  width: 30%
+  margin-right: 5%
+.dynamic-col-2
+  width: 65%
+  img
+    display: block
+    width: 100%
+    height: auto
+    margin-bottom: 2rem
+
+//  y. wp
+.clear
+  &:after
+    content: ''
+    display: table
+    clear: both
 
 
 @import "_xs&sm.sass"

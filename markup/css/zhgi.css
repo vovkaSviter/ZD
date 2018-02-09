@@ -438,7 +438,8 @@ nav.siteNav {
   display: block;
   position: relative;
   padding: 15px;
-  background: white; }
+  background: white;
+  margin-bottom: 2rem; }
   .nItem .date {
     font-size: 0.85rem;
     line-height: 1rem;
@@ -620,57 +621,57 @@ nav.siteNav {
           background: #282828;
           color: white; }
 
-footer {
+footer.col-xs-12 {
   background: #282828;
   color: white;
   font-size: 0.75rem;
   line-height: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  footer .pdf {
+  footer.col-xs-12 .pdf {
     padding-left: 5rem;
     padding-right: 0; }
-    footer .pdf h4 {
+    footer.col-xs-12 .pdf h4 {
       text-transform: uppercase;
       margin-top: 2.55556rem; }
-      footer .pdf h4 + a.social {
+      footer.col-xs-12 .pdf h4 + a.social {
         margin-top: 1rem; }
-    footer .pdf a {
+    footer.col-xs-12 .pdf a {
       display: block;
       margin-bottom: 1rem; }
-      footer .pdf a i {
+      footer.col-xs-12 .pdf a i {
         display: inline-block;
         font-size: 2rem;
         margin-right: 0.5rem; }
-      footer .pdf a:first-child {
+      footer.col-xs-12 .pdf a:first-child {
         margin-top: 1.27778rem; }
-      footer .pdf a:hover {
+      footer.col-xs-12 .pdf a:hover {
         color: #e8e000; }
-      footer .pdf a.social {
+      footer.col-xs-12 .pdf a.social {
         margin-bottom: 0.25rem;
         margin-top: 0.25rem;
         text-transform: uppercase; }
-        footer .pdf a.social i {
+        footer.col-xs-12 .pdf a.social i {
           font-size: 1rem;
           margin-right: 0.25rem; }
-  footer .map h4 {
+  footer.col-xs-12 .map h4 {
     text-transform: uppercase; }
-  footer .map ul li {
+  footer.col-xs-12 .map ul li {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem; }
-    footer .map ul li:hover a {
+    footer.col-xs-12 .map ul li:hover a {
       color: #e8e000; }
-    footer .map ul li:first-child {
+    footer.col-xs-12 .map ul li:first-child {
       margin-top: 1rem; }
-  footer .address h4 {
+  footer.col-xs-12 .address h4 {
     text-transform: uppercase; }
-    footer .address h4 i {
+    footer.col-xs-12 .address h4 i {
       color: #e8e000; }
-  footer .address .leftAddress, footer .address .rightAddress {
+  footer.col-xs-12 .address .leftAddress, footer.col-xs-12 .address .rightAddress {
     margin-bottom: 2.55556rem; }
-    footer .address .leftAddress div, footer .address .rightAddress div {
+    footer.col-xs-12 .address .leftAddress div, footer.col-xs-12 .address .rightAddress div {
       margin-top: 1rem; }
-  footer .footerCopy {
+  footer.col-xs-12 .footerCopy {
     margin-top: 1rem; }
 
 .upTo {
@@ -840,13 +841,14 @@ footer {
         display: inline-block;
         margin-left: 1rem; }
 
-.servicesPage .servicesList {
+.servicesList {
   margin-bottom: 5rem; }
-.servicesPage .serviceColumn a {
+
+.serviceColumn a {
   display: block;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-  .servicesPage .serviceColumn a:hover {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+  .serviceColumn a:hover {
     color: #e8e000; }
 
 .serviceSinglePage .pageHeader {
@@ -911,6 +913,26 @@ footer {
       color: #e8e000; }
     .paginLike .pagination .next i {
       margin-left: 15px; }
+
+*[class*=dynamic-col-] {
+  float: left; }
+
+.dynamic-col-1 {
+  width: 30%;
+  margin-right: 5%; }
+
+.dynamic-col-2 {
+  width: 65%; }
+  .dynamic-col-2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem; }
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 @media screen and (max-width: 992px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
@@ -1043,5 +1065,17 @@ footer {
 @media screen and (max-width: 992px) {
   footer .services {
     margin-bottom: 1rem; } }
+
+@media screen and (max-width: 992px) {
+  *[class*=dynamic-col-] {
+    float: none; } }
+
+@media screen and (max-width: 992px) {
+  .dynamic-col-1 {
+    width: 100%; } }
+
+@media screen and (max-width: 992px) {
+  .dynamic-col-2 {
+    width: 100%; } }
 
 /*# sourceMappingURL=zhgi.css.map */
