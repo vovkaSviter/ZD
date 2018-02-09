@@ -61,10 +61,14 @@ $(document).ready(function(){
 
     //News
     $(function(){
-        var item = $('.nItem .imgKeeper');
+        var item = $('.nItem');
         var itemWidth = item.width();
 
-        item.css('height' , itemWidth *.65);
+        var imgItem = $('.nItem .imgKeeper');
+        var imgItemWidth = imgItem.width();
+
+        item.css('height' , itemWidth * 1.65);
+        imgItem.css('height' , imgItemWidth * .65);
 
     });
 
