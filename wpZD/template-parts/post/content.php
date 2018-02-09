@@ -45,13 +45,38 @@
 
         echo my_multi_col_v2($content);
 
-        wp_link_pages( array(
-            'before'      => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
-            'after'       => '</div>',
-            'link_before' => '<span class="page-number">',
-            'link_after'  => '</span>',
-        ) );
-        ?>
+
+        echo '
+        <div class="row">
+            <section class="paginLike col-xs-12">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-offset-4 col-md-8">
+                                <div class="likeIt">
+                                    <a href="#">
+                                        <span>Мне падабаецца!</span>
+                                    </a>
+                                </div>
+                                <div class="pagination">
+                                    <a href="'?> <?php echo get_previous_posts_link(); ?> <?php echo'" class="prev">
+                                        <i class="fa fa-angle-double-left fa-2x"></i>
+                                        Предыдущий
+                                    </a>
+                                    <a href="'?> <?php echo get_next_posts_link(); ?> <?php echo'" class="next">
+                                        Следующий
+                                        <i class="fa fa-angle-double-right fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        '
+        ;?>
+
     </div><!-- .entry-content -->
 
     <?php if ( is_single() ) : ?>

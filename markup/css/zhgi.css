@@ -929,10 +929,22 @@ footer.col-xs-12 {
     height: auto;
     margin-bottom: 2rem; }
 
-.clear:after {
+article.post:after {
   content: "";
   display: table;
   clear: both; }
+
+footer.entry-footer {
+  display: none; }
+
+#comments {
+  display: none; }
+
+.screen-reader-text {
+  display: none; }
+
+.navigation.post-navigation {
+  display: none; }
 
 @media screen and (max-width: 992px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
