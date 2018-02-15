@@ -401,50 +401,51 @@ get_header(); ?>
                                 <h3>
                                     Заказать услугу
                                 </h3>
-                                <form id="envelopeForm">
-                                    <label for="name">
-                                        <input id="name" type="text">
-                                        <span>Ваше имя*</span>
-                                    </label>
-
-                                    <label for="phone">
-                                        <input id="phone" type="tel">
-                                        <span>Телефон</span>
-                                    </label>
-
-                                    <label for="email">
-                                        <input id="email" type="email">
-                                        <span>E-Mail*</span>
-                                    </label>
-
-                                    <select>
-                                        <option>Создание сайта</option>
-                                        <option>Дизайн рекламы</option>
-                                        <option>Стратегия бренда</option>
-                                        <option>Прочее</option>
-                                    </select>
-
-                                    <label for="comment">
-                                        <textarea id="comment"></textarea>
-                                        <span>Комментарий</span>
-                                    </label>
-
-                                    <label for="file">
-                                        <span>Прикрепить файл</span><br>
-                                        <small>подсказка о форматах и прочее</small>
-                                        <input id="file" type="file">
-                                    </label>
-
-                                    <label for="check">
-                                        <input id="check" type="checkbox">
-                                        <span></span>
-                                        <small>
-                                            Согласие на обработку персональныйх данных
-                                            <a href="#"><b>(политика конфидециальности)</b></a>
-                                        </small>
-                                    </label>
-                                    <input id="submit" type="submit" placeholder="Отправить" disabled="disabled">
-                                </form>
+                                    <?php echo do_shortcode('[contact-form-7 id="113" title="Контактная форма 1"]') ?>
+<!--                                <form id="envelopeForm">-->
+<!--                                    <label for="name">-->
+<!--                                        <input id="name" type="text">-->
+<!--                                        <span>Ваше имя*</span>-->
+<!--                                    </label>-->
+<!---->
+<!--                                    <label for="phone">-->
+<!--                                        <input id="phone" type="tel">-->
+<!--                                        <span>Телефон</span>-->
+<!--                                    </label>-->
+<!---->
+<!--                                    <label for="email">-->
+<!--                                        <input id="email" type="email">-->
+<!--                                        <span>E-Mail*</span>-->
+<!--                                    </label>-->
+<!---->
+<!--                                    <select>-->
+<!--                                        <option>Создание сайта</option>-->
+<!--                                        <option>Дизайн рекламы</option>-->
+<!--                                        <option>Стратегия бренда</option>-->
+<!--                                        <option>Прочее</option>-->
+<!--                                    </select>-->
+<!---->
+<!--                                    <label for="comment">-->
+<!--                                        <textarea id="comment"></textarea>-->
+<!--                                        <span>Комментарий</span>-->
+<!--                                    </label>-->
+<!---->
+<!--                                    <label for="file">-->
+<!--                                        <span>Прикрепить файл</span><br>-->
+<!--                                        <small>подсказка о форматах и прочее</small>-->
+<!--                                        <input id="file" type="file">-->
+<!--                                    </label>-->
+<!---->
+<!--                                    <label for="check">-->
+<!--                                        <input id="check" type="checkbox">-->
+<!--                                        <span></span>-->
+<!--                                        <small>-->
+<!--                                            Согласие на обработку персональныйх данных-->
+<!--                                            <a href="#"><b>(политика конфидециальности)</b></a>-->
+<!--                                        </small>-->
+<!--                                    </label>-->
+<!--                                    <input id="submit" type="submit" placeholder="Отправить" disabled="disabled">-->
+<!--                                </form>-->
                             </div>
                         </div>
                     </div>

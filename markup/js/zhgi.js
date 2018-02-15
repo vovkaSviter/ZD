@@ -178,16 +178,45 @@ $(document).ready(function(){
     });
 
     //FeedbackSubmit behaviour
-    $(function(){
-        var check = $('#check');
-        var submit = $('#submit');
-        var checked = check.attr('checked');
+    //$(function(){
+    //    var check = $('#check');
+    //    var submit = $('#submit');
+    //    var checked = check.attr('checked');
+    //
+    //    check.click(function(){
+    //        submit.attr('disabled' , !this.checked);
+    //    });
+    //
+    //});
 
-        check.click(function(){
-            submit.attr('disabled' , !this.checked);
+    //FeedbackInputHeader behaviour
+    $(function(){
+
+        var input = $('.feedbackEnvelope input');
+        var textarea = $('.feedbackEnvelope textarea');
+
+        input.focusin(function(){
+            $(this).closest('label').find('.inputHeader').addClass('focused');
         });
 
+        input.focusout(function(){
+            $(this).closest('label').find('.inputHeader').removeClass('focused');
+        });
+
+        textarea.focusin(function(){
+            $(this).closest('label').find('.inputHeader').addClass('focused');
+        });
+
+        textarea.focusout(function(){
+            $(this).closest('label').find('.inputHeader').removeClass('focused');
+        });
+
+        textarea.on('change keyup keydown paste cut', textarea, function () {
+            $(this).height(0).height(this.scrollHeight);
+        }).find('textarea').change();
+
     });
+
 
     console.log('JQ is here');
 });
