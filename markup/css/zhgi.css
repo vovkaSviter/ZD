@@ -29,13 +29,13 @@ input, textarea {
 ::-moz-placeholder {
   color: #282828; }
 
-#navSearch {
+.socials form input[type='search'] {
   color: #e8e000; }
 
-#navSearch::-webkit-input-placeholder {
+.socials form input[type='search']::-webkit-input-placeholder {
   color: #e8e000; }
 
-#navSearch::-moz-placeholder {
+.socials form input[type='search']::-moz-placeholder {
   color: #e8e000; }
 
 @font-face {
@@ -190,11 +190,13 @@ nav.siteNav {
       position: absolute;
       top: 15%;
       left: -183px;
-      width: auto;
+      width: 100%;
       transition: all 0.25s; }
-      nav.siteNav .socials form #navSearch {
+      nav.siteNav .socials form input[type='search'] {
         border: solid 2px #e8e000;
         padding: 5px; }
+      nav.siteNav .socials form button {
+        display: none; }
     nav.siteNav .socials form.hidden {
       left: 0;
       width: 0;

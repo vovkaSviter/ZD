@@ -8,25 +8,33 @@ get_header(); ?>
 
     <div class="row">
         <section class="feedback contacts col-xs-12">
-            <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <h1 class="col-xs-12">Свяжитесь с нами</h1>
-                        <form class="col-xs-12">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-4">
-                                    <input type="text" placeholder="Ваше имя">
-                                </div>
-                                <div class="col-xs-12 col-md-4">
-                                    <input type="email" placeholder="Ваш e-mail">
-                                </div>
-                                <div class="col-xs-12 col-md-4">
-                                    <input type="tel" placeholder="Ваш телефон">
+            <div class="container">
+                <div class="row">
+                    <h1 class="col-xs-12">Свяжитесь с нами</h1>
+                    <div class="feedbackEnvelope col-xs-12">
+                        <div class="row">
+                            <div class="left col-xs-12 col-md-6">
+                                <h2>
+                                    Звони или пиши!<br>
+                                    Вторая строка заметно длиннее...<br>
+                                    И третья.
+                                </h2>
+                                <div class="descr">
+                                    <b>Сильный и эффективный бренд —</b>
+                                    это ключевой нематериальный актив
+                                    вашего бизнеса. Разработка бренда — сугубо индивидуальное
+                                    решение, удовлетворяющее целям и задачам именно вашего бизнеса.
+                                    Поэтому и расчет стоимости услуг по разработке фирменного стиля
+                                    в каждом случае проводится индивидуально.
                                 </div>
                             </div>
-                            <textarea placeholder="Ваше сообщение" rows="5"></textarea>
-                            <input type="submit" placeholder="отправить">
-                        </form>
+                            <div class="right col-xs-12 col-md-6">
+                                <h3>
+                                    Заказать услугу
+                                </h3>
+                                <?php echo do_shortcode('[contact-form-7 id="113" title="Контактная форма 1"]') ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

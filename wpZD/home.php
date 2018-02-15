@@ -401,7 +401,7 @@ get_header(); ?>
                                 <h3>
                                     Заказать услугу
                                 </h3>
-                                    <?php echo do_shortcode('[contact-form-7 id="113" title="Контактная форма 1"]') ?>
+                                <?php echo do_shortcode('[contact-form-7 id="113" title="Контактная форма 1"]') ?>
 <!--                                <form id="envelopeForm">-->
 <!--                                    <label for="name">-->
 <!--                                        <input id="name" type="text">-->

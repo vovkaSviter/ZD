@@ -137,9 +137,10 @@
                     </ul>
 
                     <div class="socials col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-2">
-                        <form class="hidden">
-                            <input  type="search" id="navSearch" name="q" maxlength="75" placeholder="Поиск по сайту">
-                        </form>
+<!--                        <form class="hidden">-->
+<!--                            <input  type="search" id="navSearch" name="q" maxlength="75" placeholder="Поиск по сайту">-->
+<!--                        </form>-->
+                        <?php get_search_form(); ?>
                         <i class="customSearch" id="navSearchTrigger"></i>
                         <a href="#" class="fa fa-youtube"></a>
                         <a href="#" class="fa fa-instagram"></a>
