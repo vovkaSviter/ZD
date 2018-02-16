@@ -179,9 +179,21 @@
             var owlKeeper = '<div class="owlKeeper col-xs-12">' +
                                 '<div class="row">' +
                                     '<div class="sophisticated owl-carousel">' +
-                                        '<img src="<?php echo wp_get_attachment_image_src(94); ?>">' +
-                                        '<img src="<?php echo get_the_post_thumbnail_url(86); ?>">' +
-                                        '<img src="<?php echo get_the_post_thumbnail_url(82); ?>">' +
+                                        '<?php
+                                            $id = 94;
+                                            $attachment_image = get_children( array(
+                                                'numberposts' => 3,
+                                                'post_mime_type' => 'image',
+                                                'post_parent' => $id
+//                                                'post_type' => 'attachment'
+                                            ) );
+                                            $attachment_image1 = array_shift($attachment_image);
+                                            $attachment_image2 = $attachment_image[0];
+                                            $attachment_image3 = end($attachment_image);
+                                        ?>' +
+                                        '<img src="<?php echo wp_get_attachment_url( $attachment_image1->ID ); ?>" alt="">' +
+                                        '<img src="<?php echo wp_get_attachment_url( $attachment_image2->ID ); ?>" alt="">' +
+                                        '<img src="<?php echo wp_get_attachment_url( $attachment_image3->ID ); ?>" alt="">' +
                                     '</div>' +
                                 '</div>' +
                             '</div>';
@@ -201,7 +213,7 @@
                                 items: 1
                             },
                             768: {
-                                items: 5
+                                items: 1
                             }
                         }
                     });
