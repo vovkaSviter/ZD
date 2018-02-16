@@ -102,7 +102,7 @@ get_header(); ?>
 
                     <div class="col-xs-12 col-md-4">
                         <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
-                        <div class="pItem pItemImg" style="background-image: url('<?php echo $bgImg[0] ?>')">
+                        <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
                             <div class="info">
                                 <div class="header"><?php the_title(); ?></div>
                                 Клиент:

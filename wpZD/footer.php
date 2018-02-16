@@ -130,7 +130,7 @@
 <script>
     $(document).ready(function(){
         var mgr = $('#mgr');
-        $(mgr).owlCarousel({
+        mgr.owlCarousel({
             nav: true,
             dots: true,
             items: 1,
@@ -170,6 +170,27 @@
                 }
             }
         });
+
+        $(function(){
+
+            var post = $('.pItemImg');
+            var owlKeeper = '<div class="owlKeeper col-xs-12">' +
+                                '<div class="row">hyu!</div>' +
+                            '</div>';
+
+            post.each(function(){
+
+                $(this).click(function(){
+                    var parent = $(this).closest('.col-xs-12.col-md-4');
+
+                    parent.before(owlKeeper);
+
+                });
+
+            });
+
+        });
+
     });
 </script>
 
