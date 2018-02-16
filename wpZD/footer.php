@@ -176,10 +176,18 @@
         $(function(){
 
             var post = $('.pItemImg');
-            var owlKeeper = '<div class="owlKeeper col-xs-12">' +
-                                '<div class="row">' +
-                                    '<div class="sophisticated owl-carousel">' +
-                                        '<?php
+
+
+            post.each(function(){
+
+                $(this).one('click', function(){
+                    var parent = $(this).closest('.col-xs-12.col-md-4');
+                    var postId = $(this).attr('id');
+
+                    var owlKeeper = '<div class="owlKeeper col-xs-12">' +
+                        '<div class="row">' +
+                        '<div class="sophisticated owl-carousel">' +
+                        '<?php
                                             $id = 94;
                                             $attachment_image = get_children( array(
                                                 'numberposts' => 3,
@@ -191,17 +199,12 @@
                                             $attachment_image2 = $attachment_image[0];
                                             $attachment_image3 = end($attachment_image);
                                         ?>' +
-                                        '<img src="<?php echo wp_get_attachment_url( $attachment_image1->ID ); ?>" alt="">' +
-                                        '<img src="<?php echo wp_get_attachment_url( $attachment_image2->ID ); ?>" alt="">' +
-                                        '<img src="<?php echo wp_get_attachment_url( $attachment_image3->ID ); ?>" alt="">' +
-                                    '</div>' +
-                                '</div>' +
-                            '</div>';
-
-            post.each(function(){
-
-                $(this).click(function(){
-                    var parent = $(this).closest('.col-xs-12.col-md-4');
+                        '<img src="<?php echo wp_get_attachment_url( $attachment_image1->ID ); ?>" alt="">' +
+                        '<img src="<?php echo wp_get_attachment_url( $attachment_image2->ID ); ?>" alt="">' +
+                        '<img src="<?php echo wp_get_attachment_url( $attachment_image3->ID ); ?>" alt="">' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
 
                     parent.before(owlKeeper);
 
