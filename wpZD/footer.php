@@ -171,11 +171,19 @@
             }
         });
 
+
+
         $(function(){
 
             var post = $('.pItemImg');
             var owlKeeper = '<div class="owlKeeper col-xs-12">' +
-                                '<div class="row">hyu!</div>' +
+                                '<div class="row">' +
+                                    '<div class="sophisticated owl-carousel">' +
+                                        '<img src="<?php echo wp_get_attachment_image_src(94); ?>">' +
+                                        '<img src="<?php echo get_the_post_thumbnail_url(86); ?>">' +
+                                        '<img src="<?php echo get_the_post_thumbnail_url(82); ?>">' +
+                                    '</div>' +
+                                '</div>' +
                             '</div>';
 
             post.each(function(){
@@ -185,11 +193,26 @@
 
                     parent.before(owlKeeper);
 
+                    $('.sophisticated').owlCarousel({
+                        nav: true,
+                        dots: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            768: {
+                                items: 5
+                            }
+                        }
+                    });
+
                 });
 
             });
 
         });
+
+
 
     });
 </script>
