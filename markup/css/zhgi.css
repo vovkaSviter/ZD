@@ -978,6 +978,9 @@ footer.entry-footer {
     background-size: contain;
     background-repeat: no-repeat; }
 
+.current-cat a {
+  color: #e8e000; }
+
 @media screen and (max-width: 992px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }
