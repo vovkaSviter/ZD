@@ -981,6 +981,11 @@ footer.entry-footer {
 .current-cat a {
   color: #e8e000; }
 
+.search-results .entry-meta {
+  display: none; }
+.search-results .link-more {
+  display: none; }
+
 @media screen and (max-width: 992px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }

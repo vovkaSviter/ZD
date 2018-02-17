@@ -14,6 +14,12 @@ get_header(); ?>
     <div class="row">
         <div class="container">
             <div class="row">
+                <?php
+                if(function_exists('bcn_display'))
+                {
+                    bcn_display();
+                }
+                ?>
                 <section class="col-xs-12">
 
                     <div class="wrap">
@@ -28,7 +34,7 @@ get_header(); ?>
 
                         <div id="primary" class="content-area">
                             <main id="main" class="site-main" role="main">
-
+                                <ol>
                                 <?php
                                 if ( have_posts() ) :
                                     /* Start the Loop */
@@ -39,7 +45,14 @@ get_header(); ?>
                                          * If you want to overload this in a child theme then include a file
                                          * called content-search.php and that will be used instead.
                                          */
-                                        get_template_part( 'template-parts/post/content', 'excerpt' );
+
+                                        ?>
+                                        <li>
+                                            <?php
+                                                get_template_part( 'template-parts/post/content', 'excerpt' );
+                                            ?>
+                                        </li>
+                                        <?php
 
                                     endwhile; // End of the loop.
 
@@ -57,6 +70,7 @@ get_header(); ?>
 
                                 endif;
                                 ?>
+                                </ol>
 
                             </main><!-- #main -->
                         </div><!-- #primary -->

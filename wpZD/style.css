@@ -985,6 +985,14 @@ footer.entry-footer {
     background-size: contain;
     background-repeat: no-repeat; }
 
+.current-cat a {
+    color: #e8e000; }
+
+.search-results .entry-meta {
+    display: none; }
+.search-results .link-more {
+    display: none; }
+
 @media screen and (max-width: 992px) {
     nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
         text-align: center; } }
@@ -1138,5 +1146,14 @@ footer.entry-footer {
 @media screen and (max-width: 992px) {
     .serviceColumn {
         text-align: center; } }
+
+@media screen and (max-width: 992px) {
+    .text404 h1 {
+        text-align: center; }
+    .text404 p {
+        text-align: center; }
+    .text404 a {
+        float: none;
+        margin: 0 auto; } }
 
 /*# sourceMappingURL=zhgi.css.map */
