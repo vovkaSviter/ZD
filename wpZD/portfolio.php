@@ -10,6 +10,12 @@ get_header(); ?>
             <div class="row">
                 <div class="container">
                     <div class="row">
+                        <?php
+                        if(function_exists('bcn_display'))
+                        {
+                            bcn_display();
+                        }
+                        ?>
                         <h1>Портфолио</h1>
                     </div>
                 </div>

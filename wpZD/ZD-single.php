@@ -11,6 +11,12 @@ get_header();  ?>
             <div class="row">
                 <div class="container">
                     <div class="row">
+                        <?php
+                        if(function_exists('bcn_display'))
+                        {
+                            bcn_display();
+                        }
+                        ?>
                         <div class="wrap">
                             <div id="primary" class="content-area">
                                 <main id="main" class="site-main" role="main">

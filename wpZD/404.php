@@ -13,6 +13,12 @@
 get_header(); ?>
 
     <div class="row">
+        <?php
+        if(function_exists('bcn_display'))
+            {
+                bcn_display();
+            }
+        ?>
         <section class="error404 col-xs-12">
             <div class="container">
                 <div class="row">

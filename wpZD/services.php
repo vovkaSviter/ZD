@@ -10,6 +10,12 @@ get_header(); ?>
         <section class="pageHeader col-xs-12">
             <div class="container">
                 <div class="row">
+                    <?php
+                    if(function_exists('bcn_display'))
+                    {
+                        bcn_display();
+                    }
+                    ?>
                     <h1>Услуги</h1>
                 </div>
             </div>

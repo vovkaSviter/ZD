@@ -10,6 +10,12 @@ get_header(); ?>
         <section class="feedback contacts col-xs-12">
             <div class="container">
                 <div class="row">
+                    <?php
+                    if(function_exists('bcn_display'))
+                    {
+                        bcn_display();
+                    }
+                    ?>
                     <h1 class="col-xs-12">Свяжитесь с нами</h1>
                     <div class="feedbackEnvelope col-xs-12">
                         <div class="row">
