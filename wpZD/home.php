@@ -101,6 +101,21 @@ get_header(); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                     <div class="col-xs-12 col-md-4">
+                        <div class="hyunyaMyunya owl-carousel">
+                            <?php
+                                $attachments = get_children(array('post_parent' => $post->ID,
+                                    'post_status' => 'inherit',
+                                    'post_type' => 'attachment',
+                                    'post_mime_type' => 'image',
+                                    'order' => 'ASC',
+                                    'orderby' => 'menu_order ID'));
+
+                                foreach($attachments as $att_id => $attachment) {
+                                    $full_img_url = wp_get_attachment_image($attachment->ID);
+                                    echo $full_img_url;
+                                }
+                            ?>
+                        </div>
                         <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                         <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
                             <div class="info">
