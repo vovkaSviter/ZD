@@ -3,8 +3,6 @@ body {
   color: #282828; }
   body.home > .container-fluid {
     background: white; }
-  body > .container-fluid {
-    background: #f9f9f9; }
 
 body {
   margin: 0; }
@@ -62,7 +60,7 @@ html {
 
 body {
   font-family: RobotoLight;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.27778rem; }
 
 h1 {
@@ -108,8 +106,6 @@ body {
   color: #282828; }
   body.home > .container-fluid {
     background: white; }
-  body > .container-fluid {
-    background: #f9f9f9; }
 
 @keyframes rotate {
   0% {
@@ -955,6 +951,33 @@ footer.entry-footer {
 .navigation.post-navigation {
   display: none; }
 
+.error404 {
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+  .error404 .text404 {
+    height: 75vh; }
+    .error404 .text404 h1 {
+      text-align: right; }
+    .error404 .text404 p {
+      text-align: right; }
+    .error404 .text404 a {
+      display: block;
+      padding: 1rem 3rem;
+      border: solid 1px #282828;
+      color: #282828;
+      text-align: center;
+      float: right;
+      min-width: 25%; }
+      .error404 .text404 a:hover {
+        color: white;
+        background: #282828; }
+  .error404 .img404 {
+    height: 75vh;
+    background-image: url("../imgs/homer2.jpg");
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
 @media screen and (max-width: 992px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }
@@ -1108,5 +1131,14 @@ footer.entry-footer {
 @media screen and (max-width: 992px) {
   .serviceColumn {
     text-align: center; } }
+
+@media screen and (max-width: 992px) {
+  .text404 h1 {
+    text-align: center; }
+  .text404 p {
+    text-align: center; }
+  .text404 a {
+    float: none;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=zhgi.css.map */
