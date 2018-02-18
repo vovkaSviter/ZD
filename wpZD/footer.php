@@ -171,7 +171,7 @@
             }
         });
 
-        $('.hyunyaMyunya').owlCarousel({
+        $('.cornerStone').owlCarousel({
             nav: true,
             dots: true,
             responsive: {

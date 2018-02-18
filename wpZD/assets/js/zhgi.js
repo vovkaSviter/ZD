@@ -218,6 +218,32 @@ $(document).ready(function(){
 
     });
 
+    // Cornerstone behaviour
+
+    $(function(){
+        var item = $('.pItemImg');
+
+        item.click(function(){
+            var thisOwlKeeper = $(this).prev('.owlKeeper');
+            var thisRow = $(this).closest('.row');
+
+            console.log(thisOwlKeeper);
+
+            //var cloned = thisOwlKeeper.clone();
+            //console.log(cloned);
+            //cloned.prependTo(thisRow);
+            thisOwlKeeper.clone().prependTo(thisRow).css({
+                'visibility': 'visible',
+                'height': 'auto'
+            });
+
+        });
+
+
+    });
+
+
+
     console.log('JQ is here');
 });
 

@@ -97,24 +97,33 @@ get_header(); ?>
                         </a>
                     </div>
 
-                    <?php query_posts('tag=pervaya-plashka'); ?>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <?php
+                        $the_query = new WP_Query( array(
+                                        'tag'=>'pervaya-plashka',
+                                        'posts_per_page' => 2
+                                    ));
+                    ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
 
-                    <div class="col-xs-12 col-md-4">
-                        <div class="hyunyaMyunya owl-carousel">
-                            <?php
-                                $attachments = get_children(array('post_parent' => $post->ID,
-                                    'post_status' => 'inherit',
-                                    'post_type' => 'attachment',
-                                    'post_mime_type' => 'image',
-                                    'order' => 'ASC',
-                                    'orderby' => 'menu_order ID'));
+                    <div class="pItemWrapper col-xs-12 col-md-4">
+                        <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+                            <div class="cornerStone owl-carousel">
+                                <?php
+                                    $attachments = get_children(array('post_parent' => $post->ID,
+                                        'post_status' => 'inherit',
+                                        'post_type' => 'attachment',
+                                        'post_mime_type' => 'image',
+                                        'order' => 'ASC',
+                                        'orderby' => 'menu_order ID'));
 
-                                foreach($attachments as $att_id => $attachment) {
-                                    $full_img_url = wp_get_attachment_image($attachment->ID);
-                                    echo $full_img_url;
-                                }
-                            ?>
+                                    foreach($attachments as $att_id => $attachment) {
+                                        $full_img_url = wp_get_attachment_image($attachment->ID);
+                                        echo $full_img_url;
+                                    }
+                                ?>
+                            </div>
+                            <span class="cutOut">close</span>
                         </div>
                         <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                         <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
@@ -146,6 +155,128 @@ get_header(); ?>
                         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
                     <?php endif; ?>
 
+                </div>
+
+                <div class="row">
+                    <?php
+                    $the_query = new WP_Query( array(
+                        'tag'=>'pervaya-plashka',
+                        'offset'=> 2,
+                        'posts_per_page' => 3
+                    ));
+                    ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
+
+                        <div class="pItemWrapper col-xs-12 col-md-4">
+                            <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+                                <div class="cornerStone owl-carousel">
+                                    <?php
+                                    $attachments = get_children(array('post_parent' => $post->ID,
+                                        'post_status' => 'inherit',
+                                        'post_type' => 'attachment',
+                                        'post_mime_type' => 'image',
+                                        'order' => 'ASC',
+                                        'orderby' => 'menu_order ID'));
+
+                                    foreach($attachments as $att_id => $attachment) {
+                                        $full_img_url = wp_get_attachment_image($attachment->ID);
+                                        echo $full_img_url;
+                                    }
+                                    ?>
+                                </div>
+                                <span class="cutOut">close</span>
+                            </div>
+                            <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
+                            <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
+                                <div class="info">
+                                    <div class="header"><?php the_title(); ?></div>
+                                    Клиент:
+                                    <div class="customer">
+                                        <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                    </div>
+                                    Задача:
+                                    <div class="goal">
+                                        <?php $key="Задача"; echo get_post_meta($post->ID, $key, true); ?>
+                                    </div>
+                                    <div class="viewsLikes">
+                                    <span class="views">
+                                        <i class="fa fa-eye"></i> &mdash;
+                                        <span class="viewsNr">5587</span>
+                                    </span>
+                                    <span class="likes">
+                                        <i class="fa fa-thumbs-o-up"></i> &mdash;
+                                        <span class="likesNr">13441</span>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php endwhile; else : ?>
+                        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                    <?php endif; ?>
+                </div>
+
+                <div class="row">
+                    <?php
+                    $the_query = new WP_Query( array(
+                        'tag'=>'pervaya-plashka',
+                        'offset'=> 5,
+                        'posts_per_page' => 3
+                    ));
+                    ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
+
+                        <div class="pItemWrapper col-xs-12 col-md-4">
+                            <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+                                <div class="cornerStone owl-carousel">
+                                    <?php
+                                    $attachments = get_children(array('post_parent' => $post->ID,
+                                        'post_status' => 'inherit',
+                                        'post_type' => 'attachment',
+                                        'post_mime_type' => 'image',
+                                        'order' => 'ASC',
+                                        'orderby' => 'menu_order ID'));
+
+                                    foreach($attachments as $att_id => $attachment) {
+                                        $full_img_url = wp_get_attachment_image($attachment->ID);
+                                        echo $full_img_url;
+                                    }
+                                    ?>
+                                </div>
+                                <span class="cutOut">close</span>
+                            </div>
+                            <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
+                            <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
+                                <div class="info">
+                                    <div class="header"><?php the_title(); ?></div>
+                                    Клиент:
+                                    <div class="customer">
+                                        <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                    </div>
+                                    Задача:
+                                    <div class="goal">
+                                        <?php $key="Задача"; echo get_post_meta($post->ID, $key, true); ?>
+                                    </div>
+                                    <div class="viewsLikes">
+                                    <span class="views">
+                                        <i class="fa fa-eye"></i> &mdash;
+                                        <span class="viewsNr">5587</span>
+                                    </span>
+                                    <span class="likes">
+                                        <i class="fa fa-thumbs-o-up"></i> &mdash;
+                                        <span class="likesNr">13441</span>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php endwhile; else : ?>
+                        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                    <?php endif; ?>
                 </div>
 
                 <div class="row">
