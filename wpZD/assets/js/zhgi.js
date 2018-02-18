@@ -227,15 +227,20 @@ $(document).ready(function(){
             var thisOwlKeeper = $(this).prev('.owlKeeper');
             var thisRow = $(this).closest('.row');
 
-            console.log(thisOwlKeeper);
-
-            //var cloned = thisOwlKeeper.clone();
-            //console.log(cloned);
-            //cloned.prependTo(thisRow);
             thisOwlKeeper.clone().prependTo(thisRow).css({
                 'visibility': 'visible',
                 'height': 'auto'
             });
+
+        });
+
+        //var cutOut = $('.cutOut');
+
+        $('.portfolio').on('click','.cutOut',function(){
+
+            var thisOwl = $(this).closest('.owlKeeper');
+
+            thisOwl.remove();
 
         });
 
