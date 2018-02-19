@@ -223,9 +223,13 @@ $(document).ready(function(){
     $(function(){
         var item = $('.pItemImg');
 
-        item.click(function(){
+            item.click(function(){
             var thisOwlKeeper = $(this).prev('.owlKeeper');
             var thisRow = $(this).closest('.row');
+
+            if($('.row.each>.owlKeeper').length){
+                $('.row.each>.owlKeeper').remove();
+            }
 
             thisOwlKeeper.clone().prependTo(thisRow).css({
                 'visibility': 'visible',

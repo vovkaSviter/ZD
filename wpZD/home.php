@@ -83,7 +83,7 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row each">
 
                     <div class="col-xs-12 col-md-4">
                         <a href="<?php echo get_tag_link(21); ?>" class="pItem pItemText">
@@ -157,7 +157,7 @@ get_header(); ?>
 
                 </div>
 
-                <div class="row">
+                <div class="row each">
                     <?php
                     $the_query = new WP_Query( array(
                         'tag'=>'pervaya-plashka',
@@ -218,7 +218,7 @@ get_header(); ?>
                     <?php endif; ?>
                 </div>
 
-                <div class="row">
+                <div class="row each">
                     <?php
                     $the_query = new WP_Query( array(
                         'tag'=>'pervaya-plashka',
