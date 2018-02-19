@@ -108,6 +108,29 @@ get_header(); ?>
 
                     <div class="pItemWrapper col-xs-12 col-md-4">
                         <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+                            <div class="owlDescription">
+                                Клиент:
+                                <div class="customer">
+                                    <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                </div>
+                                Бренд:
+                                <div class="goal">
+                                    <?php $key="Бренд"; echo get_post_meta($post->ID, $key, true); ?>
+                                </div>
+                                Краткое описание проекта:
+                                <div class="goal">
+                                    <?php $key="ПроектКратко"; echo get_post_meta($post->ID, $key, true); ?>
+                                </div>
+                                <a href="<?php echo get_permalink(); ?>" class="descrPermalink">Подробнее</a>
+                                Услуги:
+                                <div class="goal">
+                                    <?php
+                                        foreach( get_the_category() as $category ){
+                                        $catID = $category->cat_ID ;
+                                        echo '<a href="'. get_category_link($catID) . '">' . $category->cat_name . '</a>';
+                                    }  ?>
+                                </div>
+                            </div>
                             <div class="cornerStone owl-carousel">
                                 <?php
                                     $attachments = get_children(array('post_parent' => $post->ID,
@@ -124,6 +147,7 @@ get_header(); ?>
                                 ?>
                             </div>
                             <span class="cutOut fa fa-close"></span>
+                            <div class="owlDescriptionTrigger">Описание проекта</div>
                         </div>
                         <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                         <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
@@ -170,6 +194,7 @@ get_header(); ?>
 
                         <div class="pItemWrapper col-xs-12 col-md-4">
                             <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+
                                 <div class="cornerStone owl-carousel">
                                     <?php
                                     $attachments = get_children(array('post_parent' => $post->ID,

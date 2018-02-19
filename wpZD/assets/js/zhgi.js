@@ -222,6 +222,7 @@ $(document).ready(function(){
 
     $(function(){
         var item = $('.pItemImg');
+        var portfolio = $('.portfolio');
 
             item.click(function(){
                 var thisOwlKeeper = $(this).prev('.owlKeeper');
@@ -252,12 +253,18 @@ $(document).ready(function(){
 
             });
 
-        $('.portfolio').on('click','.cutOut',function(){
+        portfolio.on('click','.cutOut',function(){
             var thisOwl = $(this).closest('.owlKeeper');
 
             thisOwl.remove();
         });
 
+        portfolio.on('click','.owlDescriptionTrigger',function(){
+            var thisDescription = $(this).closest('.owlKeeper').find('.owlDescription');
+            thisDescription.toggle();
+
+            $(this).toggleClass('active');
+        });
 
     });
 

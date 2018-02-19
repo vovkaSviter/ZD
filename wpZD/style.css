@@ -997,6 +997,35 @@ footer.entry-footer {
     margin-bottom: 25px;
     border-bottom: solid 1px #e7e5e7;
     text-align: right; }
+.owlKeeper.clOned .owlDescription {
+    display: none;
+    width: 35%;
+    height: 500px;
+    position: absolute;
+    background: #e8e000;
+    z-index: 2;
+    color: white; }
+.owlKeeper.clOned .owlDescription .descrPermalink {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: solid 2px white;
+    color: white;
+    text-align: center; }
+.owlKeeper.clOned .owlDescription .descrPermalink:hover {
+    color: #e8e000;
+    background: white; }
+.owlKeeper.clOned .owlDescriptionTrigger {
+    min-width: 100px;
+    float: left;
+    border: solid 1px #e8e000;
+    color: #e8e000;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 2;
+    cursor: pointer; }
+.owlKeeper.clOned .owlDescriptionTrigger.active {
+    background: #e8e000;
+    color: white; }
 .owlKeeper.clOned img {
     height: 500px; }
 .owlKeeper.clOned .owl-nav {
@@ -1020,7 +1049,7 @@ footer.entry-footer {
     cursor: pointer;
     position: relative;
     top: 1rem;
-    z-index: 2}
+    z-index: 2; }
 
 @media screen and (max-width: 992px) {
     nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {

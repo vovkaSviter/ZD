@@ -1016,6 +1016,35 @@ footer.entry-footer
   margin-bottom: 25px
   border-bottom: solid 1px $bGrayLight
   text-align: right
+  .owlDescription
+    display: none
+    width: 35%
+    height: 500px
+    position: absolute
+    background: $bOrange
+    z-index: 2
+    color: $bWhite
+    .descrPermalink
+      display: inline-block
+      padding: 1rem 2rem
+      border: solid 2px $bWhite
+      color: $bWhite
+      text-align: center
+      &:hover
+        color: $bOrange
+        background: $bWhite
+  .owlDescriptionTrigger
+    min-width: 100px
+    float: left
+    border: solid 1px $bOrange
+    color: $bOrange
+    padding: 1rem 2rem
+    position: relative
+    z-index: 2
+    cursor: pointer
+    &.active
+      background: $bOrange
+      color: $bWhite
   img
     height: 500px
   .owl-nav
