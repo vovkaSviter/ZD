@@ -1012,8 +1012,33 @@ footer.entry-footer
   .link-more
     display: none
 
-.cornerStone
-
-
+.owlKeeper.clOned
+  margin-bottom: 25px
+  border-bottom: solid 1px $bGrayLight
+  text-align: right
+  img
+    height: 500px
+  .owl-nav
+    display: none
+  .owl-dots
+    position: relative
+    bottom: -2.25rem
+    text-align: center
+    .owl-dot
+      display: inline-block
+      width: 1rem
+      height: 1rem
+      margin-left: .25rem
+      margin-right: .25rem
+      border-radius: 50%
+      border: solid 2px $bGray
+      background: transparent
+      &.active
+        background: $bGray
+  .cutOut
+    cursor: pointer
+    position: relative
+    top: 1rem
+    z-index: 2
 
 @import "_xs&sm.sass"

@@ -123,7 +123,7 @@ get_header(); ?>
                                     }
                                 ?>
                             </div>
-                            <span class="cutOut">close</span>
+                            <span class="cutOut fa fa-close"></span>
                         </div>
                         <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                         <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
@@ -185,7 +185,7 @@ get_header(); ?>
                                     }
                                     ?>
                                 </div>
-                                <span class="cutOut">close</span>
+                                <span class="cutOut fa fa-close"></span>
                             </div>
                             <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                             <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
@@ -246,7 +246,7 @@ get_header(); ?>
                                     }
                                     ?>
                                 </div>
-                                <span class="cutOut">close</span>
+                                <span class="cutOut fa fa-close"></span>
                             </div>
                             <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                             <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">

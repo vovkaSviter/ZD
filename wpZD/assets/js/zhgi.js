@@ -224,28 +224,38 @@ $(document).ready(function(){
         var item = $('.pItemImg');
 
             item.click(function(){
-            var thisOwlKeeper = $(this).prev('.owlKeeper');
-            var thisRow = $(this).closest('.row');
+                var thisOwlKeeper = $(this).prev('.owlKeeper');
+                var thisRow = $(this).closest('.row');
 
-            if($('.row.each>.owlKeeper').length){
-                $('.row.each>.owlKeeper').remove();
-            }
+                if($('.row.each>.owlKeeper').length){
+                    $('.row.each>.owlKeeper').remove();
+                }
 
-            thisOwlKeeper.clone().prependTo(thisRow).css({
-                'visibility': 'visible',
-                'height': 'auto'
+                thisOwlKeeper.clone().prependTo(thisRow).css({
+                    'visibility': 'visible',
+                    'height': '575'
+                }).addClass('clOned');
+
+                var owl = $('.row.each>.owlKeeper').find('.owl-carousel');
+                owl.owlCarousel({
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        768: {
+                            items: 1
+                        }
+                    },
+                    navigation: true,
+                    dots: true
+                });
+
             });
 
-        });
-
-        //var cutOut = $('.cutOut');
-
         $('.portfolio').on('click','.cutOut',function(){
-
             var thisOwl = $(this).closest('.owlKeeper');
 
             thisOwl.remove();
-
         });
 
 

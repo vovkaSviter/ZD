@@ -986,6 +986,35 @@ footer.entry-footer {
 .search-results .link-more {
   display: none; }
 
+.owlKeeper.clOned {
+  margin-bottom: 25px;
+  border-bottom: solid 1px #e7e5e7;
+  text-align: right; }
+  .owlKeeper.clOned img {
+    height: 500px; }
+  .owlKeeper.clOned .owl-nav {
+    display: none; }
+  .owlKeeper.clOned .owl-dots {
+    position: relative;
+    bottom: -2.25rem;
+    text-align: center; }
+    .owlKeeper.clOned .owl-dots .owl-dot {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      border-radius: 50%;
+      border: solid 2px #282828;
+      background: transparent; }
+      .owlKeeper.clOned .owl-dots .owl-dot.active {
+        background: #282828; }
+  .owlKeeper.clOned .cutOut {
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+    z-index: 2; }
+
 @media screen and (max-width: 992px) {
   nav.siteNav .logo, nav.siteNav .phones, nav.siteNav .socials, nav.siteNav .navList {
     text-align: center; } }
