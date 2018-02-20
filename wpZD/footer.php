@@ -21,11 +21,11 @@
             <div class="container">
                 <div class="row">
                     <div class="pdf col-xs-12 col-md-2 pull-right">
-                        <a href="#" class="download">
+                        <a href="<?php echo get_page_link(133);?>" class="download">
                             <i class="fa fa-file-pdf-o"></i>
                             PDF-презентация
                         </a>
-                        <a href="#" class="download">
+                        <a href="<?php echo get_page_link(7);?>" class="download">
                             <i class="fa fa-comments-o"></i>
                             Обратная связь
                         </a>

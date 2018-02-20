@@ -122,8 +122,10 @@ get_header(); ?>
                                     <?php $key="ПроектКратко"; echo get_post_meta($post->ID, $key, true); ?>
                                 </div>
                                 <a href="<?php echo get_permalink(); ?>" class="descrPermalink">Подробнее</a>
+                                </br>
+                                </br>
                                 Услуги:
-                                <div class="goal">
+                                <div class="tags">
                                     <?php
                                         foreach( get_the_category() as $category ){
                                         $catID = $category->cat_ID ;
