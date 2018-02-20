@@ -88,7 +88,10 @@ get_header(); ?>
                     <div class="col-xs-12 col-md-4">
                         <a href="<?php echo get_tag_link(21); ?>" class="pItem pItemText">
                             <div class="header">
-                                <?php single_tag_title(); ?>
+                                <?php
+                                $tagName = get_term(21, 'post_tag');
+                                echo $tagName->name;
+                                ?>
                             </div>
                             <?php echo term_description( 21, 'post_tag' ) ?>
                             <div class="more">
@@ -311,7 +314,10 @@ get_header(); ?>
                     <div class="col-xs-12 col-md-4">
                         <a href="<?php echo get_tag_link(22); ?>" class="pItem pItemText">
                             <div class="header">
-                                <?php single_tag_title(); ?>
+                                <?php
+                                    $tagName = get_term(22, 'post_tag');
+                                    echo $tagName->name;
+                                ?>
                             </div>
                             <?php echo term_description( 22, 'post_tag' ) ?>
                             <div class="more">
