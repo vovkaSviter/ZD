@@ -49,7 +49,7 @@ get_header(); ?>
                                     Используя таблицу интегралов элементарных функций, получим: определитель
                                     системы линейных уравнений стабилизирует акцепт.
                                 </div>
-                                <a href="#" download>
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/pdf/download1.txt" download>
                                     Скачать презентацию
                                     <i class="fa fa-angle-double-right fa-2x"></i>
                                 </a>
@@ -66,7 +66,7 @@ get_header(); ?>
                                     последовательно реквизирует предел функции. Объект права, не вдаваясь в
                                     подробности, последовательно реквизирует кредитор. Лист Мёбиуса основан на опыте.
                                 </div>
-                                <a href="#" download>
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/pdf/download2.txt" download>
                                     Скачать презентацию
                                     <i class="fa fa-angle-double-right fa-2x"></i>
                                 </a>
@@ -84,7 +84,7 @@ get_header(); ?>
                                     условие сходимости упорядочивает невероятный взаимозачет. Не факт, что
                                     геодезическая линия своевременно исполняет
                                 </div>
-                                <a href="#" download>
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/pdf/download3.txt" download>
                                     Скачать презентацию
                                     <i class="fa fa-angle-double-right fa-2x"></i>
                                 </a>
