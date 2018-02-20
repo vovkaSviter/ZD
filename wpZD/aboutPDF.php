@@ -21,7 +21,9 @@ get_header(); ?>
 
                         <div class="content col-xs-12 col-md-offset-3 col-md-6">
                             <div class="row">
-                                <h1 class="col-xs-12">PDF-презентация</h1>
+                                <h1 class="col-xs-12">
+                                    <?php wp_title(''); ?>
+                                </h1>
                                 <div class="text col-xs-12">
                                     Дуализм раскладывает на элементы бабувизм, открывая новые горизонты.
                                     Отношение к современности амбивалентно.

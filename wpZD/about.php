@@ -15,7 +15,9 @@ get_header(); ?>
                         bcn_display();
                     }
                     ?>
-                    <h1>Новости</h1>
+                    <h1>
+                        <?php wp_title(''); ?>
+                    </h1>
                 </div>
             </div>
         </section>
