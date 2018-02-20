@@ -286,6 +286,22 @@ nav.siteNav
     position: absolute
     bottom: 15px
     left: 15px
+.customer, .goal
+  text-transform: uppercase
+  margin-bottom: 1rem
+  margin-top: .5rem
+  font-family: RobotoRegular
+.tags
+  margin-bottom: 1rem
+  margin-top: .5rem
+  font-family: RobotoRegular
+  a
+    text-decoration: underline
+    display: inline-block
+    margin-right: .5rem
+    font-style: italic
+    &:hover
+      text-decoration: none
 .pItemImg
   position: relative
   background-position: center
@@ -307,11 +323,6 @@ nav.siteNav
     .header
       font-weight: bold
       margin-bottom: 1rem
-
-    .customer, .goal
-      text-transform: uppercase
-      margin-bottom: 1rem
-      font-family: RobotoRegular
     .viewsLikes
       position: absolute
       bottom: 15px
@@ -1015,19 +1026,19 @@ footer.entry-footer
 .owlKeeper.clOned
   margin-bottom: 25px
   border-bottom: solid 1px $bGrayLight
-  text-align: right
   .owlDescription
     display: none
     width: 35%
     height: 500px
+    padding: 3rem
     position: absolute
     background: $bOrange
     z-index: 2
     color: $bWhite
     .descrPermalink
       display: inline-block
-      padding: 1rem 2rem
-      border: solid 2px $bWhite
+      padding: .5rem 1rem
+      border: solid 4px $bWhite
       color: $bWhite
       text-align: center
       &:hover
@@ -1042,7 +1053,7 @@ footer.entry-footer
     position: relative
     z-index: 2
     cursor: pointer
-    &.active
+    &.active, &:hover
       background: $bOrange
       color: $bWhite
   img
@@ -1065,6 +1076,8 @@ footer.entry-footer
       &.active
         background: $bGray
   .cutOut
+    display: inline-block
+    float: right
     cursor: pointer
     position: relative
     top: 1rem
