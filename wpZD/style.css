@@ -263,38 +263,29 @@ nav.siteNav .innerList.tab a:not(:last-child):hover {
 
 .marryGoRound {
     padding: 0; }
-.marryGoRound .stub {
-    position: relative;
-    background-image: url("assets/images/mgr3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-.marryGoRound .stub > .container {
-    height: 100%; }
-.marryGoRound .stub .mgrItemText {
+.marryGoRound .mgrItemText {
     width: 40%;
     position: relative;
     top: 15%;
     color: white; }
-.marryGoRound .stub .mgrItemText .header {
+.marryGoRound .mgrItemText .header {
     font-family: RobotoBold;
     font-size: 5rem;
     line-height: 6rem; }
-.marryGoRound .stub .mgrItemText .body {
+.marryGoRound .mgrItemText .body {
     font-size: 1.75rem;
     line-height: 2.25rem;
     margin-top: 2rem;
     margin-bottom: 2rem; }
-.marryGoRound .stub.second {
+.marryGoRound .mgrItemText.second {
     background-image: url("assets/images/mgr2.jpg"); }
-.marryGoRound .stub.third {
+.marryGoRound .mgrItemText.third {
     background-image: url("assets/images/mgr1.png"); }
 .marryGoRound .owl-nav {
     display: none; }
 .marryGoRound .owl-dots {
-    position: relative;
-    top: -2.25rem;
-    text-align: center; }
+    position: relative !important;
+    top: -4.25rem; }
 .marryGoRound .owl-dots .owl-dot {
     display: inline-block;
     width: 1rem;
@@ -306,6 +297,9 @@ nav.siteNav .innerList.tab a:not(:last-child):hover {
     background: transparent; }
 .marryGoRound .owl-dots .owl-dot.active {
     background: white; }
+
+.mainPage .marryGoRound #mgr .owl-dot span {
+    display: none !important; }
 
 .portfolio h3 {
     font-family: RobotoThin;

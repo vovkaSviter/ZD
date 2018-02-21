@@ -18,47 +18,8 @@
 get_header(); ?>
 
     <div class="row">
-        <section id="mgr" class="marryGoRound owl-carousel col-xs-12">
-            <div class="stub first">
-                <div class="container">
-                    <div class="mgrItemText visible-md visible-lg">
-                        <div class="header">Брыф</div>
-                        <div class="body">
-                            Прадукт традыцыйны, вельмі просты, зразумелы – і ў гэтым яго складанасць
-                        </div>
-                        <a href="#">
-                            <i class="fa fa-angle-double-right fa-3x"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="stub second">
-                <div class="container">
-                    <div class="mgrItemText visible-md visible-lg">
-                        <div class="header">Рашэнне</div>
-                        <div class="body">
-                            Стварэнне нацыянальна арыентаванай гандлёвай маркі «Цудоўная цукерня».
-                            Беларуская канцэпцыя брэнду
-                        </div>
-                        <a href="#">
-                            <i class="fa fa-angle-double-right fa-3x"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="stub third">
-                <div class="container">
-                    <div class="mgrItemText visible-md visible-lg">
-                        <div class="header">Задача</div>
-                        <div class="body">
-                            Стварыць новую, адмысловую гандлёвую марку цукру.
-                        </div>
-                        <a href="#">
-                            <i class="fa fa-angle-double-right fa-3x"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <section class="marryGoRound">
+            <?php echo do_shortcode('[slide-anything id="154"]')?>
         </section>
     </div>
 
