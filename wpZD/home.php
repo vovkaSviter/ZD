@@ -70,6 +70,7 @@ get_header(); ?>
                     <?php if ( $the_query->have_posts() ) : ?>
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
 
+
                     <div class="pItemWrapper col-xs-12 col-md-4">
                         <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
                             <div class="owlDescription">
@@ -322,40 +323,90 @@ get_header(); ?>
                     <?php endif; ?>
                 </div>
 
-                <div class="row">
+                <div class="row each">
 
                     <div class="col-xs-12 col-md-4">
-                        <a href="<?php echo get_tag_link(22); ?>" class="pItem pItemText">
+                        <a href="<?php echo get_tag_link(25); ?>" class="pItem pItemText">
                             <div class="header">
                                 <?php
-                                    $tagName = get_term(22, 'post_tag');
-                                    echo $tagName->name;
+                                $tagName = get_term(25, 'post_tag');
+                                echo $tagName->name;
                                 ?>
                             </div>
-                            <?php echo term_description( 22, 'post_tag' ) ?>
+                            <?php echo term_description( 25, 'post_tag' ) ?>
                             <div class="more">
                                 <i class="fa fa-angle-double-right fa-2x"></i>
                             </div>
                         </a>
                     </div>
 
-                    <?php query_posts('tag=vtoraya-plashka'); ?>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <?php
+                    $the_query = new WP_Query( array(
+                        'tag'=>'corporate',
+                        'posts_per_page' => 2
+                    ));
+                    ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
 
-                        <div class="col-xs-12 col-md-4">
-                            <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
-                            <div class="pItem pItemImg" style="background-image: url('<?php echo $bgImg[0] ?>')">
-                                <div class="info">
-                                    <div class="header"><?php the_title(); ?></div>
-                                    Клиент:
-                                    <div class="customer">
-                                        <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                            <div class="pItemWrapper col-xs-12 col-md-4">
+                                <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+                                    <div class="owlDescription">
+                                        Клиент:
+                                        <div class="customer">
+                                            <?php echo the_field('customer'); ?>
+                                        </div>
+                                        Бренд:
+                                        <div class="goal">
+                                            <?php echo the_field('brand'); ?>
+                                        </div>
+                                        Краткое описание проекта:
+                                        <div class="goal">
+                                            <?php echo the_field('short'); ?>
+                                        </div>
+                                        <a href="<?php echo get_permalink(); ?>" class="descrPermalink">Подробнее</a>
+                                        </br>
+                                        </br>
+                                        Услуги:
+                                        <div class="tags">
+                                            <?php
+                                            foreach( get_the_category() as $category ){
+                                                $catID = $category->cat_ID ;
+                                                echo '<a href="'. get_category_link($catID) . '">' . $category->cat_name . '</a>';
+                                            }  ?>
+                                        </div>
                                     </div>
-                                    Задача:
-                                    <div class="goal">
-                                        <?php $key="Задача"; echo get_post_meta($post->ID, $key, true); ?>
+                                    <div class="cornerStone owl-carousel">
+                                        <?php
+                                        $attachments = get_children(array('post_parent' => $post->ID,
+                                            'post_status' => 'inherit',
+                                            'post_type' => 'attachment',
+                                            'post_mime_type' => 'image',
+                                            'order' => 'ASC',
+                                            'orderby' => 'menu_order ID'));
+
+                                        foreach($attachments as $att_id => $attachment) {
+                                            $full_img_url = wp_get_attachment_image($attachment->ID);
+                                            echo $full_img_url;
+                                        }
+                                        ?>
                                     </div>
-                                    <div class="viewsLikes">
+                                    <span class="cutOut fa fa-close"></span>
+                                    <div class="owlDescriptionTrigger">Описание проекта</div>
+                                </div>
+                                <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
+                                <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
+                                    <div class="info">
+                                        <div class="header"><?php the_title(); ?></div>
+                                        Клиент:
+                                        <div class="customer">
+                                            <?php echo the_field('customer'); ?>
+                                        </div>
+                                        Задача:
+                                        <div class="goal">
+                                            <?php echo the_field('goal'); ?>
+                                        </div>
+                                        <div class="viewsLikes">
                                     <span class="views">
                                         <i class="fa fa-eye"></i> &mdash;
                                         <span class="viewsNr">5587</span>
@@ -364,15 +415,206 @@ get_header(); ?>
                                         <i class="fa fa-thumbs-o-up"></i> &mdash;
                                         <span class="likesNr">13441</span>
                                     </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php endwhile; else : ?>
-                        <p><?php esc_html_e( 'Сорян:/' ); ?></p>
-                    <?php endif; ?>
 
+                        <?php endwhile; else : ?>
+                        <p><?php esc_html_e( 'Сорян:\\' ); ?></p>
+                    <?php endif; ?>
                 </div>
+
+                <div class="row each">
+
+                    <?php
+                    $the_query = new WP_Query( array(
+                        'tag'=>'corporate',
+                        'offset'=> 2,
+                        'posts_per_page' => 3
+                    ));
+                    ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
+
+                            <div class="pItemWrapper col-xs-12 col-md-4">
+                                <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+                                    <div class="owlDescription">
+                                        Клиент:
+                                        <div class="customer">
+                                            <?php echo the_field('customer'); ?>
+                                        </div>
+                                        Бренд:
+                                        <div class="goal">
+                                            <?php echo the_field('brand'); ?>
+                                        </div>
+                                        Краткое описание проекта:
+                                        <div class="goal">
+                                            <?php echo the_field('short'); ?>
+                                        </div>
+                                        <a href="<?php echo get_permalink(); ?>" class="descrPermalink">Подробнее</a>
+                                        </br>
+                                        </br>
+                                        Услуги:
+                                        <div class="tags">
+                                            <?php
+                                            foreach( get_the_category() as $category ){
+                                                $catID = $category->cat_ID ;
+                                                echo '<a href="'. get_category_link($catID) . '">' . $category->cat_name . '</a>';
+                                            }  ?>
+                                        </div>
+                                    </div>
+                                    <div class="cornerStone owl-carousel">
+                                        <?php
+                                        $attachments = get_children(array('post_parent' => $post->ID,
+                                            'post_status' => 'inherit',
+                                            'post_type' => 'attachment',
+                                            'post_mime_type' => 'image',
+                                            'order' => 'ASC',
+                                            'orderby' => 'menu_order ID'));
+
+                                        foreach($attachments as $att_id => $attachment) {
+                                            $full_img_url = wp_get_attachment_image($attachment->ID);
+                                            echo $full_img_url;
+                                        }
+                                        ?>
+                                    </div>
+                                    <span class="cutOut fa fa-close"></span>
+                                    <div class="owlDescriptionTrigger">Описание проекта</div>
+                                </div>
+                                <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
+                                <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
+                                    <div class="info">
+                                        <div class="header"><?php the_title(); ?></div>
+                                        Клиент:
+                                        <div class="customer">
+                                            <?php echo the_field('customer'); ?>
+                                        </div>
+                                        Задача:
+                                        <div class="goal">
+                                            <?php echo the_field('goal'); ?>
+                                        </div>
+                                        <div class="viewsLikes">
+                                    <span class="views">
+                                        <i class="fa fa-eye"></i> &mdash;
+                                        <span class="viewsNr">5587</span>
+                                    </span>
+                                    <span class="likes">
+                                        <i class="fa fa-thumbs-o-up"></i> &mdash;
+                                        <span class="likesNr">13441</span>
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <?php endwhile; else : ?>
+                        <p><?php esc_html_e( 'Сорян:\\' ); ?></p>
+                    <?php endif; ?>
+                </div>
+
+                <div class="row each">
+
+                    <div class="col-xs-12 col-md-4">
+                        <a href="<?php echo get_tag_link(26); ?>" class="pItem pItemText">
+                            <div class="header">
+                                <?php
+                                $tagName = get_term(26, 'post_tag');
+                                echo $tagName->name;
+                                ?>
+                            </div>
+                            <?php echo term_description( 26, 'post_tag' ) ?>
+                            <div class="more">
+                                <i class="fa fa-angle-double-right fa-2x"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <?php
+                    $the_query = new WP_Query( array(
+                        'tag'=>'space',
+                        'posts_per_page' => 2
+                    ));
+                    ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
+
+                            <div class="pItemWrapper col-xs-12 col-md-4">
+                                <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+                                    <div class="owlDescription">
+                                        Клиент:
+                                        <div class="customer">
+                                            <?php echo the_field('customer'); ?>
+                                        </div>
+                                        Бренд:
+                                        <div class="goal">
+                                            <?php echo the_field('brand'); ?>
+                                        </div>
+                                        Краткое описание проекта:
+                                        <div class="goal">
+                                            <?php echo the_field('short'); ?>
+                                        </div>
+                                        <a href="<?php echo get_permalink(); ?>" class="descrPermalink">Подробнее</a>
+                                        </br>
+                                        </br>
+                                        Услуги:
+                                        <div class="tags">
+                                            <?php
+                                            foreach( get_the_category() as $category ){
+                                                $catID = $category->cat_ID ;
+                                                echo '<a href="'. get_category_link($catID) . '">' . $category->cat_name . '</a>';
+                                            }  ?>
+                                        </div>
+                                    </div>
+                                    <div class="cornerStone owl-carousel">
+                                        <?php
+                                        $attachments = get_children(array('post_parent' => $post->ID,
+                                            'post_status' => 'inherit',
+                                            'post_type' => 'attachment',
+                                            'post_mime_type' => 'image',
+                                            'order' => 'ASC',
+                                            'orderby' => 'menu_order ID'));
+
+                                        foreach($attachments as $att_id => $attachment) {
+                                            $full_img_url = wp_get_attachment_image($attachment->ID);
+                                            echo $full_img_url;
+                                        }
+                                        ?>
+                                    </div>
+                                    <span class="cutOut fa fa-close"></span>
+                                    <div class="owlDescriptionTrigger">Описание проекта</div>
+                                </div>
+                                <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
+                                <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
+                                    <div class="info">
+                                        <div class="header"><?php the_title(); ?></div>
+                                        Клиент:
+                                        <div class="customer">
+                                            <?php echo the_field('customer'); ?>
+                                        </div>
+                                        Задача:
+                                        <div class="goal">
+                                            <?php echo the_field('goal'); ?>
+                                        </div>
+                                        <div class="viewsLikes">
+                                    <span class="views">
+                                        <i class="fa fa-eye"></i> &mdash;
+                                        <span class="viewsNr">5587</span>
+                                    </span>
+                                    <span class="likes">
+                                        <i class="fa fa-thumbs-o-up"></i> &mdash;
+                                        <span class="likesNr">13441</span>
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <?php endwhile; else : ?>
+                        <p><?php esc_html_e( 'Сорян:\\' ); ?></p>
+                    <?php endif; ?>
+                </div>
+
             </div>
         </section>
     </div>

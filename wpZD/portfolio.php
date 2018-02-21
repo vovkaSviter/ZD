@@ -90,7 +90,7 @@ get_header(); ?>
                     <div class="row">
                         <div class="showMeMore col-xs-12">
                             <div class="smmWrapper">
-                                <img src="imgs/showMeMore.png" alt="showMeMore">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/showMeMore.png" alt="showMeMore">
                                 Смотреть больше!
                             </div>
                         </div>
