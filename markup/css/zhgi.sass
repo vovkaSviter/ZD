@@ -184,28 +184,28 @@ nav.siteNav
 //  c. MarryGoRound
 .marryGoRound
   padding: 0
-  .stub
+  //.stub
+  //  position: relative
+  //  background-image: url("../imgs/mgr3.jpg")
+  //  background-position: center
+  //  background-size: cover
+  //  background-repeat: no-repeat
+  //  &>.container
+  //    height: 100%
+  .mgrItemText
+    width: 40%
     position: relative
-    background-image: url("../imgs/mgr3.jpg")
-    background-position: center
-    background-size: cover
-    background-repeat: no-repeat
-    &>.container
-      height: 100%
-    .mgrItemText
-      width: 40%
-      position: relative
-      top: 15%
-      color: $bWhite
-      .header
-        font-family: RobotoBold
-        font-size: 5rem
-        line-height: 6rem
-      .body
-        font-size: 1.75rem
-        line-height: 2.25rem
-        margin-top: 2rem
-        margin-bottom: 2rem
+    top: 15%
+    color: $bWhite
+    .header
+      font-family: RobotoBold
+      font-size: 5rem
+      line-height: 6rem
+    .body
+      font-size: 1.75rem
+      line-height: 2.25rem
+      margin-top: 2rem
+      margin-bottom: 2rem
 
     &.second
       background-image: url("../imgs/mgr2.jpg")
@@ -214,9 +214,9 @@ nav.siteNav
   .owl-nav
     display: none
   .owl-dots
-    position: relative
-    top: -2.25rem
-    text-align: center
+    position: relative !important
+    top: -4.25rem
+    //text-align: center
     .owl-dot
       display: inline-block
       width: 1rem
@@ -228,6 +228,12 @@ nav.siteNav
       background: transparent
       &.active
         background: $bWhite
+
+.mainPage
+  .marryGoRound
+    #mgr
+      .owl-dot span
+        display: none !important
 
 //  d. Portfolio
 .portfolio
