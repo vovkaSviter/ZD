@@ -47,14 +47,14 @@ get_header(); ?>
                 <div class="row each">
 
                     <div class="col-xs-12 col-md-4">
-                        <a href="<?php echo get_tag_link(21); ?>" class="pItem pItemText">
+                        <a href="<?php echo get_tag_link(24); ?>" class="pItem pItemText">
                             <div class="header">
                                 <?php
-                                $tagName = get_term(21, 'post_tag');
+                                $tagName = get_term(24, 'post_tag');
                                 echo $tagName->name;
                                 ?>
                             </div>
-                            <?php echo term_description( 21, 'post_tag' ) ?>
+                            <?php echo term_description( 24, 'post_tag' ) ?>
                             <div class="more">
                                 <i class="fa fa-angle-double-right fa-2x"></i>
                             </div>
@@ -63,7 +63,7 @@ get_header(); ?>
 
                     <?php
                         $the_query = new WP_Query( array(
-                                        'tag'=>'pervaya-plashka',
+                                        'tag'=>'consumer',
                                         'posts_per_page' => 2
                                     ));
                     ?>
@@ -75,15 +75,16 @@ get_header(); ?>
                             <div class="owlDescription">
                                 Клиент:
                                 <div class="customer">
-                                    <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                    <?php echo the_field('customer'); ?>
                                 </div>
                                 Бренд:
                                 <div class="goal">
-                                    <?php $key="Бренд"; echo get_post_meta($post->ID, $key, true); ?>
+<!--                                    --><?php //$key="Бренд"; echo get_post_meta($post->ID, $key, true); ?>
+                                    <?php echo the_field('brand'); ?>
                                 </div>
                                 Краткое описание проекта:
                                 <div class="goal">
-                                    <?php $key="ПроектКратко"; echo get_post_meta($post->ID, $key, true); ?>
+                                    <?php echo the_field('short'); ?>
                                 </div>
                                 <a href="<?php echo get_permalink(); ?>" class="descrPermalink">Подробнее</a>
                                 </br>
@@ -121,11 +122,11 @@ get_header(); ?>
                                 <div class="header"><?php the_title(); ?></div>
                                 Клиент:
                                 <div class="customer">
-                                    <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                    <?php echo the_field('customer'); ?>
                                 </div>
                                 Задача:
                                 <div class="goal">
-                                    <?php $key="Задача"; echo get_post_meta($post->ID, $key, true); ?>
+                                    <?php echo the_field('goal'); ?>
                                 </div>
                                 <div class="viewsLikes">
                                     <span class="views">
@@ -142,7 +143,7 @@ get_header(); ?>
                     </div>
 
                     <?php endwhile; else : ?>
-                        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                        <p><?php esc_html_e( 'Сорян :/' ); ?></p>
                     <?php endif; ?>
 
                 </div>
@@ -150,7 +151,7 @@ get_header(); ?>
                 <div class="row each">
                     <?php
                     $the_query = new WP_Query( array(
-                        'tag'=>'pervaya-plashka',
+                        'tag'=>'consumer',
                         'offset'=> 2,
                         'posts_per_page' => 3
                     ));
@@ -160,7 +161,31 @@ get_header(); ?>
 
                         <div class="pItemWrapper col-xs-12 col-md-4">
                             <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
-
+                                <div class="owlDescription">
+                                    Клиент:
+                                    <div class="customer">
+                                        <?php echo the_field('customer'); ?>
+                                    </div>
+                                    Бренд:
+                                    <div class="goal">
+                                        <?php echo the_field('brand'); ?>
+                                    </div>
+                                    Краткое описание проекта:
+                                    <div class="goal">
+                                        <?php echo the_field('short'); ?>
+                                    </div>
+                                    <a href="<?php echo get_permalink(); ?>" class="descrPermalink">Подробнее</a>
+                                    </br>
+                                    </br>
+                                    Услуги:
+                                    <div class="tags">
+                                        <?php
+                                        foreach( get_the_category() as $category ){
+                                            $catID = $category->cat_ID ;
+                                            echo '<a href="'. get_category_link($catID) . '">' . $category->cat_name . '</a>';
+                                        }  ?>
+                                    </div>
+                                </div>
                                 <div class="cornerStone owl-carousel">
                                     <?php
                                     $attachments = get_children(array('post_parent' => $post->ID,
@@ -177,6 +202,7 @@ get_header(); ?>
                                     ?>
                                 </div>
                                 <span class="cutOut fa fa-close"></span>
+                                <div class="owlDescriptionTrigger">Описание проекта</div>
                             </div>
                             <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                             <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
@@ -184,11 +210,11 @@ get_header(); ?>
                                     <div class="header"><?php the_title(); ?></div>
                                     Клиент:
                                     <div class="customer">
-                                        <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                        <?php echo the_field('customer'); ?>
                                     </div>
                                     Задача:
                                     <div class="goal">
-                                        <?php $key="Задача"; echo get_post_meta($post->ID, $key, true); ?>
+                                        <?php echo the_field('goal'); ?>
                                     </div>
                                     <div class="viewsLikes">
                                     <span class="views">
@@ -205,14 +231,14 @@ get_header(); ?>
                         </div>
 
                     <?php endwhile; else : ?>
-                        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                        <p><?php esc_html_e( 'Сорян :/' ); ?></p>
                     <?php endif; ?>
                 </div>
 
                 <div class="row each">
                     <?php
                     $the_query = new WP_Query( array(
-                        'tag'=>'pervaya-plashka',
+                        'tag'=>'consumer',
                         'offset'=> 5,
                         'posts_per_page' => 3
                     ));
@@ -222,6 +248,31 @@ get_header(); ?>
 
                         <div class="pItemWrapper col-xs-12 col-md-4">
                             <div class="owlKeeper col-xs-12" style="visibility: hidden; height: 0">
+                                <div class="owlDescription">
+                                    Клиент:
+                                    <div class="customer">
+                                        <?php echo the_field('customer'); ?>
+                                    </div>
+                                    Бренд:
+                                    <div class="goal">
+                                        <?php echo the_field('brand'); ?>
+                                    </div>
+                                    Краткое описание проекта:
+                                    <div class="goal">
+                                        <?php echo the_field('short'); ?>
+                                    </div>
+                                    <a href="<?php echo get_permalink(); ?>" class="descrPermalink">Подробнее</a>
+                                    </br>
+                                    </br>
+                                    Услуги:
+                                    <div class="tags">
+                                        <?php
+                                        foreach( get_the_category() as $category ){
+                                            $catID = $category->cat_ID ;
+                                            echo '<a href="'. get_category_link($catID) . '">' . $category->cat_name . '</a>';
+                                        }  ?>
+                                    </div>
+                                </div>
                                 <div class="cornerStone owl-carousel">
                                     <?php
                                     $attachments = get_children(array('post_parent' => $post->ID,
@@ -238,6 +289,7 @@ get_header(); ?>
                                     ?>
                                 </div>
                                 <span class="cutOut fa fa-close"></span>
+                                <div class="owlDescriptionTrigger">Описание проекта</div>
                             </div>
                             <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
                             <div class="pItem pItemImg" id="<?php echo get_the_ID(); ?>" style="background-image: url('<?php echo $bgImg[0] ?>')">
@@ -245,11 +297,11 @@ get_header(); ?>
                                     <div class="header"><?php the_title(); ?></div>
                                     Клиент:
                                     <div class="customer">
-                                        <?php $key="Клиент"; echo get_post_meta($post->ID, $key, true); ?>
+                                        <?php echo the_field('customer'); ?>
                                     </div>
                                     Задача:
                                     <div class="goal">
-                                        <?php $key="Задача"; echo get_post_meta($post->ID, $key, true); ?>
+                                        <?php echo the_field('goal'); ?>
                                     </div>
                                     <div class="viewsLikes">
                                     <span class="views">
@@ -266,7 +318,7 @@ get_header(); ?>
                         </div>
 
                     <?php endwhile; else : ?>
-                        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                        <p><?php esc_html_e( 'Сорян:\\' ); ?></p>
                     <?php endif; ?>
                 </div>
 
@@ -317,7 +369,7 @@ get_header(); ?>
                             </div>
                         </div>
                     <?php endwhile; else : ?>
-                        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                        <p><?php esc_html_e( 'Сорян:/' ); ?></p>
                     <?php endif; ?>
 
                 </div>
