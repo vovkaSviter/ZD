@@ -14,18 +14,21 @@
 
 ?>
 
-
+    <?php $bgImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full') ?>
     <div class="serviceSinglePageItem col-xs-12 col-md-4">
-        <div class="pItem pItemImg">
+        <a href="<?php echo get_permalink(); ?>" class="pItem pItemImg" style="display: block; background-image: url('<?php echo $bgImg[0] ?>')">
             <div class="info">
-                <div class="header">Amato</div>
+                <div class="header">
+                    <?php the_title(); ?>
+                </div>
                 Клиент:
                 <div class="customer">
-                    ООО "АвалонТорг"
+                    <?php echo the_field('customer'); ?>
                 </div>
                 Цель:
-                <div class="goal">редизайн упаковки для кофе - молотого
-                    и в зернах</div>
+                <div class="goal">
+                    <?php echo the_field('goal'); ?>
+                </div>
                 <div class="viewsLikes">
                             <span class="views">
                                 <i class="fa fa-eye"></i> &mdash;
@@ -37,5 +40,5 @@
                             </span>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
