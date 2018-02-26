@@ -898,8 +898,11 @@ footer.col-xs-12
 
 //  w. portfolioSinglePage
 .portfolioSingleDescription
-  .left
-    &>div
+  .custGoalShare
+    width: 30%
+    margin-right: 5%
+    float: left
+    .customerIs
       border-top: solid 1px darken($bGrayLight, .25)
       padding-top: 1rem
     .customerIs, .goalIs
@@ -962,13 +965,16 @@ footer.col-xs-12
 
 
 //  x. dynamic-col-
-*[class *= dynamic-col-]
-  float: left
 .dynamic-col-1
+  width: 65%
+  float: right
+  img
+    width: 100%
+    height: auto
+.dynamic-col-2
   width: 30%
   margin-right: 5%
-.dynamic-col-2
-  width: 65%
+  float: left
   img
     display: block
     width: 100%
@@ -985,10 +991,23 @@ footer.entry-footer
   display: none
 #comments
   display: none
-.screen-reader-text
+.screen-reader-text, .nav-subtitle, .nav-title-icon-wrapper
   display: none
 .navigation.post-navigation
-  display: none
+  width: 65%
+  float: right
+  .nav-links
+    &:after
+      content: ''
+      display: table
+      clear: both
+  .nav-previous
+    width: 35%
+    float: left
+  .nav-next
+    width: 35%
+    float: right
+    text-align: right
 
 .error404
   margin-bottom: 2rem

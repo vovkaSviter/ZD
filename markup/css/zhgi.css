@@ -871,14 +871,18 @@ footer.col-xs-12 {
 .serviceSinglePage .pageHeaderDescription {
   margin-top: 1.27778rem; }
 
-.portfolioSingleDescription .left > div {
-  border-top: solid 1px #e6e4e6;
-  padding-top: 1rem; }
-.portfolioSingleDescription .left .customerIs, .portfolioSingleDescription .left .goalIs {
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  font-family: RobotoRegular;
-  font-weight: bold; }
+.portfolioSingleDescription .custGoalShare {
+  width: 30%;
+  margin-right: 5%;
+  float: left; }
+  .portfolioSingleDescription .custGoalShare .customerIs {
+    border-top: solid 1px #e6e4e6;
+    padding-top: 1rem; }
+  .portfolioSingleDescription .custGoalShare .customerIs, .portfolioSingleDescription .custGoalShare .goalIs {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: RobotoRegular;
+    font-weight: bold; }
 .portfolioSingleDescription .zooKeeper {
   margin-bottom: 1rem; }
   .portfolioSingleDescription .zooKeeper a:hover {
@@ -929,15 +933,17 @@ footer.col-xs-12 {
     .paginLike .pagination .next i {
       margin-left: 15px; }
 
-*[class*=dynamic-col-] {
-  float: left; }
-
 .dynamic-col-1 {
-  width: 30%;
-  margin-right: 5%; }
+  width: 65%;
+  float: right; }
+  .dynamic-col-1 img {
+    width: 100%;
+    height: auto; }
 
 .dynamic-col-2 {
-  width: 65%; }
+  width: 30%;
+  margin-right: 5%;
+  float: left; }
   .dynamic-col-2 img {
     display: block;
     width: 100%;
@@ -955,11 +961,23 @@ footer.entry-footer {
 #comments {
   display: none; }
 
-.screen-reader-text {
+.screen-reader-text, .nav-subtitle, .nav-title-icon-wrapper {
   display: none; }
 
 .navigation.post-navigation {
-  display: none; }
+  width: 65%;
+  float: right; }
+  .navigation.post-navigation .nav-links:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .navigation.post-navigation .nav-previous {
+    width: 35%;
+    float: left; }
+  .navigation.post-navigation .nav-next {
+    width: 35%;
+    float: right;
+    text-align: right; }
 
 .error404 {
   margin-bottom: 2rem;
